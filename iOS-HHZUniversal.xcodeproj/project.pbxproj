@@ -1,0 +1,1128 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78D9E9C71DE3E41C009D5E55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9C61DE3E41C009D5E55 /* main.m */; };
+		78D9E9CA1DE3E41C009D5E55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9C91DE3E41C009D5E55 /* AppDelegate.m */; };
+		78D9E9CD1DE3E41C009D5E55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9CC1DE3E41C009D5E55 /* ViewController.m */; };
+		78D9E9D01DE3E41C009D5E55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D9E9CE1DE3E41C009D5E55 /* Main.storyboard */; };
+		78D9E9D21DE3E41C009D5E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D9E9D11DE3E41C009D5E55 /* Assets.xcassets */; };
+		78D9E9D51DE3E41C009D5E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D9E9D31DE3E41C009D5E55 /* LaunchScreen.storyboard */; };
+		78D9E9E01DE3E41C009D5E55 /* iOS_HHZUniversalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9DF1DE3E41C009D5E55 /* iOS_HHZUniversalTests.m */; };
+		78D9EA761DE3E4D0009D5E55 /* HHZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9ED1DE3E4D0009D5E55 /* HHZNavigationController.m */; };
+		78D9EA771DE3E4D0009D5E55 /* HHZNavigationController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78D9E9EE1DE3E4D0009D5E55 /* HHZNavigationController.plist */; };
+		78D9EA781DE3E4D0009D5E55 /* HHZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9F01DE3E4D0009D5E55 /* HHZViewController.m */; };
+		78D9EA791DE3E4D0009D5E55 /* NSArray+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9F41DE3E4D0009D5E55 /* NSArray+HHZCategory.m */; };
+		78D9EA7A1DE3E4D0009D5E55 /* NSDictionary+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9F61DE3E4D0009D5E55 /* NSDictionary+HHZCategory.m */; };
+		78D9EA7B1DE3E4D0009D5E55 /* NSException+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9F81DE3E4D0009D5E55 /* NSException+HHZCategory.m */; };
+		78D9EA7C1DE3E4D0009D5E55 /* NSNull+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9FA1DE3E4D0009D5E55 /* NSNull+HHZCategory.m */; };
+		78D9EA7D1DE3E4D0009D5E55 /* NSObject+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9FC1DE3E4D0009D5E55 /* NSObject+HHZCategory.m */; };
+		78D9EA7E1DE3E4D0009D5E55 /* NSString+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9FE1DE3E4D0009D5E55 /* NSString+HHZCategory.m */; };
+		78D9EA7F1DE3E4D0009D5E55 /* NSTimer+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA001DE3E4D0009D5E55 /* NSTimer+HHZCategory.m */; };
+		78D9EA801DE3E4D0009D5E55 /* UIButton+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA041DE3E4D0009D5E55 /* UIButton+HHZCategory.m */; };
+		78D9EA811DE3E4D0009D5E55 /* UIColor+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA061DE3E4D0009D5E55 /* UIColor+HHZCategory.m */; };
+		78D9EA821DE3E4D0009D5E55 /* UIImage+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA081DE3E4D0009D5E55 /* UIImage+HHZCategory.m */; };
+		78D9EA831DE3E4D0009D5E55 /* UIImageView+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA0A1DE3E4D0009D5E55 /* UIImageView+HHZCategory.m */; };
+		78D9EA841DE3E4D0009D5E55 /* UILabel+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA0C1DE3E4D0009D5E55 /* UILabel+HHZCategory.m */; };
+		78D9EA851DE3E4D0009D5E55 /* UITableView+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA0E1DE3E4D0009D5E55 /* UITableView+HHZCategory.m */; };
+		78D9EA861DE3E4D0009D5E55 /* UITableViewCell+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA101DE3E4D0009D5E55 /* UITableViewCell+HHZCategory.m */; };
+		78D9EA871DE3E4D0009D5E55 /* UIView+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA121DE3E4D0009D5E55 /* UIView+HHZCategory.m */; };
+		78D9EA881DE3E4D0009D5E55 /* HHZAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA1A1DE3E4D0009D5E55 /* HHZAlertView.m */; };
+		78D9EA891DE3E4D0009D5E55 /* ClientDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA1D1DE3E4D0009D5E55 /* ClientDemo.m */; };
+		78D9EA8A1DE3E4D0009D5E55 /* ServiceDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA1F1DE3E4D0009D5E55 /* ServiceDemo.m */; };
+		78D9EA8B1DE3E4D0009D5E55 /* HHZMethodException.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA221DE3E4D0009D5E55 /* HHZMethodException.m */; };
+		78D9EA8C1DE3E4D0009D5E55 /* HHZHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA251DE3E4D0009D5E55 /* HHZHttpClient.m */; };
+		78D9EA8D1DE3E4D0009D5E55 /* HHZHttpEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA271DE3E4D0009D5E55 /* HHZHttpEncryption.m */; };
+		78D9EA8E1DE3E4D0009D5E55 /* HHZHttpRequestCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA2A1DE3E4D0009D5E55 /* HHZHttpRequestCondition.m */; };
+		78D9EA8F1DE3E4D0009D5E55 /* HHZHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA2C1DE3E4D0009D5E55 /* HHZHttpService.m */; };
+		78D9EA901DE3E4D0009D5E55 /* HHZHttpStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA2F1DE3E4D0009D5E55 /* HHZHttpStruct.m */; };
+		78D9EA911DE3E4D0009D5E55 /* HHZHttpTagBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA311DE3E4D0009D5E55 /* HHZHttpTagBuilder.m */; };
+		78D9EA921DE3E4D0009D5E55 /* HHZAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA361DE3E4D0009D5E55 /* HHZAppInfo.m */; };
+		78D9EA931DE3E4D0009D5E55 /* HHZAppInfoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA3B1DE3E4D0009D5E55 /* HHZAppInfoTool.m */; settings = {COMPILER_FLAGS = "-Wno-undeclared-selector -Wno-shorten-64-to-32"; }; };
+		78D9EA941DE3E4D0009D5E55 /* HHZTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA3F1DE3E4D0009D5E55 /* HHZTableViewCell.m */; };
+		78D9EA951DE3E4D0009D5E55 /* HHZArchiveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA431DE3E4D0009D5E55 /* HHZArchiveTool.m */; };
+		78D9EA961DE3E4D0009D5E55 /* HHZCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA461DE3E4D0009D5E55 /* HHZCacheTool.m */; };
+		78D9EA971DE3E4D0009D5E55 /* HHZCalculateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA491DE3E4D0009D5E55 /* HHZCalculateTool.m */; };
+		78D9EA981DE3E4D0009D5E55 /* HHZDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA4C1DE3E4D0009D5E55 /* HHZDateTool.m */; };
+		78D9EA991DE3E4D0009D5E55 /* HHZDateTool_Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA4E1DE3E4D0009D5E55 /* HHZDateTool_Format.m */; };
+		78D9EA9A1DE3E4D0009D5E55 /* HHZDateToolFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA501DE3E4D0009D5E55 /* HHZDateToolFactory.m */; };
+		78D9EA9B1DE3E4D0009D5E55 /* DDLoggerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA531DE3E4D0009D5E55 /* DDLoggerTool.m */; };
+		78D9EA9C1DE3E4D0009D5E55 /* HHZDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA561DE3E4D0009D5E55 /* HHZDeviceTool.m */; };
+		78D9EA9D1DE3E4D0009D5E55 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA5A1DE3E4D0009D5E55 /* GTMBase64.m */; };
+		78D9EA9E1DE3E4D0009D5E55 /* HHZAESEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA5D1DE3E4D0009D5E55 /* HHZAESEncryption.m */; };
+		78D9EA9F1DE3E4D0009D5E55 /* HHZBase64Encrption.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA5F1DE3E4D0009D5E55 /* HHZBase64Encrption.m */; };
+		78D9EAA01DE3E4D0009D5E55 /* HHZDESEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA611DE3E4D0009D5E55 /* HHZDESEncryption.m */; };
+		78D9EAA11DE3E4D0009D5E55 /* HHZEncrptionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA631DE3E4D0009D5E55 /* HHZEncrptionFactory.m */; };
+		78D9EAA21DE3E4D0009D5E55 /* HHZMD5Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA651DE3E4D0009D5E55 /* HHZMD5Encryption.m */; };
+		78D9EAA31DE3E4D0009D5E55 /* HHZIQKeyboardManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA681DE3E4D0009D5E55 /* HHZIQKeyboardManagerTool.m */; };
+		78D9EAA41DE3E4D0009D5E55 /* HHZKitTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA6B1DE3E4D0009D5E55 /* HHZKitTool.m */; };
+		78D9EAA51DE3E4D0009D5E55 /* HHZMapTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA6D1DE3E4D0009D5E55 /* HHZMapTool.m */; };
+		78D9EAA61DE3E4D0009D5E55 /* HHZPathTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA6F1DE3E4D0009D5E55 /* HHZPathTool.m */; };
+		78D9EAA71DE3E4D0009D5E55 /* HHZPlistTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA721DE3E4D0009D5E55 /* HHZPlistTool.m */; };
+		78D9EAA81DE3E4D0009D5E55 /* HHZRegularTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA751DE3E4D0009D5E55 /* HHZRegularTool.m */; };
+		D91A2AC77285ED1564546243 /* libPods-iOS-HHZUniversal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A02CFD3A02A60E15887B80 /* libPods-iOS-HHZUniversal.a */; };
+		E2317C593A94D06F85AE145C /* libPods-iOS-HHZUniversalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D732F2D9CF5B727F4AB86546 /* libPods-iOS-HHZUniversalTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78D9E9DC1DE3E41C009D5E55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78D9E9BA1DE3E41B009D5E55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78D9E9C11DE3E41C009D5E55;
+			remoteInfo = "iOS-HHZUniversal";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E7153FB32A3CE1A66DBD9A8 /* Pods-iOS-HHZUniversalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversalTests/Pods-iOS-HHZUniversalTests.release.xcconfig"; sourceTree = "<group>"; };
+		70CD4AB4D3116914A077127A /* Pods-iOS-HHZUniversalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversalTests/Pods-iOS-HHZUniversalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		78D9E9C21DE3E41C009D5E55 /* iOS-HHZUniversal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-HHZUniversal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78D9E9C61DE3E41C009D5E55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		78D9E9C81DE3E41C009D5E55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		78D9E9C91DE3E41C009D5E55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		78D9E9CB1DE3E41C009D5E55 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		78D9E9CC1DE3E41C009D5E55 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		78D9E9CF1DE3E41C009D5E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		78D9E9D11DE3E41C009D5E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78D9E9D41DE3E41C009D5E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78D9E9D61DE3E41C009D5E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78D9E9DB1DE3E41C009D5E55 /* iOS-HHZUniversalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-HHZUniversalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78D9E9DF1DE3E41C009D5E55 /* iOS_HHZUniversalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_HHZUniversalTests.m; sourceTree = "<group>"; };
+		78D9E9E11DE3E41C009D5E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78D9E9EC1DE3E4D0009D5E55 /* HHZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZNavigationController.h; sourceTree = "<group>"; };
+		78D9E9ED1DE3E4D0009D5E55 /* HHZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZNavigationController.m; sourceTree = "<group>"; };
+		78D9E9EE1DE3E4D0009D5E55 /* HHZNavigationController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HHZNavigationController.plist; sourceTree = "<group>"; };
+		78D9E9EF1DE3E4D0009D5E55 /* HHZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZViewController.h; sourceTree = "<group>"; };
+		78D9E9F01DE3E4D0009D5E55 /* HHZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZViewController.m; sourceTree = "<group>"; };
+		78D9E9F31DE3E4D0009D5E55 /* NSArray+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HHZCategory.h"; sourceTree = "<group>"; };
+		78D9E9F41DE3E4D0009D5E55 /* NSArray+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HHZCategory.m"; sourceTree = "<group>"; };
+		78D9E9F51DE3E4D0009D5E55 /* NSDictionary+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HHZCategory.h"; sourceTree = "<group>"; };
+		78D9E9F61DE3E4D0009D5E55 /* NSDictionary+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HHZCategory.m"; sourceTree = "<group>"; };
+		78D9E9F71DE3E4D0009D5E55 /* NSException+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+HHZCategory.h"; sourceTree = "<group>"; };
+		78D9E9F81DE3E4D0009D5E55 /* NSException+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+HHZCategory.m"; sourceTree = "<group>"; };
+		78D9E9F91DE3E4D0009D5E55 /* NSNull+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+HHZCategory.h"; sourceTree = "<group>"; };
+		78D9E9FA1DE3E4D0009D5E55 /* NSNull+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+HHZCategory.m"; sourceTree = "<group>"; };
+		78D9E9FB1DE3E4D0009D5E55 /* NSObject+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HHZCategory.h"; sourceTree = "<group>"; };
+		78D9E9FC1DE3E4D0009D5E55 /* NSObject+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HHZCategory.m"; sourceTree = "<group>"; };
+		78D9E9FD1DE3E4D0009D5E55 /* NSString+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HHZCategory.h"; sourceTree = "<group>"; };
+		78D9E9FE1DE3E4D0009D5E55 /* NSString+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HHZCategory.m"; sourceTree = "<group>"; };
+		78D9E9FF1DE3E4D0009D5E55 /* NSTimer+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+HHZCategory.h"; sourceTree = "<group>"; };
+		78D9EA001DE3E4D0009D5E55 /* NSTimer+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+HHZCategory.m"; sourceTree = "<group>"; };
+		78D9EA031DE3E4D0009D5E55 /* UIButton+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+HHZCategory.h"; sourceTree = "<group>"; };
+		78D9EA041DE3E4D0009D5E55 /* UIButton+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HHZCategory.m"; sourceTree = "<group>"; };
+		78D9EA051DE3E4D0009D5E55 /* UIColor+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HHZCategory.h"; sourceTree = "<group>"; };
+		78D9EA061DE3E4D0009D5E55 /* UIColor+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HHZCategory.m"; sourceTree = "<group>"; };
+		78D9EA071DE3E4D0009D5E55 /* UIImage+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HHZCategory.h"; sourceTree = "<group>"; };
+		78D9EA081DE3E4D0009D5E55 /* UIImage+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HHZCategory.m"; sourceTree = "<group>"; };
+		78D9EA091DE3E4D0009D5E55 /* UIImageView+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HHZCategory.h"; sourceTree = "<group>"; };
+		78D9EA0A1DE3E4D0009D5E55 /* UIImageView+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HHZCategory.m"; sourceTree = "<group>"; };
+		78D9EA0B1DE3E4D0009D5E55 /* UILabel+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+HHZCategory.h"; sourceTree = "<group>"; };
+		78D9EA0C1DE3E4D0009D5E55 /* UILabel+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+HHZCategory.m"; sourceTree = "<group>"; };
+		78D9EA0D1DE3E4D0009D5E55 /* UITableView+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+HHZCategory.h"; sourceTree = "<group>"; };
+		78D9EA0E1DE3E4D0009D5E55 /* UITableView+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+HHZCategory.m"; sourceTree = "<group>"; };
+		78D9EA0F1DE3E4D0009D5E55 /* UITableViewCell+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+HHZCategory.h"; sourceTree = "<group>"; };
+		78D9EA101DE3E4D0009D5E55 /* UITableViewCell+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+HHZCategory.m"; sourceTree = "<group>"; };
+		78D9EA111DE3E4D0009D5E55 /* UIView+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HHZCategory.h"; sourceTree = "<group>"; };
+		78D9EA121DE3E4D0009D5E55 /* UIView+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HHZCategory.m"; sourceTree = "<group>"; };
+		78D9EA141DE3E4D0009D5E55 /* HHZImportConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZImportConfig.h; sourceTree = "<group>"; };
+		78D9EA151DE3E4D0009D5E55 /* HHZMACROConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZMACROConfig.h; sourceTree = "<group>"; };
+		78D9EA191DE3E4D0009D5E55 /* HHZAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZAlertView.h; sourceTree = "<group>"; };
+		78D9EA1A1DE3E4D0009D5E55 /* HHZAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZAlertView.m; sourceTree = "<group>"; };
+		78D9EA1C1DE3E4D0009D5E55 /* ClientDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientDemo.h; sourceTree = "<group>"; };
+		78D9EA1D1DE3E4D0009D5E55 /* ClientDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientDemo.m; sourceTree = "<group>"; };
+		78D9EA1E1DE3E4D0009D5E55 /* ServiceDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceDemo.h; sourceTree = "<group>"; };
+		78D9EA1F1DE3E4D0009D5E55 /* ServiceDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceDemo.m; sourceTree = "<group>"; };
+		78D9EA211DE3E4D0009D5E55 /* HHZMethodException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZMethodException.h; sourceTree = "<group>"; };
+		78D9EA221DE3E4D0009D5E55 /* HHZMethodException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZMethodException.m; sourceTree = "<group>"; };
+		78D9EA241DE3E4D0009D5E55 /* HHZHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpClient.h; sourceTree = "<group>"; };
+		78D9EA251DE3E4D0009D5E55 /* HHZHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpClient.m; sourceTree = "<group>"; };
+		78D9EA261DE3E4D0009D5E55 /* HHZHttpEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpEncryption.h; sourceTree = "<group>"; };
+		78D9EA271DE3E4D0009D5E55 /* HHZHttpEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpEncryption.m; sourceTree = "<group>"; };
+		78D9EA281DE3E4D0009D5E55 /* HHZHttpEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpEnum.h; sourceTree = "<group>"; };
+		78D9EA291DE3E4D0009D5E55 /* HHZHttpRequestCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpRequestCondition.h; sourceTree = "<group>"; };
+		78D9EA2A1DE3E4D0009D5E55 /* HHZHttpRequestCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpRequestCondition.m; sourceTree = "<group>"; };
+		78D9EA2B1DE3E4D0009D5E55 /* HHZHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpService.h; sourceTree = "<group>"; };
+		78D9EA2C1DE3E4D0009D5E55 /* HHZHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpService.m; sourceTree = "<group>"; };
+		78D9EA2D1DE3E4D0009D5E55 /* HHZHttpServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpServiceDelegate.h; sourceTree = "<group>"; };
+		78D9EA2E1DE3E4D0009D5E55 /* HHZHttpStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpStruct.h; sourceTree = "<group>"; };
+		78D9EA2F1DE3E4D0009D5E55 /* HHZHttpStruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpStruct.m; sourceTree = "<group>"; };
+		78D9EA301DE3E4D0009D5E55 /* HHZHttpTagBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpTagBuilder.h; sourceTree = "<group>"; };
+		78D9EA311DE3E4D0009D5E55 /* HHZHttpTagBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpTagBuilder.m; sourceTree = "<group>"; };
+		78D9EA351DE3E4D0009D5E55 /* HHZAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZAppInfo.h; sourceTree = "<group>"; };
+		78D9EA361DE3E4D0009D5E55 /* HHZAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZAppInfo.m; sourceTree = "<group>"; };
+		78D9EA371DE3E4D0009D5E55 /* LSApplicationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationProxy.h; sourceTree = "<group>"; };
+		78D9EA381DE3E4D0009D5E55 /* LSBundleProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBundleProxy.h; sourceTree = "<group>"; };
+		78D9EA391DE3E4D0009D5E55 /* LSResourceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSResourceProxy.h; sourceTree = "<group>"; };
+		78D9EA3A1DE3E4D0009D5E55 /* HHZAppInfoTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZAppInfoTool.h; sourceTree = "<group>"; };
+		78D9EA3B1DE3E4D0009D5E55 /* HHZAppInfoTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZAppInfoTool.m; sourceTree = "<group>"; };
+		78D9EA3E1DE3E4D0009D5E55 /* HHZTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZTableViewCell.h; sourceTree = "<group>"; };
+		78D9EA3F1DE3E4D0009D5E55 /* HHZTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZTableViewCell.m; sourceTree = "<group>"; };
+		78D9EA421DE3E4D0009D5E55 /* HHZArchiveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZArchiveTool.h; sourceTree = "<group>"; };
+		78D9EA431DE3E4D0009D5E55 /* HHZArchiveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZArchiveTool.m; sourceTree = "<group>"; };
+		78D9EA451DE3E4D0009D5E55 /* HHZCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZCacheTool.h; sourceTree = "<group>"; };
+		78D9EA461DE3E4D0009D5E55 /* HHZCacheTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZCacheTool.m; sourceTree = "<group>"; };
+		78D9EA481DE3E4D0009D5E55 /* HHZCalculateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZCalculateTool.h; sourceTree = "<group>"; };
+		78D9EA491DE3E4D0009D5E55 /* HHZCalculateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZCalculateTool.m; sourceTree = "<group>"; };
+		78D9EA4B1DE3E4D0009D5E55 /* HHZDateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZDateTool.h; sourceTree = "<group>"; };
+		78D9EA4C1DE3E4D0009D5E55 /* HHZDateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZDateTool.m; sourceTree = "<group>"; };
+		78D9EA4D1DE3E4D0009D5E55 /* HHZDateTool_Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZDateTool_Format.h; sourceTree = "<group>"; };
+		78D9EA4E1DE3E4D0009D5E55 /* HHZDateTool_Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZDateTool_Format.m; sourceTree = "<group>"; };
+		78D9EA4F1DE3E4D0009D5E55 /* HHZDateToolFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZDateToolFactory.h; sourceTree = "<group>"; };
+		78D9EA501DE3E4D0009D5E55 /* HHZDateToolFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZDateToolFactory.m; sourceTree = "<group>"; };
+		78D9EA521DE3E4D0009D5E55 /* DDLoggerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLoggerTool.h; sourceTree = "<group>"; };
+		78D9EA531DE3E4D0009D5E55 /* DDLoggerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLoggerTool.m; sourceTree = "<group>"; };
+		78D9EA551DE3E4D0009D5E55 /* HHZDeviceTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZDeviceTool.h; sourceTree = "<group>"; };
+		78D9EA561DE3E4D0009D5E55 /* HHZDeviceTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZDeviceTool.m; sourceTree = "<group>"; };
+		78D9EA591DE3E4D0009D5E55 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		78D9EA5A1DE3E4D0009D5E55 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		78D9EA5B1DE3E4D0009D5E55 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		78D9EA5C1DE3E4D0009D5E55 /* HHZAESEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZAESEncryption.h; sourceTree = "<group>"; };
+		78D9EA5D1DE3E4D0009D5E55 /* HHZAESEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZAESEncryption.m; sourceTree = "<group>"; };
+		78D9EA5E1DE3E4D0009D5E55 /* HHZBase64Encrption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZBase64Encrption.h; sourceTree = "<group>"; };
+		78D9EA5F1DE3E4D0009D5E55 /* HHZBase64Encrption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZBase64Encrption.m; sourceTree = "<group>"; };
+		78D9EA601DE3E4D0009D5E55 /* HHZDESEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZDESEncryption.h; sourceTree = "<group>"; };
+		78D9EA611DE3E4D0009D5E55 /* HHZDESEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZDESEncryption.m; sourceTree = "<group>"; };
+		78D9EA621DE3E4D0009D5E55 /* HHZEncrptionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZEncrptionFactory.h; sourceTree = "<group>"; };
+		78D9EA631DE3E4D0009D5E55 /* HHZEncrptionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZEncrptionFactory.m; sourceTree = "<group>"; };
+		78D9EA641DE3E4D0009D5E55 /* HHZMD5Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZMD5Encryption.h; sourceTree = "<group>"; };
+		78D9EA651DE3E4D0009D5E55 /* HHZMD5Encryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZMD5Encryption.m; sourceTree = "<group>"; };
+		78D9EA671DE3E4D0009D5E55 /* HHZIQKeyboardManagerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZIQKeyboardManagerTool.h; sourceTree = "<group>"; };
+		78D9EA681DE3E4D0009D5E55 /* HHZIQKeyboardManagerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZIQKeyboardManagerTool.m; sourceTree = "<group>"; };
+		78D9EA6A1DE3E4D0009D5E55 /* HHZKitTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZKitTool.h; sourceTree = "<group>"; };
+		78D9EA6B1DE3E4D0009D5E55 /* HHZKitTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZKitTool.m; sourceTree = "<group>"; };
+		78D9EA6C1DE3E4D0009D5E55 /* HHZMapTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZMapTool.h; sourceTree = "<group>"; };
+		78D9EA6D1DE3E4D0009D5E55 /* HHZMapTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZMapTool.m; sourceTree = "<group>"; };
+		78D9EA6E1DE3E4D0009D5E55 /* HHZPathTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZPathTool.h; sourceTree = "<group>"; };
+		78D9EA6F1DE3E4D0009D5E55 /* HHZPathTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZPathTool.m; sourceTree = "<group>"; };
+		78D9EA711DE3E4D0009D5E55 /* HHZPlistTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZPlistTool.h; sourceTree = "<group>"; };
+		78D9EA721DE3E4D0009D5E55 /* HHZPlistTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZPlistTool.m; sourceTree = "<group>"; };
+		78D9EA741DE3E4D0009D5E55 /* HHZRegularTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZRegularTool.h; sourceTree = "<group>"; };
+		78D9EA751DE3E4D0009D5E55 /* HHZRegularTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZRegularTool.m; sourceTree = "<group>"; };
+		78D9EAA91DE3E4E0009D5E55 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		95A02CFD3A02A60E15887B80 /* libPods-iOS-HHZUniversal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-HHZUniversal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9644A4E204CBBC88EF4E1046 /* Pods-iOS-HHZUniversal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversal.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal.release.xcconfig"; sourceTree = "<group>"; };
+		D732F2D9CF5B727F4AB86546 /* libPods-iOS-HHZUniversalTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-HHZUniversalTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF0F1841E80C7F5DB9209FD /* Pods-iOS-HHZUniversal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78D9E9BF1DE3E41C009D5E55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D91A2AC77285ED1564546243 /* libPods-iOS-HHZUniversal.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78D9E9D81DE3E41C009D5E55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2317C593A94D06F85AE145C /* libPods-iOS-HHZUniversalTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D41A3873512DEE5492F646B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95A02CFD3A02A60E15887B80 /* libPods-iOS-HHZUniversal.a */,
+				D732F2D9CF5B727F4AB86546 /* libPods-iOS-HHZUniversalTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78D9E9B91DE3E41B009D5E55 = {
+			isa = PBXGroup;
+			children = (
+				78D9E9C41DE3E41C009D5E55 /* iOS-HHZUniversal */,
+				78D9E9DE1DE3E41C009D5E55 /* iOS-HHZUniversalTests */,
+				78D9E9C31DE3E41C009D5E55 /* Products */,
+				A8BC88620A3D0726E57E5C0C /* Pods */,
+				4D41A3873512DEE5492F646B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		78D9E9C31DE3E41C009D5E55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78D9E9C21DE3E41C009D5E55 /* iOS-HHZUniversal.app */,
+				78D9E9DB1DE3E41C009D5E55 /* iOS-HHZUniversalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78D9E9C41DE3E41C009D5E55 /* iOS-HHZUniversal */ = {
+			isa = PBXGroup;
+			children = (
+				78D9E9EA1DE3E4D0009D5E55 /* classes */,
+				78D9E9C81DE3E41C009D5E55 /* AppDelegate.h */,
+				78D9E9C91DE3E41C009D5E55 /* AppDelegate.m */,
+				78D9E9CB1DE3E41C009D5E55 /* ViewController.h */,
+				78D9E9CC1DE3E41C009D5E55 /* ViewController.m */,
+				78D9E9CE1DE3E41C009D5E55 /* Main.storyboard */,
+				78D9E9D11DE3E41C009D5E55 /* Assets.xcassets */,
+				78D9E9D31DE3E41C009D5E55 /* LaunchScreen.storyboard */,
+				78D9E9D61DE3E41C009D5E55 /* Info.plist */,
+				78D9E9C51DE3E41C009D5E55 /* Supporting Files */,
+				78D9EAA91DE3E4E0009D5E55 /* PrefixHeader.pch */,
+			);
+			path = "iOS-HHZUniversal";
+			sourceTree = "<group>";
+		};
+		78D9E9C51DE3E41C009D5E55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78D9E9C61DE3E41C009D5E55 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78D9E9DE1DE3E41C009D5E55 /* iOS-HHZUniversalTests */ = {
+			isa = PBXGroup;
+			children = (
+				78D9E9DF1DE3E41C009D5E55 /* iOS_HHZUniversalTests.m */,
+				78D9E9E11DE3E41C009D5E55 /* Info.plist */,
+			);
+			path = "iOS-HHZUniversalTests";
+			sourceTree = "<group>";
+		};
+		78D9E9EA1DE3E4D0009D5E55 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				78D9E9EB1DE3E4D0009D5E55 /* base */,
+				78D9E9F11DE3E4D0009D5E55 /* category */,
+				78D9EA131DE3E4D0009D5E55 /* config */,
+				78D9EA161DE3E4D0009D5E55 /* customView */,
+				78D9EA1B1DE3E4D0009D5E55 /* demo */,
+				78D9EA201DE3E4D0009D5E55 /* exception */,
+				78D9EA231DE3E4D0009D5E55 /* http */,
+				78D9EA321DE3E4D0009D5E55 /* private */,
+				78D9EA3C1DE3E4D0009D5E55 /* reference */,
+				78D9EA3D1DE3E4D0009D5E55 /* subclass */,
+				78D9EA401DE3E4D0009D5E55 /* utils */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		78D9E9EB1DE3E4D0009D5E55 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				78D9E9EC1DE3E4D0009D5E55 /* HHZNavigationController.h */,
+				78D9E9ED1DE3E4D0009D5E55 /* HHZNavigationController.m */,
+				78D9E9EE1DE3E4D0009D5E55 /* HHZNavigationController.plist */,
+				78D9E9EF1DE3E4D0009D5E55 /* HHZViewController.h */,
+				78D9E9F01DE3E4D0009D5E55 /* HHZViewController.m */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		78D9E9F11DE3E4D0009D5E55 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				78D9E9F21DE3E4D0009D5E55 /* foundation */,
+				78D9EA011DE3E4D0009D5E55 /* others */,
+				78D9EA021DE3E4D0009D5E55 /* uikit */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		78D9E9F21DE3E4D0009D5E55 /* foundation */ = {
+			isa = PBXGroup;
+			children = (
+				78D9E9F31DE3E4D0009D5E55 /* NSArray+HHZCategory.h */,
+				78D9E9F41DE3E4D0009D5E55 /* NSArray+HHZCategory.m */,
+				78D9E9F51DE3E4D0009D5E55 /* NSDictionary+HHZCategory.h */,
+				78D9E9F61DE3E4D0009D5E55 /* NSDictionary+HHZCategory.m */,
+				78D9E9F71DE3E4D0009D5E55 /* NSException+HHZCategory.h */,
+				78D9E9F81DE3E4D0009D5E55 /* NSException+HHZCategory.m */,
+				78D9E9F91DE3E4D0009D5E55 /* NSNull+HHZCategory.h */,
+				78D9E9FA1DE3E4D0009D5E55 /* NSNull+HHZCategory.m */,
+				78D9E9FB1DE3E4D0009D5E55 /* NSObject+HHZCategory.h */,
+				78D9E9FC1DE3E4D0009D5E55 /* NSObject+HHZCategory.m */,
+				78D9E9FD1DE3E4D0009D5E55 /* NSString+HHZCategory.h */,
+				78D9E9FE1DE3E4D0009D5E55 /* NSString+HHZCategory.m */,
+				78D9E9FF1DE3E4D0009D5E55 /* NSTimer+HHZCategory.h */,
+				78D9EA001DE3E4D0009D5E55 /* NSTimer+HHZCategory.m */,
+			);
+			path = foundation;
+			sourceTree = "<group>";
+		};
+		78D9EA011DE3E4D0009D5E55 /* others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = others;
+			sourceTree = "<group>";
+		};
+		78D9EA021DE3E4D0009D5E55 /* uikit */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA031DE3E4D0009D5E55 /* UIButton+HHZCategory.h */,
+				78D9EA041DE3E4D0009D5E55 /* UIButton+HHZCategory.m */,
+				78D9EA051DE3E4D0009D5E55 /* UIColor+HHZCategory.h */,
+				78D9EA061DE3E4D0009D5E55 /* UIColor+HHZCategory.m */,
+				78D9EA071DE3E4D0009D5E55 /* UIImage+HHZCategory.h */,
+				78D9EA081DE3E4D0009D5E55 /* UIImage+HHZCategory.m */,
+				78D9EA091DE3E4D0009D5E55 /* UIImageView+HHZCategory.h */,
+				78D9EA0A1DE3E4D0009D5E55 /* UIImageView+HHZCategory.m */,
+				78D9EA0B1DE3E4D0009D5E55 /* UILabel+HHZCategory.h */,
+				78D9EA0C1DE3E4D0009D5E55 /* UILabel+HHZCategory.m */,
+				78D9EA0D1DE3E4D0009D5E55 /* UITableView+HHZCategory.h */,
+				78D9EA0E1DE3E4D0009D5E55 /* UITableView+HHZCategory.m */,
+				78D9EA0F1DE3E4D0009D5E55 /* UITableViewCell+HHZCategory.h */,
+				78D9EA101DE3E4D0009D5E55 /* UITableViewCell+HHZCategory.m */,
+				78D9EA111DE3E4D0009D5E55 /* UIView+HHZCategory.h */,
+				78D9EA121DE3E4D0009D5E55 /* UIView+HHZCategory.m */,
+			);
+			path = uikit;
+			sourceTree = "<group>";
+		};
+		78D9EA131DE3E4D0009D5E55 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA141DE3E4D0009D5E55 /* HHZImportConfig.h */,
+				78D9EA151DE3E4D0009D5E55 /* HHZMACROConfig.h */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		78D9EA161DE3E4D0009D5E55 /* customView */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA171DE3E4D0009D5E55 /* custom */,
+				78D9EA181DE3E4D0009D5E55 /* system */,
+			);
+			path = customView;
+			sourceTree = "<group>";
+		};
+		78D9EA171DE3E4D0009D5E55 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+		78D9EA181DE3E4D0009D5E55 /* system */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA191DE3E4D0009D5E55 /* HHZAlertView.h */,
+				78D9EA1A1DE3E4D0009D5E55 /* HHZAlertView.m */,
+			);
+			path = system;
+			sourceTree = "<group>";
+		};
+		78D9EA1B1DE3E4D0009D5E55 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA1C1DE3E4D0009D5E55 /* ClientDemo.h */,
+				78D9EA1D1DE3E4D0009D5E55 /* ClientDemo.m */,
+				78D9EA1E1DE3E4D0009D5E55 /* ServiceDemo.h */,
+				78D9EA1F1DE3E4D0009D5E55 /* ServiceDemo.m */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+		78D9EA201DE3E4D0009D5E55 /* exception */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA211DE3E4D0009D5E55 /* HHZMethodException.h */,
+				78D9EA221DE3E4D0009D5E55 /* HHZMethodException.m */,
+			);
+			path = exception;
+			sourceTree = "<group>";
+		};
+		78D9EA231DE3E4D0009D5E55 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA241DE3E4D0009D5E55 /* HHZHttpClient.h */,
+				78D9EA251DE3E4D0009D5E55 /* HHZHttpClient.m */,
+				78D9EA261DE3E4D0009D5E55 /* HHZHttpEncryption.h */,
+				78D9EA271DE3E4D0009D5E55 /* HHZHttpEncryption.m */,
+				78D9EA281DE3E4D0009D5E55 /* HHZHttpEnum.h */,
+				78D9EA291DE3E4D0009D5E55 /* HHZHttpRequestCondition.h */,
+				78D9EA2A1DE3E4D0009D5E55 /* HHZHttpRequestCondition.m */,
+				78D9EA2B1DE3E4D0009D5E55 /* HHZHttpService.h */,
+				78D9EA2C1DE3E4D0009D5E55 /* HHZHttpService.m */,
+				78D9EA2D1DE3E4D0009D5E55 /* HHZHttpServiceDelegate.h */,
+				78D9EA2E1DE3E4D0009D5E55 /* HHZHttpStruct.h */,
+				78D9EA2F1DE3E4D0009D5E55 /* HHZHttpStruct.m */,
+				78D9EA301DE3E4D0009D5E55 /* HHZHttpTagBuilder.h */,
+				78D9EA311DE3E4D0009D5E55 /* HHZHttpTagBuilder.m */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		78D9EA321DE3E4D0009D5E55 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA331DE3E4D0009D5E55 /* appInfo */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		78D9EA331DE3E4D0009D5E55 /* appInfo */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA341DE3E4D0009D5E55 /* applicationDepence */,
+				78D9EA3A1DE3E4D0009D5E55 /* HHZAppInfoTool.h */,
+				78D9EA3B1DE3E4D0009D5E55 /* HHZAppInfoTool.m */,
+			);
+			path = appInfo;
+			sourceTree = "<group>";
+		};
+		78D9EA341DE3E4D0009D5E55 /* applicationDepence */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA351DE3E4D0009D5E55 /* HHZAppInfo.h */,
+				78D9EA361DE3E4D0009D5E55 /* HHZAppInfo.m */,
+				78D9EA371DE3E4D0009D5E55 /* LSApplicationProxy.h */,
+				78D9EA381DE3E4D0009D5E55 /* LSBundleProxy.h */,
+				78D9EA391DE3E4D0009D5E55 /* LSResourceProxy.h */,
+			);
+			path = applicationDepence;
+			sourceTree = "<group>";
+		};
+		78D9EA3C1DE3E4D0009D5E55 /* reference */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = reference;
+			sourceTree = "<group>";
+		};
+		78D9EA3D1DE3E4D0009D5E55 /* subclass */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA3E1DE3E4D0009D5E55 /* HHZTableViewCell.h */,
+				78D9EA3F1DE3E4D0009D5E55 /* HHZTableViewCell.m */,
+			);
+			path = subclass;
+			sourceTree = "<group>";
+		};
+		78D9EA401DE3E4D0009D5E55 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA411DE3E4D0009D5E55 /* archive */,
+				78D9EA441DE3E4D0009D5E55 /* cache */,
+				78D9EA471DE3E4D0009D5E55 /* calculate */,
+				78D9EA4A1DE3E4D0009D5E55 /* date */,
+				78D9EA511DE3E4D0009D5E55 /* ddLogger */,
+				78D9EA541DE3E4D0009D5E55 /* device */,
+				78D9EA571DE3E4D0009D5E55 /* encryption */,
+				78D9EA661DE3E4D0009D5E55 /* IQKeyboardManager */,
+				78D9EA691DE3E4D0009D5E55 /* kit */,
+				78D9EA701DE3E4D0009D5E55 /* plist */,
+				78D9EA731DE3E4D0009D5E55 /* regular */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		78D9EA411DE3E4D0009D5E55 /* archive */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA421DE3E4D0009D5E55 /* HHZArchiveTool.h */,
+				78D9EA431DE3E4D0009D5E55 /* HHZArchiveTool.m */,
+			);
+			path = archive;
+			sourceTree = "<group>";
+		};
+		78D9EA441DE3E4D0009D5E55 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA451DE3E4D0009D5E55 /* HHZCacheTool.h */,
+				78D9EA461DE3E4D0009D5E55 /* HHZCacheTool.m */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		78D9EA471DE3E4D0009D5E55 /* calculate */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA481DE3E4D0009D5E55 /* HHZCalculateTool.h */,
+				78D9EA491DE3E4D0009D5E55 /* HHZCalculateTool.m */,
+			);
+			path = calculate;
+			sourceTree = "<group>";
+		};
+		78D9EA4A1DE3E4D0009D5E55 /* date */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA4B1DE3E4D0009D5E55 /* HHZDateTool.h */,
+				78D9EA4C1DE3E4D0009D5E55 /* HHZDateTool.m */,
+				78D9EA4D1DE3E4D0009D5E55 /* HHZDateTool_Format.h */,
+				78D9EA4E1DE3E4D0009D5E55 /* HHZDateTool_Format.m */,
+				78D9EA4F1DE3E4D0009D5E55 /* HHZDateToolFactory.h */,
+				78D9EA501DE3E4D0009D5E55 /* HHZDateToolFactory.m */,
+			);
+			path = date;
+			sourceTree = "<group>";
+		};
+		78D9EA511DE3E4D0009D5E55 /* ddLogger */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA521DE3E4D0009D5E55 /* DDLoggerTool.h */,
+				78D9EA531DE3E4D0009D5E55 /* DDLoggerTool.m */,
+			);
+			path = ddLogger;
+			sourceTree = "<group>";
+		};
+		78D9EA541DE3E4D0009D5E55 /* device */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA551DE3E4D0009D5E55 /* HHZDeviceTool.h */,
+				78D9EA561DE3E4D0009D5E55 /* HHZDeviceTool.m */,
+			);
+			path = device;
+			sourceTree = "<group>";
+		};
+		78D9EA571DE3E4D0009D5E55 /* encryption */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA581DE3E4D0009D5E55 /* GTMBase64 */,
+				78D9EA5C1DE3E4D0009D5E55 /* HHZAESEncryption.h */,
+				78D9EA5D1DE3E4D0009D5E55 /* HHZAESEncryption.m */,
+				78D9EA5E1DE3E4D0009D5E55 /* HHZBase64Encrption.h */,
+				78D9EA5F1DE3E4D0009D5E55 /* HHZBase64Encrption.m */,
+				78D9EA601DE3E4D0009D5E55 /* HHZDESEncryption.h */,
+				78D9EA611DE3E4D0009D5E55 /* HHZDESEncryption.m */,
+				78D9EA621DE3E4D0009D5E55 /* HHZEncrptionFactory.h */,
+				78D9EA631DE3E4D0009D5E55 /* HHZEncrptionFactory.m */,
+				78D9EA641DE3E4D0009D5E55 /* HHZMD5Encryption.h */,
+				78D9EA651DE3E4D0009D5E55 /* HHZMD5Encryption.m */,
+			);
+			path = encryption;
+			sourceTree = "<group>";
+		};
+		78D9EA581DE3E4D0009D5E55 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA591DE3E4D0009D5E55 /* GTMBase64.h */,
+				78D9EA5A1DE3E4D0009D5E55 /* GTMBase64.m */,
+				78D9EA5B1DE3E4D0009D5E55 /* GTMDefines.h */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+		78D9EA661DE3E4D0009D5E55 /* IQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA671DE3E4D0009D5E55 /* HHZIQKeyboardManagerTool.h */,
+				78D9EA681DE3E4D0009D5E55 /* HHZIQKeyboardManagerTool.m */,
+			);
+			path = IQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		78D9EA691DE3E4D0009D5E55 /* kit */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA6A1DE3E4D0009D5E55 /* HHZKitTool.h */,
+				78D9EA6B1DE3E4D0009D5E55 /* HHZKitTool.m */,
+				78D9EA6C1DE3E4D0009D5E55 /* HHZMapTool.h */,
+				78D9EA6D1DE3E4D0009D5E55 /* HHZMapTool.m */,
+				78D9EA6E1DE3E4D0009D5E55 /* HHZPathTool.h */,
+				78D9EA6F1DE3E4D0009D5E55 /* HHZPathTool.m */,
+			);
+			path = kit;
+			sourceTree = "<group>";
+		};
+		78D9EA701DE3E4D0009D5E55 /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA711DE3E4D0009D5E55 /* HHZPlistTool.h */,
+				78D9EA721DE3E4D0009D5E55 /* HHZPlistTool.m */,
+			);
+			path = plist;
+			sourceTree = "<group>";
+		};
+		78D9EA731DE3E4D0009D5E55 /* regular */ = {
+			isa = PBXGroup;
+			children = (
+				78D9EA741DE3E4D0009D5E55 /* HHZRegularTool.h */,
+				78D9EA751DE3E4D0009D5E55 /* HHZRegularTool.m */,
+			);
+			path = regular;
+			sourceTree = "<group>";
+		};
+		A8BC88620A3D0726E57E5C0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEF0F1841E80C7F5DB9209FD /* Pods-iOS-HHZUniversal.debug.xcconfig */,
+				9644A4E204CBBC88EF4E1046 /* Pods-iOS-HHZUniversal.release.xcconfig */,
+				70CD4AB4D3116914A077127A /* Pods-iOS-HHZUniversalTests.debug.xcconfig */,
+				0E7153FB32A3CE1A66DBD9A8 /* Pods-iOS-HHZUniversalTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78D9E9C11DE3E41C009D5E55 /* iOS-HHZUniversal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78D9E9E41DE3E41C009D5E55 /* Build configuration list for PBXNativeTarget "iOS-HHZUniversal" */;
+			buildPhases = (
+				2CBE99E6C487426A1FE67BDB /* [CP] Check Pods Manifest.lock */,
+				78D9E9BE1DE3E41C009D5E55 /* Sources */,
+				78D9E9BF1DE3E41C009D5E55 /* Frameworks */,
+				78D9E9C01DE3E41C009D5E55 /* Resources */,
+				39F8A15E9A3D87F622C0A6CC /* [CP] Embed Pods Frameworks */,
+				759B752F1C430ACC1047B70B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-HHZUniversal";
+			productName = "iOS-HHZUniversal";
+			productReference = 78D9E9C21DE3E41C009D5E55 /* iOS-HHZUniversal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78D9E9DA1DE3E41C009D5E55 /* iOS-HHZUniversalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78D9E9E71DE3E41C009D5E55 /* Build configuration list for PBXNativeTarget "iOS-HHZUniversalTests" */;
+			buildPhases = (
+				FE714F328D0B2B7121105AC2 /* [CP] Check Pods Manifest.lock */,
+				78D9E9D71DE3E41C009D5E55 /* Sources */,
+				78D9E9D81DE3E41C009D5E55 /* Frameworks */,
+				78D9E9D91DE3E41C009D5E55 /* Resources */,
+				00CA39406FD09D29E8F3389C /* [CP] Embed Pods Frameworks */,
+				0AA1E37C5CADE620442604E0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78D9E9DD1DE3E41C009D5E55 /* PBXTargetDependency */,
+			);
+			name = "iOS-HHZUniversalTests";
+			productName = "iOS-HHZUniversalTests";
+			productReference = 78D9E9DB1DE3E41C009D5E55 /* iOS-HHZUniversalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78D9E9BA1DE3E41B009D5E55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "陈哲是个好孩子";
+				TargetAttributes = {
+					78D9E9C11DE3E41C009D5E55 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					78D9E9DA1DE3E41C009D5E55 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 78D9E9C11DE3E41C009D5E55;
+					};
+				};
+			};
+			buildConfigurationList = 78D9E9BD1DE3E41B009D5E55 /* Build configuration list for PBXProject "iOS-HHZUniversal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78D9E9B91DE3E41B009D5E55;
+			productRefGroup = 78D9E9C31DE3E41C009D5E55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78D9E9C11DE3E41C009D5E55 /* iOS-HHZUniversal */,
+				78D9E9DA1DE3E41C009D5E55 /* iOS-HHZUniversalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78D9E9C01DE3E41C009D5E55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D9E9D51DE3E41C009D5E55 /* LaunchScreen.storyboard in Resources */,
+				78D9EA771DE3E4D0009D5E55 /* HHZNavigationController.plist in Resources */,
+				78D9E9D21DE3E41C009D5E55 /* Assets.xcassets in Resources */,
+				78D9E9D01DE3E41C009D5E55 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78D9E9D91DE3E41C009D5E55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00CA39406FD09D29E8F3389C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-HHZUniversalTests/Pods-iOS-HHZUniversalTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0AA1E37C5CADE620442604E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-HHZUniversalTests/Pods-iOS-HHZUniversalTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CBE99E6C487426A1FE67BDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		39F8A15E9A3D87F622C0A6CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		759B752F1C430ACC1047B70B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE714F328D0B2B7121105AC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78D9E9BE1DE3E41C009D5E55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D9EA931DE3E4D0009D5E55 /* HHZAppInfoTool.m in Sources */,
+				78D9EA9E1DE3E4D0009D5E55 /* HHZAESEncryption.m in Sources */,
+				78D9EA951DE3E4D0009D5E55 /* HHZArchiveTool.m in Sources */,
+				78D9EA841DE3E4D0009D5E55 /* UILabel+HHZCategory.m in Sources */,
+				78D9EA921DE3E4D0009D5E55 /* HHZAppInfo.m in Sources */,
+				78D9EA8B1DE3E4D0009D5E55 /* HHZMethodException.m in Sources */,
+				78D9EAA61DE3E4D0009D5E55 /* HHZPathTool.m in Sources */,
+				78D9E9CD1DE3E41C009D5E55 /* ViewController.m in Sources */,
+				78D9EA911DE3E4D0009D5E55 /* HHZHttpTagBuilder.m in Sources */,
+				78D9EA9B1DE3E4D0009D5E55 /* DDLoggerTool.m in Sources */,
+				78D9EA791DE3E4D0009D5E55 /* NSArray+HHZCategory.m in Sources */,
+				78D9EA881DE3E4D0009D5E55 /* HHZAlertView.m in Sources */,
+				78D9EA811DE3E4D0009D5E55 /* UIColor+HHZCategory.m in Sources */,
+				78D9EA941DE3E4D0009D5E55 /* HHZTableViewCell.m in Sources */,
+				78D9EA8F1DE3E4D0009D5E55 /* HHZHttpService.m in Sources */,
+				78D9EA9D1DE3E4D0009D5E55 /* GTMBase64.m in Sources */,
+				78D9EA891DE3E4D0009D5E55 /* ClientDemo.m in Sources */,
+				78D9EAA11DE3E4D0009D5E55 /* HHZEncrptionFactory.m in Sources */,
+				78D9EA961DE3E4D0009D5E55 /* HHZCacheTool.m in Sources */,
+				78D9EA8A1DE3E4D0009D5E55 /* ServiceDemo.m in Sources */,
+				78D9EAA41DE3E4D0009D5E55 /* HHZKitTool.m in Sources */,
+				78D9EA831DE3E4D0009D5E55 /* UIImageView+HHZCategory.m in Sources */,
+				78D9EA9C1DE3E4D0009D5E55 /* HHZDeviceTool.m in Sources */,
+				78D9EA7D1DE3E4D0009D5E55 /* NSObject+HHZCategory.m in Sources */,
+				78D9EA851DE3E4D0009D5E55 /* UITableView+HHZCategory.m in Sources */,
+				78D9EA871DE3E4D0009D5E55 /* UIView+HHZCategory.m in Sources */,
+				78D9E9CA1DE3E41C009D5E55 /* AppDelegate.m in Sources */,
+				78D9EA8D1DE3E4D0009D5E55 /* HHZHttpEncryption.m in Sources */,
+				78D9EA7C1DE3E4D0009D5E55 /* NSNull+HHZCategory.m in Sources */,
+				78D9EA901DE3E4D0009D5E55 /* HHZHttpStruct.m in Sources */,
+				78D9EA7E1DE3E4D0009D5E55 /* NSString+HHZCategory.m in Sources */,
+				78D9EA9A1DE3E4D0009D5E55 /* HHZDateToolFactory.m in Sources */,
+				78D9EA7A1DE3E4D0009D5E55 /* NSDictionary+HHZCategory.m in Sources */,
+				78D9EA821DE3E4D0009D5E55 /* UIImage+HHZCategory.m in Sources */,
+				78D9EAA51DE3E4D0009D5E55 /* HHZMapTool.m in Sources */,
+				78D9EAA01DE3E4D0009D5E55 /* HHZDESEncryption.m in Sources */,
+				78D9EA861DE3E4D0009D5E55 /* UITableViewCell+HHZCategory.m in Sources */,
+				78D9EA991DE3E4D0009D5E55 /* HHZDateTool_Format.m in Sources */,
+				78D9EAA31DE3E4D0009D5E55 /* HHZIQKeyboardManagerTool.m in Sources */,
+				78D9EA981DE3E4D0009D5E55 /* HHZDateTool.m in Sources */,
+				78D9EA8C1DE3E4D0009D5E55 /* HHZHttpClient.m in Sources */,
+				78D9EAA71DE3E4D0009D5E55 /* HHZPlistTool.m in Sources */,
+				78D9EA761DE3E4D0009D5E55 /* HHZNavigationController.m in Sources */,
+				78D9EA9F1DE3E4D0009D5E55 /* HHZBase64Encrption.m in Sources */,
+				78D9EAA81DE3E4D0009D5E55 /* HHZRegularTool.m in Sources */,
+				78D9EA781DE3E4D0009D5E55 /* HHZViewController.m in Sources */,
+				78D9EAA21DE3E4D0009D5E55 /* HHZMD5Encryption.m in Sources */,
+				78D9EA7F1DE3E4D0009D5E55 /* NSTimer+HHZCategory.m in Sources */,
+				78D9E9C71DE3E41C009D5E55 /* main.m in Sources */,
+				78D9EA801DE3E4D0009D5E55 /* UIButton+HHZCategory.m in Sources */,
+				78D9EA8E1DE3E4D0009D5E55 /* HHZHttpRequestCondition.m in Sources */,
+				78D9EA7B1DE3E4D0009D5E55 /* NSException+HHZCategory.m in Sources */,
+				78D9EA971DE3E4D0009D5E55 /* HHZCalculateTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78D9E9D71DE3E41C009D5E55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D9E9E01DE3E41C009D5E55 /* iOS_HHZUniversalTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78D9E9DD1DE3E41C009D5E55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78D9E9C11DE3E41C009D5E55 /* iOS-HHZUniversal */;
+			targetProxy = 78D9E9DC1DE3E41C009D5E55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78D9E9CE1DE3E41C009D5E55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78D9E9CF1DE3E41C009D5E55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		78D9E9D31DE3E41C009D5E55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78D9E9D41DE3E41C009D5E55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78D9E9E21DE3E41C009D5E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		78D9E9E31DE3E41C009D5E55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78D9E9E51DE3E41C009D5E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF0F1841E80C7F5DB9209FD /* Pods-iOS-HHZUniversal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
+				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhe.universal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		78D9E9E61DE3E41C009D5E55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9644A4E204CBBC88EF4E1046 /* Pods-iOS-HHZUniversal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
+				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhe.universal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		78D9E9E81DE3E41C009D5E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70CD4AB4D3116914A077127A /* Pods-iOS-HHZUniversalTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "iOS-HHZUniversalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-------.iOS-HHZUniversalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-HHZUniversal.app/iOS-HHZUniversal";
+			};
+			name = Debug;
+		};
+		78D9E9E91DE3E41C009D5E55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E7153FB32A3CE1A66DBD9A8 /* Pods-iOS-HHZUniversalTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "iOS-HHZUniversalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-------.iOS-HHZUniversalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-HHZUniversal.app/iOS-HHZUniversal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78D9E9BD1DE3E41B009D5E55 /* Build configuration list for PBXProject "iOS-HHZUniversal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78D9E9E21DE3E41C009D5E55 /* Debug */,
+				78D9E9E31DE3E41C009D5E55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78D9E9E41DE3E41C009D5E55 /* Build configuration list for PBXNativeTarget "iOS-HHZUniversal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78D9E9E51DE3E41C009D5E55 /* Debug */,
+				78D9E9E61DE3E41C009D5E55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78D9E9E71DE3E41C009D5E55 /* Build configuration list for PBXNativeTarget "iOS-HHZUniversalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78D9E9E81DE3E41C009D5E55 /* Debug */,
+				78D9E9E91DE3E41C009D5E55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78D9E9BA1DE3E41B009D5E55 /* Project object */;
+}

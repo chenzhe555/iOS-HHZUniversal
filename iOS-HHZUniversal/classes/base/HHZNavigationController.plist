@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>barTintColor</key>
+	<string>#DC143C</string>
+	<key>isBold</key>
+	<true/>
+	<key>textFontSize</key>
+	<integer>18</integer>
+	<key>textColor</key>
+	<string>#DC143C</string>
+</dict>
+</plist>
