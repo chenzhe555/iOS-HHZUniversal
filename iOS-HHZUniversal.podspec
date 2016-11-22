@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "iOS-HHZUniversal"
-  s.version      = "0.0.13"
+  s.version      = "0.0.1"
   s.summary      = "iOS基础工程"
   s.requires_arc = true
 
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = "陈哲是个好孩子!"
 
-  s.homepage     = "https://github.com/chenzhe555/iOS_Universal_Project"
+  s.homepage     = "https://github.com/chenzhe555/iOS-HHZUniversal"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/chenzhe555/iOS_Universal_Project.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/chenzhe555/iOS-HHZUniversal.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
