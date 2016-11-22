@@ -92,97 +92,97 @@ Pod::Spec.new do |s|
   #
 
   
-  s.source_files = 'iOS_Universal_Project/classes/config/*.h'
+  s.source_files = 'iOS-HHZUniversal/classes/config/*.h'
 
-  s.subspec 'iOS_Universal_Project' do |one|
+  s.subspec 'iOS-HHZUniversal' do |one|
     one.subspec 'category' do |two|
       two.subspec 'foundation' do |three|
-        three.source_files = 'iOS_Universal_Project/classes/category/foundation/*.{h,m}'
+        three.source_files = 'iOS-HHZUniversal/classes/category/foundation/*.{h,m}'
       end
 
       two.subspec 'uikit' do |three|
-        three.source_files = 'iOS_Universal_Project/classes/category/uikit/*.{h,m}'
+        three.source_files = 'iOS-HHZUniversal/classes/category/uikit/*.{h,m}'
       end
     end
 
     one.subspec 'utils' do |two|
       two.subspec 'kit' do |three|
-        three.source_files = 'iOS_Universal_Project/classes/utils/kit/*.{h,m}'
+        three.source_files = 'iOS-HHZUniversal/classes/utils/kit/*.{h,m}'
       end
 
       two.subspec 'device' do |three|
-        three.source_files = 'iOS_Universal_Project/classes/utils/device/*.{h,m}'
+        three.source_files = 'iOS-HHZUniversal/classes/utils/device/*.{h,m}'
       end
 
       two.subspec 'encryption' do |three|
         three.subspec 'GTMBase64' do |four|
-          four.source_files = 'iOS_Universal_Project/classes/utils/encryption/GTMBase64/*.{h,m}'
+          four.source_files = 'iOS-HHZUniversal/classes/utils/encryption/GTMBase64/*.{h,m}'
         end
-        three.source_files = 'iOS_Universal_Project/classes/utils/encryption/*.{h,m}'
+        three.source_files = 'iOS-HHZUniversal/classes/utils/encryption/*.{h,m}'
       end
 
       two.subspec 'cache' do |three|
-        three.source_files = 'iOS_Universal_Project/classes/utils/cache/*.{h,m}'
+        three.source_files = 'iOS-HHZUniversal/classes/utils/cache/*.{h,m}'
       end
 
       two.subspec 'plist' do |three|
-        three.dependency 'iOS_Universal_Project/iOS_Universal_Project/utils/cache'
+        three.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/utils/cache'
         
-        three.source_files = 'iOS_Universal_Project/classes/utils/plist/*.{h,m}'
+        three.source_files = 'iOS-HHZUniversal/classes/utils/plist/*.{h,m}'
       end
 
       two.subspec 'regular' do |three|
-        three.source_files = 'iOS_Universal_Project/classes/utils/regular/*.{h,m}'
+        three.source_files = 'iOS-HHZUniversal/classes/utils/regular/*.{h,m}'
       end
 
       two.subspec 'date' do |three|
-        three.source_files = 'iOS_Universal_Project/classes/utils/date/*.{h,m}'
+        three.source_files = 'iOS-HHZUniversal/classes/utils/date/*.{h,m}'
       end
 
       two.subspec 'calculate' do |three|
-        three.source_files = 'iOS_Universal_Project/classes/utils/calculate/*.{h,m}'
+        three.source_files = 'iOS-HHZUniversal/classes/utils/calculate/*.{h,m}'
       end
 
       two.subspec 'IQKeyboardManager' do |three|
-        three.source_files = 'iOS_Universal_Project/classes/utils/IQKeyboardManager/*.{h,m}'
+        three.source_files = 'iOS-HHZUniversal/classes/utils/IQKeyboardManager/*.{h,m}'
       end
 
       two.subspec 'archive' do |three|
-        three.source_files = 'iOS_Universal_Project/classes/utils/archive/*.{h,m}'
+        three.source_files = 'iOS-HHZUniversal/classes/utils/archive/*.{h,m}'
       end
     end
 
     one.subspec 'base' do |two|
-      two.dependency 'iOS_Universal_Project/iOS_Universal_Project/utils'
-      two.dependency 'iOS_Universal_Project/iOS_Universal_Project/category'
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/utils'
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/category'
 
-      two.source_files = 'iOS_Universal_Project/classes/base/*.{h,m}'
+      two.source_files = 'iOS-HHZUniversal/classes/base/*.{h,m}'
     end
 
     one.subspec 'exception' do |two|
-      two.source_files = 'iOS_Universal_Project/classes/exception/*.{h,m}'
+      two.source_files = 'iOS-HHZUniversal/classes/exception/*.{h,m}'
     end
 
     one.subspec 'http' do |two|
-      two.dependency 'iOS_Universal_Project/iOS_Universal_Project/utils'
-      two.dependency 'iOS_Universal_Project/iOS_Universal_Project/exception'
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/utils'
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/exception'
 
-      two.source_files = 'iOS_Universal_Project/classes/http/*.{h,m}'
+      two.source_files = 'iOS-HHZUniversal/classes/http/*.{h,m}'
     end
 
     one.subspec 'demo' do |two|
-      two.dependency 'iOS_Universal_Project/iOS_Universal_Project/http'
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/http'
 
-      two.source_files = 'iOS_Universal_Project/classes/demo/*.{h,m}'
+      two.source_files = 'iOS-HHZUniversal/classes/demo/*.{h,m}'
     end
 
     one.subspec 'subclass' do |two|
-      two.source_files = 'iOS_Universal_Project/classes/subclass/*.{h,m}'
+      two.source_files = 'iOS-HHZUniversal/classes/subclass/*.{h,m}'
     end
 
     one.subspec 'customView' do |two|
       two.subspec 'system' do |three|
-        three.source_files = 'iOS_Universal_Project/classes/customView/system/*.{h,m}'
+        three.source_files = 'iOS-HHZUniversal/classes/customView/system/*.{h,m}'
       end
     end
     
