@@ -6,6 +6,8 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 #pragma mark 视图Rect
 @interface UIView (setFrame)
 
@@ -101,3 +103,5 @@
 - (void)showRippleEffect;
 
 @end
+
+NS_ASSUME_NONNULL_END
