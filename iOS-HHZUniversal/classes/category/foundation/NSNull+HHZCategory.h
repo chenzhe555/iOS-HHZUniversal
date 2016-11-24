@@ -6,8 +6,10 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
-#pragma mark 类方法异常处理，消息转发
-@interface NSNull (forwardMethod)
+NS_ASSUME_NONNULL_BEGIN
 
+@interface NSNull (HHZUtils_Forward)
 
 @end
+
+NS_ASSUME_NONNULL_END

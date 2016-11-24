@@ -10,7 +10,7 @@
 #import <float.h>
 @import Accelerate;
 
-@implementation UIImage (ImageEffects)
+@implementation UIImage (HHZUtils_ImageEffects)
 
 #pragma mark 如果是ios8以上，用系统自带方法
 //UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
@@ -388,14 +388,14 @@
 
 
 
-@implementation UIImage (Bundle)
+@implementation UIImage (HHZUtils_Bundle)
 
-+(UIImage *)getAppIcon
++(UIImage *)getAppIcon_hhz
 {
-    return [[UIImage alloc] initWithContentsOfFile:[self getAppIconPath]];
+    return [[UIImage alloc] initWithContentsOfFile:[self getAppIconPath_hhz]];
 }
 
-+(NSString*)getAppIconPath
++(NSString*)getAppIconPath_hhz
 {
     NSString* iconFilename = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleIconFile"] ;
     NSString* iconBasename = [iconFilename stringByDeletingPathExtension] ;
@@ -407,9 +407,9 @@
 
 
 
-@implementation UIImage (Transform)
+@implementation UIImage (HHZUtils_Transform)
 
--(UIImage *)compressToSize:(CGSize)size
+-(UIImage *)compressToSize_hhz:(CGSize)size
 {
     UIGraphicsBeginImageContext(size);
     CGRect rect = {{0,0}, size};
@@ -419,7 +419,7 @@
     return compressedImg;
 }
 
--(CGSize)getContainerSizeWithLimitWidth:(CGFloat)limitWidth andLimitHeight:(CGFloat)limitHeight
+-(CGSize)getContainerSizeWithLimitWidth_hhz:(CGFloat)limitWidth andLimitHeight:(CGFloat)limitHeight
 {
     CGSize newSize;
     CGFloat width1 = self.size.width;
@@ -442,12 +442,12 @@
     return newSize;
 }
 
--(UIImage *)resizeImageWithEdge:(UIEdgeInsets)edgeInset
+-(UIImage *)resizeImageWithEdge_hhz:(UIEdgeInsets)edgeInset
 {
     return [self resizableImageWithCapInsets:edgeInset resizingMode:UIImageResizingModeTile];
 }
 
-+(UIImage *)transformToPureImageWithColor:(UIColor *)color
++(UIImage *)transformToPureImageWithColor_hhz:(UIColor *)color
 {
     CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
     UIGraphicsBeginImageContext(rect.size);
@@ -459,7 +459,7 @@
     return image;
 }
 
--(UIImage*)imageRotatedByDegrees:(CGFloat)degrees
+-(UIImage*)imageRotatedByDegrees_hhz:(CGFloat)degrees
 {
     CGFloat width = CGImageGetWidth(self.CGImage);
     CGFloat height = CGImageGetHeight(self.CGImage);
@@ -481,7 +481,7 @@
     return newImage;
 }
 
--(UIImage *)imageWithCornerRadius:(CGFloat)radius Size:(CGSize)size
+-(UIImage *)imageWithCornerRadius_hhz:(CGFloat)radius Size:(CGSize)size
 {
     if (size.width == 0 && size.height == 0) return nil;
     

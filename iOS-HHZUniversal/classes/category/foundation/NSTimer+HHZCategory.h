@@ -6,9 +6,10 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark 改变计时器状态
-@interface NSTimer (State)
+@interface NSTimer (HHZUtils_State)
 
 /**
  *  调用NSTime实例暂停定时器
@@ -27,4 +28,18 @@
  */
 -(void)resumeTimerAfterTimeInterval:(NSTimeInterval)interval;
 
+/**
+ *  启动一个定时器
+ *
+ *  @param ti      调用间隔时间
+ *  @param yesOrNo 是否重复
+ *  @param block   回调
+ *
+ *  @return 时间对象
+ */
++(NSTimer *)scheduledTimerWithTimeInterval_hhz:(NSTimeInterval)ti repeats:(BOOL)yesOrNo Block:(void (^)(NSTimer * timer))block;
+
 @end
+
+
+NS_ASSUME_NONNULL_END

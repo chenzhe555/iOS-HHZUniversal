@@ -12,7 +12,7 @@
 
 +(instancetype)shareDateFommat
 {
-    static HHZDateTool_Year * tool = nil;
+    static HHZDateTool_Year * tool;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         tool = [[HHZDateTool_Year alloc] init];
@@ -28,7 +28,7 @@
 @implementation HHZDateTool_Time
 +(instancetype)shareDateFommat
 {
-    static HHZDateTool_Time * tool = nil;
+    static HHZDateTool_Time * tool;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         tool = [[HHZDateTool_Time alloc] init];
@@ -43,7 +43,7 @@
 @implementation HHZDateTool_YearAndTime
 +(instancetype)shareDateFommat
 {
-    static HHZDateTool_YearAndTime * tool = nil;
+    static HHZDateTool_YearAndTime * tool;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         tool = [[HHZDateTool_YearAndTime alloc] init];

@@ -18,7 +18,7 @@
 @implementation HHZHttpTagBuilder
 +(instancetype)shareManager
 {
-    static HHZHttpTagBuilder * builder = nil;
+    static HHZHttpTagBuilder * builder;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         builder = [[HHZHttpTagBuilder alloc] init];

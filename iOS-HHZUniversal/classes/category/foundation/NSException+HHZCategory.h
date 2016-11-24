@@ -6,14 +6,20 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
-@interface NSException (Trace)
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface NSException (HHZUtils_Trace)
 
 /**
  *  异常Exception调用，用于打印当前异常堆栈信息
  *
  *  @return
  */
--(NSArray *)backtrace;
+-(NSArray *)backtrace_hhz;
 
 @end
+
+NS_ASSUME_NONNULL_END
 

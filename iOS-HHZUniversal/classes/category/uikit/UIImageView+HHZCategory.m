@@ -8,8 +8,8 @@
 
 #import "UIImageView+HHZCategory.h"
 
-@implementation UIImageView (addTarget)
--(void)addTarget:(id)target andSelector:(SEL)selector
+@implementation UIImageView (HHZUtils_AddTarget)
+-(void)addTarget_hhz:(id)target andSelector:(SEL)selector
 {
     UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:target action:selector];
     self.userInteractionEnabled = YES;

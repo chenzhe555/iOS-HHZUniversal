@@ -9,53 +9,9 @@
 #import "NSString+HHZCategory.h"
 #import <objc/runtime.h>
 
-@implementation NSString (Verify)
-+(NSString *)transformStringWithObj:(id)obj
-{
-    if (obj == nil) return @"";
-    return [NSString stringWithFormat:@"%@",obj];
-}
-@end
+@implementation NSString (HHZUtils_AttributString)
 
-@implementation NSString (JSONValue)
-
-+(NSData *)JSONDataWithJSONObj:(id)jsonObj
-{
-    if (jsonObj == nil)
-    {
-        return nil;
-    }
-    NSError * err = nil;
-    NSData * data = [NSJSONSerialization dataWithJSONObject:jsonObj options:NSJSONWritingPrettyPrinted error:&err];
-    if (data.length > 0 && err == nil)
-    {
-        return data;
-    }
-    return nil;
-}
-
--(id)JSONIdWithJSONString
-{
-    if (self == nil || self.length == 0)
-    {
-        return nil;
-    }
-    NSError * err = nil;
-    id data = [NSJSONSerialization JSONObjectWithData:[self dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingAllowFragments error:&err];
-    if (data != nil && err == nil)
-    {
-        return data;
-    }
-    return nil;
-}
-
-
-@end
-
-
-@implementation NSString (AttributString)
-
--(NSMutableAttributedString *)addCustomAttributeFont:(UIFont *)font andColor:(UIColor *)color andRange:(NSRange)range
+-(NSMutableAttributedString *)addCustomAttributeFont_hhz:(UIFont *)font andColor:(UIColor *)color andRange:(NSRange)range
 {
     NSMutableAttributedString * attStr = [[NSMutableAttributedString alloc]initWithString:self];
     if (font)
@@ -69,7 +25,7 @@
     return attStr;
 }
 
--(NSMutableAttributedString *)addCustomAttributeFont:(UIFont *)font andColor:(UIColor *)color andText:(NSString *)searchText
+-(NSMutableAttributedString *)addCustomAttributeFont_hhz:(UIFont *)font andColor:(UIColor *)color andText:(NSString *)searchText
 {
     if ([self rangeOfString:searchText].location == NSNotFound)
     {
@@ -98,15 +54,17 @@
     return attStr;
 }
 
--(NSMutableAttributedString *)addLineAttributerWithTextWithColor:(UIColor *)color
+-(NSMutableAttributedString *)addLineAttributerWithTextWithColor_hhz:(UIColor *)color
 {
-    return [self addLineAttributerWithRange:NSMakeRange(0, self.length) andColor:color];
+    return [self addLineAttributerWithRange_hhz:NSMakeRange(0, self.length) andColor:color];
 }
 
--(NSMutableAttributedString *)addLineAttributerWithRange:(NSRange)range andColor:(UIColor *)color
+-(NSMutableAttributedString *)addLineAttributerWithRange_hhz:(NSRange)range andColor:(UIColor *)color
 {
     NSMutableAttributedString * str = [[NSMutableAttributedString alloc] initWithString:self];
+    //加入下划线
     [str addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:range];
+    //如果传入颜色，则加上下划线颜色
     if (color != nil)
     {
         [str addAttribute:NSUnderlineColorAttributeName value:color range:range];
@@ -116,9 +74,9 @@
 
 @end
 
-@implementation NSString (ClassBuild)
+@implementation NSString (HHZUtils_ClassBuild)
 
--(Class)getObjClass
+-(Class)getObjClass_hhz
 {
     const char * className = [self cStringUsingEncoding:NSASCIIStringEncoding];
     Class objClass = objc_getClass(className);

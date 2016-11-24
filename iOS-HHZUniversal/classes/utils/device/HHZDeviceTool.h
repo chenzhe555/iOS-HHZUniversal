@@ -6,6 +6,8 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface HHZDeviceTool : NSObject
 /**
  *  获取当前app版本号
@@ -67,13 +69,40 @@
  */
 +(NSString *)getPhoneUUID;
 
-/*
- *  获取本机IP
+/**
+ *  判断是否是IPad
  *
  *  @return
  */
-+(NSString *)getPhoneIPAddress;
++(BOOL)isPad;
 
+/**
+ *  判断是否是模拟器
+ *
+ *  @return 
+ */
++(BOOL)isSimulator;
+
+/**
+ *  判断是否能打电话
+ *
+ *  @return 
+ */
++(BOOL)canMakePhoneCalls;
+
+/**
+ *  Wifi的IP (WIFI IP address of this device @"192.168.1.111")
+ *
+ *  @return
+ */
++(nullable NSString *)IPAddressWithWifi;
+
+/**
+ *  Cell的IP 对外的外网地址 (Cell IP address of this device @"10.2.2.222")
+ *
+ *  @return
+ */
++(nullable NSString *)IPAddressWithCell;
 
 #pragma mark 越狱相关  查询IP导入SNFoundation
 ///**
@@ -96,4 +125,31 @@
 // *  @return
 // */
 //+(NSString *)localIPAddress;
+
+#pragma mark 磁盘 内存 CPU等信息
+//获取磁盘信息 异常返回 -1 (具体细节可自行查询)
++(int64_t)getDiskSpace;
++(int64_t)getDiskFreeSpace;
++(int64_t)getDiskUsedSpace;
+
+//获取内存信息 异常返回 -1 (具体细节可自行查询)
++(int64_t)getTotalMemory;
++(int64_t)getUsedMemory;
++(int64_t)getFreeMemory;
++(int64_t)getActiveMemory;
+//闲置的
++(int64_t)getInactiveMemory;
+//wired是系统核心占用的，永远不会从系统物理[内存]种驱除。
++(int64_t)getWiredMemory;
+//便携式存储器
++(int64_t)getPurgableMemory;
+
+
+//获取CPU信息 异常返回 -1 (具体细节可自行查询)
+// Avaliable CPU processor count.
++(NSUInteger)getCPUCount;
+//Current CPU usage, 1.0 means 100%. (-1 when error occurs)
++(CGFloat)getCPUUsage;
 @end
+
+NS_ASSUME_NONNULL_END

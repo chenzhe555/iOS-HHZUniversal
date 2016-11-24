@@ -8,7 +8,7 @@
 
 #import "NSTimer+HHZCategory.h"
 
-@implementation NSTimer (State)
+@implementation NSTimer (HHZUtils_State)
 
 -(void)pauseTimer
 {
@@ -36,6 +36,20 @@
         return ;
     }
     [self setFireDate:[NSDate dateWithTimeIntervalSinceNow:interval]];
+}
+
++(void)hhz_callbackBlock:(NSTimer *)timer
+{
+    if ([timer userInfo])
+    {
+        void (^block)(NSTimer * timer) = (void (^)(NSTimer *timer))[timer userInfo];
+        block(timer);
+    }
+}
+
++(NSTimer *)scheduledTimerWithTimeInterval_hhz:(NSTimeInterval)ti repeats:(BOOL)yesOrNo Block:(void (^)(NSTimer * _Nonnull))block
+{
+    return [NSTimer scheduledTimerWithTimeInterval:ti target:self selector:@selector(hhz_callbackBlock:) userInfo:[block copy] repeats:yesOrNo];
 }
 
 @end

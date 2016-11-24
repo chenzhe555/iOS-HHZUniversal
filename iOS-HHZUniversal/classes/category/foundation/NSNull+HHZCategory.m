@@ -9,13 +9,20 @@
 #import "NSNull+HHZCategory.h"
 #import <objc/runtime.h>
 
+//返回默认值0
 NSUInteger getDefaultLength(id self,SEL _cmd)
 {
     return 0;
 }
 
-@implementation NSNull (forwardMethod)
-
+@implementation NSNull (HHZUtils_Forward)
+/**
+ *  如果调用length和count， 默认返回0
+ *
+ *  @param sel 方法
+ *
+ *  @return 是否接收消息
+ */
 +(BOOL)resolveInstanceMethod:(SEL)sel
 {
     if (sel == @selector(length) || sel == @selector(count))

@@ -44,7 +44,7 @@
     UINavigationBar *navBar = [UINavigationBar appearance];
     
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
-    UIColor * color = [UIColor colorWithHexString:[HHZPlistTool getPlistValueForKey:@"textColor" plistName:@"HHZNavigationController"]];
+    UIColor * color = [UIColor colorWithHexString_hhz:[HHZPlistTool getPlistValueForKey:@"textColor" plistName:@"HHZNavigationController"]];
     BOOL isBold = [[HHZPlistTool getPlistValueForKey:@"isBold" plistName:@"HHZNavigationController"] boolValue];
     NSNumber * textFont = [HHZPlistTool getPlistValueForKey:@"textFontSize" plistName:@"HHZNavigationController"];
     
@@ -66,7 +66,7 @@
  */
 -(void)setNavBasicInfo
 {
-    [self.navigationBar setBarTintColor:[UIColor colorWithHexString:[HHZPlistTool getPlistValueForKey:@"barTintColor" plistName:@"HHZNavigationController"]]];
+    [self.navigationBar setBarTintColor:[UIColor colorWithHexString_hhz:[HHZPlistTool getPlistValueForKey:@"barTintColor" plistName:@"HHZNavigationController"]]];
     [self.navigationBar setTranslucent:NO];
 }
 

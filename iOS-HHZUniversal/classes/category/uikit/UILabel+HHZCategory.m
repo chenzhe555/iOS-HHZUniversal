@@ -8,8 +8,8 @@
 
 #import "UILabel+HHZCategory.h"
 
-@implementation UILabel (addTarget)
--(void)addTarget:(id)labelTarget andSelector:(SEL)selector
+@implementation UILabel (HHZUtils_AddTarget)
+-(void)addTarget_hhz:(id)labelTarget andSelector:(SEL)selector
 {
     UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:labelTarget action:selector];
     self.userInteractionEnabled = YES;

@@ -6,13 +6,17 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 #pragma mark 添加点击事件
-@interface UILabel (addTarget)
+@interface UILabel (HHZUtils_AddTarget)
 /**
  *  对UILabel添加事件
  *
  *  @param vc
  *  @param selector
  */
--(void)addTarget:(id)labelTarget andSelector:(SEL)selector;
+-(void)addTarget_hhz:(id)labelTarget andSelector:(SEL)selector;
 @end
+
+NS_ASSUME_NONNULL_END
