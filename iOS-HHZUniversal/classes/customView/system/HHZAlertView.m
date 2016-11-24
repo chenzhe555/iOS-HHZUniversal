@@ -10,6 +10,12 @@
 
 @implementation HHZAlertView
 
+
++(void)showAlertViewTitle:(NSString *)title message:(NSString *)message delegate:(id)delegate ButtonTitles:(NSArray *)otherButtonTitles Tag:(NSInteger)tag
+{
+    [self showAlertTitle:title message:message delegate:delegate ButtonTitles:otherButtonTitles Tag:tag];
+}
+
 //iOS8以前用的弹框(无返回值)
 +(void)showAlertNoneReturnTitle:(NSString *)title message:(NSString *)message delegate:(id)delegate ButtonTitles:(NSArray *)otherButtonTitles Tag:(NSInteger)tag
 {
