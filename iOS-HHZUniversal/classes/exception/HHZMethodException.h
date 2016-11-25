@@ -15,5 +15,5 @@
  *
  *  @return 
  */
-+(NSException *)exceptionWithClass:(NSString *)className Method:(NSString *)methodName;
++(nonnull NSException *)exceptionWithClass:(nonnull NSString *)className Method:(nonnull NSString *)methodName;
 @end

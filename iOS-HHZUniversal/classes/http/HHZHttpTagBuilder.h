@@ -13,7 +13,7 @@
  *
  *  @return
  */
-+(instancetype)shareManager;
++(nonnull instancetype)shareManager;
 
 /**
  *  获取Tag唯一标示

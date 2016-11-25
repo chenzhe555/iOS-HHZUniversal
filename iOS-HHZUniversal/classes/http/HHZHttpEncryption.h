@@ -6,6 +6,8 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface HHZHttpEncryption : NSObject
 /**
  *  类似微信支付后台接口的加密规则(目前不支持结构复杂的请求参数),如果要使用，请与后台协商公私钥。
@@ -43,3 +45,5 @@
  */
 +(NSString *)setMethod1AESKey;
 @end
+
+NS_ASSUME_NONNULL_END

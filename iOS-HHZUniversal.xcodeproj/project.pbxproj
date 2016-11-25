@@ -71,6 +71,8 @@
 		78D9EAA81DE3E4D0009D5E55 /* HHZRegularTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9EA751DE3E4D0009D5E55 /* HHZRegularTool.m */; };
 		78FEEE0F1DE7DC540040E248 /* HHZHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEE0E1DE7DC540040E248 /* HHZHttpManager.m */; };
 		78FEEE121DE7E79B0040E248 /* HHZHttpManagerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEE111DE7E79B0040E248 /* HHZHttpManagerFactory.m */; };
+		78FEEE1D1DE7FCB90040E248 /* HHZFileHashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEE1C1DE7FCB90040E248 /* HHZFileHashTool.m */; };
+		78FEEE211DE7FF370040E248 /* HHZReachabilityTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEE201DE7FF370040E248 /* HHZReachabilityTool.m */; };
 		D91A2AC77285ED1564546243 /* libPods-iOS-HHZUniversal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A02CFD3A02A60E15887B80 /* libPods-iOS-HHZUniversal.a */; };
 		E2317C593A94D06F85AE145C /* libPods-iOS-HHZUniversalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D732F2D9CF5B727F4AB86546 /* libPods-iOS-HHZUniversalTests.a */; };
 /* End PBXBuildFile section */
@@ -223,6 +225,10 @@
 		78FEEE0E1DE7DC540040E248 /* HHZHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpManager.m; sourceTree = "<group>"; };
 		78FEEE101DE7E79B0040E248 /* HHZHttpManagerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpManagerFactory.h; sourceTree = "<group>"; };
 		78FEEE111DE7E79B0040E248 /* HHZHttpManagerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpManagerFactory.m; sourceTree = "<group>"; };
+		78FEEE1B1DE7FCB90040E248 /* HHZFileHashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZFileHashTool.h; sourceTree = "<group>"; };
+		78FEEE1C1DE7FCB90040E248 /* HHZFileHashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZFileHashTool.m; sourceTree = "<group>"; };
+		78FEEE1F1DE7FF370040E248 /* HHZReachabilityTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZReachabilityTool.h; sourceTree = "<group>"; };
+		78FEEE201DE7FF370040E248 /* HHZReachabilityTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZReachabilityTool.m; sourceTree = "<group>"; };
 		95A02CFD3A02A60E15887B80 /* libPods-iOS-HHZUniversal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-HHZUniversal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9644A4E204CBBC88EF4E1046 /* Pods-iOS-HHZUniversal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversal.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal.release.xcconfig"; sourceTree = "<group>"; };
 		D732F2D9CF5B727F4AB86546 /* libPods-iOS-HHZUniversalTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-HHZUniversalTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -554,6 +560,8 @@
 		78D9EA401DE3E4D0009D5E55 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				78FEEE1E1DE7FF220040E248 /* http */,
+				78FEEE1A1DE7FCAD0040E248 /* file */,
 				782781821DE6F09B00189D62 /* application */,
 				782781721DE6AD6500189D62 /* json */,
 				78D9EA411DE3E4D0009D5E55 /* archive */,
@@ -695,6 +703,24 @@
 				78D9EA751DE3E4D0009D5E55 /* HHZRegularTool.m */,
 			);
 			path = regular;
+			sourceTree = "<group>";
+		};
+		78FEEE1A1DE7FCAD0040E248 /* file */ = {
+			isa = PBXGroup;
+			children = (
+				78FEEE1B1DE7FCB90040E248 /* HHZFileHashTool.h */,
+				78FEEE1C1DE7FCB90040E248 /* HHZFileHashTool.m */,
+			);
+			path = file;
+			sourceTree = "<group>";
+		};
+		78FEEE1E1DE7FF220040E248 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				78FEEE1F1DE7FF370040E248 /* HHZReachabilityTool.h */,
+				78FEEE201DE7FF370040E248 /* HHZReachabilityTool.m */,
+			);
+			path = http;
 			sourceTree = "<group>";
 		};
 		A8BC88620A3D0726E57E5C0C /* Pods */ = {
@@ -948,6 +974,7 @@
 				78D9EA821DE3E4D0009D5E55 /* UIImage+HHZCategory.m in Sources */,
 				78D9EAA51DE3E4D0009D5E55 /* HHZMapTool.m in Sources */,
 				78D9EAA01DE3E4D0009D5E55 /* HHZDESEncryption.m in Sources */,
+				78FEEE1D1DE7FCB90040E248 /* HHZFileHashTool.m in Sources */,
 				78D9EA861DE3E4D0009D5E55 /* UITableViewCell+HHZCategory.m in Sources */,
 				78D9EA991DE3E4D0009D5E55 /* HHZDateTool_Format.m in Sources */,
 				78D9EAA31DE3E4D0009D5E55 /* HHZIQKeyboardManagerTool.m in Sources */,
@@ -959,6 +986,7 @@
 				782781811DE6E30E00189D62 /* UIScreen+Category.m in Sources */,
 				78D9EAA81DE3E4D0009D5E55 /* HHZRegularTool.m in Sources */,
 				7827817E1DE6D5F400189D62 /* NSNotificationCenter+Category.m in Sources */,
+				78FEEE211DE7FF370040E248 /* HHZReachabilityTool.m in Sources */,
 				78D9EA781DE3E4D0009D5E55 /* HHZViewController.m in Sources */,
 				78D9EAA21DE3E4D0009D5E55 /* HHZMD5Encryption.m in Sources */,
 				78D9EA7F1DE3E4D0009D5E55 /* NSTimer+HHZCategory.m in Sources */,

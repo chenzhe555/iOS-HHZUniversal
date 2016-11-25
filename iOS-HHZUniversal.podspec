@@ -239,5 +239,5 @@ Pod::Spec.new do |s|
   s.dependency "PINCache", "3.0.1-beta"
   #s.dependency "IQKeyboardManager", "~> 4.0.6"
   #s.dependency "CocoaLumberjack", "~> 3.0.0"
-
+  #s.dependency "SimpleKeychain", "~> 0.7.0"
 end

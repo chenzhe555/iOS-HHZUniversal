@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 
  */
-+(id)getHHZHttpManager:(NSString *)managerName;
++(nullable id)getHHZHttpManager:(NSString *)managerName;
 
 @end
 

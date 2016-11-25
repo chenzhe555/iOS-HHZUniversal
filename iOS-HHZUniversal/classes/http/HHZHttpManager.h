@@ -17,14 +17,14 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 
  */
-+(instancetype)shareManager;
++(nonnull instancetype)shareManager;
 
 /**
  *  获取主机IP
  *
  *  @return 
  */
--(NSString *)getBaseHttpUrl;
+-(nullable NSString *)getBaseHttpUrl;
 
 @end
 

@@ -13,6 +13,7 @@
 #import "HHZDeviceTool.h"
 #import "HHZHttpManager.h"
 
+NS_ASSUME_NONNULL_BEGIN
 
 //网络请求成功和失败的回调
 typedef void (^HHZSuccessBlock)(HHZHttpResponse * responseObject);
@@ -40,3 +41,6 @@ typedef void (^HHZFailureBlock)(HHZHttpResponse * responseObject);
 +(void)addExtraParamatersWithCondition:(HHZHttpRequest *)request;
 
 @end
+
+
+NS_ASSUME_NONNULL_END

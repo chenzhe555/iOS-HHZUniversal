@@ -10,8 +10,11 @@
  网络请求以及响应的结构体
  */
 
+
+
 #import "HHZHttpEnum.h"
 
+NS_ASSUME_NONNULL_BEGIN
 /**
  *  网络请求接口数据结构
  */
@@ -126,3 +129,6 @@
 +(HHZHttpResult *)generateDefaultResult:(NSUInteger)tag RequestURL:(NSString *)url Task:(NSURLSessionDataTask *)task;
 
 @end
+
+
+NS_ASSUME_NONNULL_END

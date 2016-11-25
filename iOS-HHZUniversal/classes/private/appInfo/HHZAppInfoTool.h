@@ -16,7 +16,7 @@
  *
  *  @return
  */
-+(NSArray *)getAppsbyFilter:(NSString *)filterString;
++(nullable NSArray *)getAppsbyFilter:(nonnull NSString *)filterString;
 
 /**
  *  通过appProxy获取app详细信息
@@ -25,7 +25,7 @@
  *
  *  @return
  */
-+(HHZAppInfo *)getAppInfoByProxy:(LSApplicationProxy *)appProxy;
++(nonnull HHZAppInfo *)getAppInfoByProxy:(nullable LSApplicationProxy *)appProxy;
 
 /**
  *  根据bundleID获取appIcon
@@ -34,18 +34,18 @@
  *
  *  @return
  */
-+(UIImage *)getAppbyIcon:(NSString *)bundID;
++(nullable UIImage *)getAppbyIcon:(nonnull NSString *)bundID;
 
 /**
  *  根据app的BundleID打开app
  *
  *  @param bundID
  */
-+(void)openAppByBundleID:(NSString *)bundID;
++(void)openAppByBundleID:(nonnull NSString *)bundID;
 
 
 /*
  获取手机中的所有进程---返回数组
  */
-+(NSArray *)getRunningProcesses;
++(nullable NSArray *)getRunningProcesses;
 @end

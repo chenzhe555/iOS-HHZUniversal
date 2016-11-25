@@ -9,6 +9,8 @@
 #import "HHZHttpStruct.h"
 #import "HHZHttpEnum.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface HHZHttpRequestCondition : NSObject
 //Manager的类名，有多个Manager的时候传入名，默认是nil
 @property (nonatomic, assign) NSString * managerName;
@@ -51,5 +53,7 @@
  *
  *  @return
  */
-+(instancetype)getNoneAlertCondition;
++(nonnull instancetype)getNoneAlertCondition;
 @end
+
+NS_ASSUME_NONNULL_END
