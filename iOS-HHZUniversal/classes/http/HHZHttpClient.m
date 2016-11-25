@@ -24,14 +24,13 @@
 #if DEBUG
     NSLog(@"<网络请求(加密后):%lu>\n%@\n",(long)httpTag,request.paramaters);
 #endif
-   
     
     //处理Condition情况
     [self handleHttpCondition:condition];
     
     NSURLSessionDataTask * getTask = nil;
     if ([request.requestMethod isEqualToString:@"POST"]) {
-        getTask = [[AFHTTPSessionManager manager] POST:request.url parameters:request.paramaters progress:^(NSProgress * _Nonnull uploadProgress) {
+        getTask = [[HHZHttpManager shareManager] POST:request.url parameters:request.paramaters progress:^(NSProgress * _Nonnull uploadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             HHZHttpResponse * reponse = [[HHZHttpResponse alloc] init];
@@ -57,7 +56,7 @@
             }
         }];
     }
-    return [HHZHttpResult generateDefaultResult:httpTag];
+    return [HHZHttpResult generateDefaultResult:httpTag RequestURL:request.url Task:getTask];
 }
 
 +(void)addExtraParamatersWithCondition:(HHZHttpRequest *)request
@@ -88,6 +87,7 @@
 
 +(void)handleHttpCondition:(HHZHttpRequestCondition *)condition
 {
+    //处理请求Content-Type
     switch (condition.serializerType) {
         case HHZHttpSerializerType1: {
             [AFHTTPSessionManager manager].requestSerializer = [AFJSONRequestSerializer serializer];
@@ -112,5 +112,41 @@
         default:
             break;
     }
+    
+    //处理请求方式和是否允许抓包
+    switch (condition.httpType) {
+        case HHZHttpProtocalTypeHTTP: {
+            
+            break;
+        }
+        case HHZHttpProtocalTypeHTTPS: {
+            //如果已经是HTTP，则不设置
+            if ([HHZHttpManager shareManager].securityPolicy.SSLPinningMode != AFSSLPinningModeNone)
+            {
+                [HHZHttpManager shareManager].securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+            }
+            
+            if (condition.allowSniffer)
+            {
+                // 2.设置证书模式
+                NSData * cerData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hhzHttpCertificate" ofType:@"cer"]];
+                [HHZHttpManager shareManager].securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate withPinnedCertificates:[[NSSet alloc] initWithObjects:cerData, nil]];
+            }
+            else
+            {
+                [HHZHttpManager shareManager].securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+            }
+            
+            //是否信任非法证书
+            [HHZHttpManager shareManager].securityPolicy.allowInvalidCertificates = condition.allowInvalidCer;
+            
+            //是否在证书域字段中验证域名
+            [[HHZHttpManager shareManager].securityPolicy setValidatesDomainName:condition.allowValidateDomain];
+            break;
+        }
+    }
+    
+   
+    
 }
 @end

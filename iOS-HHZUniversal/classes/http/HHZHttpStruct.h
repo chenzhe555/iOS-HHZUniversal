@@ -109,9 +109,20 @@
 @property (nonatomic, assign) NSUInteger tag;
 
 /**
+ *  请求的地址
+ */
+@property (nonatomic, copy) NSString * requestURL;
+
+/**
+ *  网络请求的Task，可以进行自定义操作
+ */
+@property (nonatomic, strong) NSURLSessionDataTask * requestTask;
+
+/**
  *  生成默认的结果
  *
  *  @return 
  */
-+(HHZHttpResult *)generateDefaultResult:(NSUInteger)tag;
++(HHZHttpResult *)generateDefaultResult:(NSUInteger)tag RequestURL:(NSString *)url Task:(NSURLSessionDataTask *)task;
+
 @end

@@ -17,10 +17,12 @@
 @end
 
 @implementation HHZHttpResult
-+(HHZHttpResult *)generateDefaultResult:(NSUInteger)tag
++(HHZHttpResult *)generateDefaultResult:(NSUInteger)tag RequestURL:(NSString *)url Task:(NSURLSessionDataTask *)task
 {
     HHZHttpResult * result = [[HHZHttpResult alloc] init];
     result.tag = tag;
+    result.requestURL = url;
+    result.requestTask = task;
     return result;
 }
 @end

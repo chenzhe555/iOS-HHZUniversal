@@ -11,7 +11,8 @@
 #import "HHZHttpEncryption.h"
 #import "HHZHttpTagBuilder.h"
 #import "HHZDeviceTool.h"
-#import <AFNetworking/AFHTTPSessionManager.h>
+#import "HHZHttpManager.h"
+
 
 //网络请求成功和失败的回调
 typedef void (^HHZSuccessBlock)(HHZHttpResponse * responseObject);

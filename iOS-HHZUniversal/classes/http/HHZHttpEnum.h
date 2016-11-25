@@ -34,3 +34,9 @@ typedef NS_ENUM(NSInteger,HHZEncryptionType){
     HHZEncryptionTypeXiaoMei,               //小美
 };
 
+//http/https
+typedef NS_ENUM(NSUInteger,HHZHttpProtocalType) {
+    HHZHttpProtocalTypeHTTP,
+    HHZHttpProtocalTypeHTTPS
+};
+
