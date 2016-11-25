@@ -7,7 +7,6 @@
 //
 
 #import "HHZPlistTool.h"
-#import "HHZCacheTool.h"
 
 @implementation HHZPlistTool
 
