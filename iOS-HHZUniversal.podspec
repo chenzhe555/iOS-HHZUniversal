@@ -114,10 +114,6 @@ Pod::Spec.new do |s|
         three.source_files = 'iOS-HHZUniversal/classes/utils/file/*.{h,m}'
       end
 
-      two.subspec 'application' do |three|
-        three.source_files = 'iOS-HHZUniversal/classes/utils/application/*.{h,m}'
-      end
-
       two.subspec 'json' do |three|
         three.source_files = 'iOS-HHZUniversal/classes/utils/json/*.{h,m}'
       end
@@ -164,6 +160,10 @@ Pod::Spec.new do |s|
       two.subspec 'archive' do |three|
         three.source_files = 'iOS-HHZUniversal/classes/utils/archive/*.{h,m}'
       end
+
+      two.subspec 'application' do |three|
+        three.source_files = 'iOS-HHZUniversal/classes/utils/application/*.{h,m}'
+      end
     end
 
     one.subspec 'base' do |two|
@@ -173,16 +173,11 @@ Pod::Spec.new do |s|
 
 
     one.subspec 'customView' do |two|
-
       two.subspec 'system' do |three|
         three.source_files = 'iOS-HHZUniversal/classes/customView/system/*.{h,m}'
       end
 
       two.subspec 'custom' do |three|
-      
-        three.subspec 'Albums' do |four|
-          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/Albums/*.{h,m}'
-        end
 
         three.subspec 'BlurMenu' do |four|
           four.source_files = 'iOS-HHZUniversal/classes/customView/custom/BlurMenu/*.{h,m}'
@@ -190,6 +185,10 @@ Pod::Spec.new do |s|
 
         three.subspec 'BottomPopView' do |four|
           four.source_files = 'iOS-HHZUniversal/classes/customView/custom/BottomPopView/*.{h,m}'
+        end
+
+        three.subspec 'Albums' do |four|
+          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/Albums/*.{h,m}'
         end
 
         three.subspec 'launchView' do |four|
