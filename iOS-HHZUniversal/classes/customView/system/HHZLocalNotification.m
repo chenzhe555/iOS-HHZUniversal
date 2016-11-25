@@ -7,6 +7,7 @@
 //
 
 #import "HHZLocalNotification.h"
+#import <UIKit/UIKit.h>
 
 @implementation HHZLocalNotification
 

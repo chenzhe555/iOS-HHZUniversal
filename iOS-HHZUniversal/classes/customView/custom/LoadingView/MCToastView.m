@@ -9,6 +9,8 @@
 #import "MCToastView.h"
 #import "HHZKitTool.h"
 #import "HHZCalculateTool.h"
+#import "HHZMACROConfig.h"
+#import "UIView+HHZCategory.h"
 
 //背景透明度
 #define kMCToastViewAlpha           0.8f

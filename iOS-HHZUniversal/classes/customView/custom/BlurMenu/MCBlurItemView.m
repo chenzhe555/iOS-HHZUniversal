@@ -7,6 +7,8 @@
 //
 
 #import "MCBlurItemView.h"
+#import "UIView+HHZCategory.h"
+#import "HHZMACROConfig.h"
 
 @interface MCBlurItemView()
 @property (nonatomic, strong) UIImageView * bgImageView;

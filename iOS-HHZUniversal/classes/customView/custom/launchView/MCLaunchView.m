@@ -10,6 +10,8 @@
 #import <SDWebImageManager.h>
 #import "HHZPathTool.h"
 #import "HHZKitTool.h"
+#import "UIView+HHZCategory.h"
+#import "HHZMACROConfig.h"
 
 #define kMCLaunchViewImgURL @"kMCLaunchViewImgURL1"         //图片存储位置
 #define kMCLaunchViewImgNSStringURL @"kMCLaunchViewImgNSStringURL1"         //图片网络地址

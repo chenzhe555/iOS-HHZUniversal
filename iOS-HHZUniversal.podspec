@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "iOS-HHZUniversal"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "iOS基础工程"
   s.requires_arc = true
 
@@ -103,10 +103,6 @@ Pod::Spec.new do |s|
       two.subspec 'uikit' do |three|
         three.source_files = 'iOS-HHZUniversal/classes/category/uikit/*.{h,m}'
       end
-
-      two.subspec 'others' do |three|
-        three.source_files = 'iOS-HHZUniversal/classes/category/others/*.{h,m}'
-      end
     end
 
     one.subspec 'utils' do |two|
@@ -146,8 +142,6 @@ Pod::Spec.new do |s|
       end
 
       two.subspec 'plist' do |three|
-        three.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/utils/cache'
-        
         three.source_files = 'iOS-HHZUniversal/classes/utils/plist/*.{h,m}'
       end
 
@@ -173,9 +167,6 @@ Pod::Spec.new do |s|
     end
 
     one.subspec 'base' do |two|
-      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/utils'
-      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/category'
-
       two.source_files = 'iOS-HHZUniversal/classes/base/*.{h,m}'
     end
 
@@ -188,9 +179,7 @@ Pod::Spec.new do |s|
       end
 
       two.subspec 'custom' do |three|
-        three.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/utils'
-        three.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/category'
-
+      
         three.subspec 'Albums' do |four|
           four.source_files = 'iOS-HHZUniversal/classes/customView/custom/Albums/*.{h,m}'
         end
@@ -249,15 +238,10 @@ Pod::Spec.new do |s|
     end
 
     one.subspec 'http' do |two|
-      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/utils'
-      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/exception'
-
       two.source_files = 'iOS-HHZUniversal/classes/http/*.{h,m}'
     end
 
     one.subspec 'demo' do |two|
-      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/http'
-
       two.source_files = 'iOS-HHZUniversal/classes/demo/*.{h,m}'
     end
 
@@ -269,10 +253,6 @@ Pod::Spec.new do |s|
       two.subspec 'system' do |three|
         three.source_files = 'iOS-HHZUniversal/classes/customView/system/*.{h,m}'
       end
-    end
-
-    one.subspec 'reference' do |two|
-      two.source_files = 'iOS-HHZUniversal/classes/reference/*.{h,m}'
     end
     
   end

@@ -10,6 +10,9 @@
  网络请求中的枚举值
  */
 
+#import <Foundation/Foundation.h>
+
+
 //针对网络请求得到结果之后弹框的方式
 typedef NS_ENUM(NSInteger, HHZHttpAlertType){
     HHZHttpAlertTypeNone = 100,             //无弹框

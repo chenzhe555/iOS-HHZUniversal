@@ -6,5 +6,7 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
+#import <UIKit/UINavigationController.h>
+
 @interface HHZNavigationController : UINavigationController
 @end

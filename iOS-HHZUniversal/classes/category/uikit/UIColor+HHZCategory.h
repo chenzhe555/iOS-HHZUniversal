@@ -6,6 +6,9 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark 与16进制之间的转换

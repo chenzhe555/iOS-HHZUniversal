@@ -7,7 +7,8 @@
 //
 
 #import "MCRedPointView.h"
-
+#import "UIView+HHZCategory.h"
+#import "UIImage+HHZCategory.h"
 //红点的Tag值
 #define RedPointTag 7260
 //红点文字大小

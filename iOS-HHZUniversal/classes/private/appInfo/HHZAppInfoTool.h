@@ -7,6 +7,7 @@
 //
 
 #import "HHZAppInfo.h"
+#import <UIKit/UIImage.h>
 
 @interface HHZAppInfoTool : NSObject
 /**

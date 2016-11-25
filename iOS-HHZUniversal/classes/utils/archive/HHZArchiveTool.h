@@ -6,6 +6,9 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
+
 @interface HHZArchiveTool : NSObject
 /**
  *  传入能进行归档的对象data写入指定的地址path

@@ -8,6 +8,7 @@
 
 #import "BaseNaviView.h"
 #import "HHZLabel.h"
+#import "UIView+HHZCategory.h"
 
 @interface BaseNaviView ()
 @property (nonatomic, strong) HHZLabel * titleLabel;

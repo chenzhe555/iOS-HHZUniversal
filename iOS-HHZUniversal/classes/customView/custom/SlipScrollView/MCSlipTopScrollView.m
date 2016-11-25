@@ -9,6 +9,8 @@
 #import "MCSlipTopScrollView.h"
 #import "MCSlipScrollViewDefine.h"
 #import "HHZCalculateTool.h"
+#import "UIView+HHZCategory.h"
+#import "HHZMACROConfig.h"
 
 @implementation MCSlipTopScrollView
 

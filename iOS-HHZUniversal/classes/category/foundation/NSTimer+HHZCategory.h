@@ -6,6 +6,9 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
+
 NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark 改变计时器状态

@@ -8,8 +8,9 @@
 
 #import "MCNoneDataView.h"
 #import "HHZLabel.h"
-#import "UIImage+HHZCategory.h"
+#import "UIImageView+HHZCategory.h"
 #import "UILabel+HHZCategory.h"
+#import "UIView+HHZCategory.h"
 
 typedef NS_ENUM(NSInteger,MCNoneDataViewType){
     MCNoneDataViewTypeText = 101,

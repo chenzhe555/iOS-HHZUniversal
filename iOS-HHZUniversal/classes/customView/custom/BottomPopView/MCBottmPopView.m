@@ -7,6 +7,8 @@
 //
 
 #import "MCBottmPopView.h"
+#import "HHZMACROConfig.h"
+#import "UIView+HHZCategory.h"
 
 static const CGFloat buttonHeight = 40.0f;                      //每个button高度
 static CGFloat height;                                          //用于标记的button Y

@@ -9,6 +9,7 @@
 #import "MCSlipScrollView.h"
 #import "MCSlipTopItemCell.h"
 #import "MCSlipScrollViewDefine.h"
+#import "UIView+HHZCategory.h"
 
 @interface MCSlipScrollView()<UITableViewDelegate,UITableViewDataSource>
 /**

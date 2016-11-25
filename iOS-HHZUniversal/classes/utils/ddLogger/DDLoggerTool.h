@@ -6,6 +6,9 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
+
 @interface DDLoggerTool : NSObject
 +(void)turnOnDDLogger;
 @end

@@ -6,6 +6,9 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
+
 @interface HHZMethodException : NSObject
 /**
  *  方法未重写实现异常

@@ -8,6 +8,7 @@
 
 #import "MCDomainLoadingView.h"
 #import "HHZLabel.h"
+#import "UIView+HHZCategory.h"
 
 //MCActivityView宽高(带文字)
 #define kMCActivityViewBGWidth 120.0f

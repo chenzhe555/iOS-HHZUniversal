@@ -7,6 +7,8 @@
 //
 
 #import "BaseTabbar.h"
+#import "HHZMACROConfig.h"
+#import "UIView+HHZCategory.h"
 
 //红点坐标X,Y
 static CGFloat redPointX;

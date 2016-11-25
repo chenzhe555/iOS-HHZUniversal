@@ -6,6 +6,10 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
 @interface HHZPlistTool : NSObject
 
 /**
@@ -27,3 +31,5 @@
 +(id)getPlistValueForKey:(NSString *)plistKey plistName:(NSString *)plistFileName;
 
 @end
+
+NS_ASSUME_NONNULL_END

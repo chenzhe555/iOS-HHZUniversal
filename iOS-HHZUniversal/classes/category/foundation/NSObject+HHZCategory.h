@@ -6,6 +6,9 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
+
 NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark 检查数据是否正确，不是的话初始化，多用于网络请求回来进行判断

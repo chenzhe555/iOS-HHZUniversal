@@ -9,6 +9,9 @@
 #import "MCUpdateAlertView.h"
 #import "HHZLabel.h"
 #import "HHZKitTool.h"
+#import "UIView+HHZCategory.h"
+#import "HHZMACROConfig.h"
+#import "UIImage+HHZCategory.h"
 
 #define kMCAlertViewLeftSpace 30.0f
 @interface MCUpdateAlertView ()

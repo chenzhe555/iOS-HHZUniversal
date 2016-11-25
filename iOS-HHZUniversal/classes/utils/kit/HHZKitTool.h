@@ -6,6 +6,10 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+
 @interface HHZKitTool : NSObject
 /**
  *  获取当前显示的主视图

@@ -5,6 +5,7 @@
 //  Created by chenzhe.376811578@qq.com on 16/11/16.
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
+#import <Foundation/Foundation.h>
 
 
 @interface HHZBase64Encrption : NSObject
@@ -15,7 +16,7 @@
  *
  *  @return 返回加密后的字符串
  */
-+(NSString *)base64StringFromText:(NSString *)string;
++(nullable NSString *)base64StringFromText:(nonnull NSString *)string;
 
 
 /**
@@ -25,5 +26,5 @@
  *
  *  @return 返回解密后的字符串
  */
-+(NSString *)base64FromBase64String:(NSString *)base64;
++(nullable NSString *)base64FromBase64String:(nonnull NSString *)base64;
 @end

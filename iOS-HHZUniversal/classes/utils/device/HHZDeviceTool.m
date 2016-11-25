@@ -7,7 +7,7 @@
 //
 
 #import "HHZDeviceTool.h"
-#import <UIKit/UIDevice.h>
+#import <UIKit/UIKit.h>
 #include <sys/types.h>
 #include <sys/sysctl.h>
 #include <mach/mach.h>

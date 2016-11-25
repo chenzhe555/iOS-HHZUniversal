@@ -6,6 +6,8 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 
 @interface HHZMapTool : NSObject
 #pragma mark 检查当前手机是否能打开相应地图应用

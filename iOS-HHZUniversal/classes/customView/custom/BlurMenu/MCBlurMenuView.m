@@ -9,6 +9,11 @@
 #import "MCBlurMenuView.h"
 #import "MCBlurItemView.h"
 #import "HHZKitTool.h"
+#import "UIView+HHZCategory.h"
+#import "UIImage+HHZCategory.h"
+#import "UIView+HHZCategory.h"
+#import "UIView+HHZCategory.h"
+#import "HHZMACROConfig.h"
 
 @interface MCBlurMenuView()
 @property (nonatomic, strong) NSMutableArray * itemArray;
