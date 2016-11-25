@@ -182,11 +182,15 @@ Pod::Spec.new do |s|
 
 
     one.subspec 'customView' do |two|
+
       two.subspec 'system' do |three|
         three.source_files = 'iOS-HHZUniversal/classes/customView/system/*.{h,m}'
       end
 
       two.subspec 'custom' do |three|
+        three.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/utils'
+        three.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/category'
+
         three.subspec 'Albums' do |four|
           four.source_files = 'iOS-HHZUniversal/classes/customView/custom/Albums/*.{h,m}'
         end
