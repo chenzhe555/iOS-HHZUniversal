@@ -136,6 +136,8 @@
 		78D9E9DF1DE3E41C009D5E55 /* iOS_HHZUniversalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_HHZUniversalTests.m; sourceTree = "<group>"; };
 		78D9E9E11DE3E41C009D5E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78D9EAA91DE3E4E0009D5E55 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		78FA585A1DE9064A00DEEA90 /* HHZMACROConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZMACROConfig.h; sourceTree = "<group>"; };
+		78FA585B1DE9064A00DEEA90 /* iOS-HHZUniversal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS-HHZUniversal.h"; sourceTree = "<group>"; };
 		78FEEE9E1DE815A60040E248 /* HHZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZNavigationController.h; sourceTree = "<group>"; };
 		78FEEE9F1DE815A60040E248 /* HHZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZNavigationController.m; sourceTree = "<group>"; };
 		78FEEEA01DE815A60040E248 /* HHZNavigationController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HHZNavigationController.plist; sourceTree = "<group>"; };
@@ -175,8 +177,6 @@
 		78FEEEC61DE815A60040E248 /* UITableViewCell+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+HHZCategory.m"; sourceTree = "<group>"; };
 		78FEEEC71DE815A60040E248 /* UIView+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HHZCategory.h"; sourceTree = "<group>"; };
 		78FEEEC81DE815A60040E248 /* UIView+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HHZCategory.m"; sourceTree = "<group>"; };
-		78FEEECA1DE815A60040E248 /* HHZImportConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZImportConfig.h; sourceTree = "<group>"; };
-		78FEEECB1DE815A60040E248 /* HHZMACROConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZMACROConfig.h; sourceTree = "<group>"; };
 		78FEEECF1DE815A60040E248 /* MCChooseImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCChooseImageView.h; sourceTree = "<group>"; };
 		78FEEED01DE815A60040E248 /* MCChooseImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCChooseImageView.m; sourceTree = "<group>"; };
 		78FEEED21DE815A60040E248 /* MCBlurItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCBlurItemView.h; sourceTree = "<group>"; };
@@ -417,12 +417,21 @@
 			path = "iOS-HHZUniversalTests";
 			sourceTree = "<group>";
 		};
+		78FA58591DE9064A00DEEA90 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				78FA585A1DE9064A00DEEA90 /* HHZMACROConfig.h */,
+				78FA585B1DE9064A00DEEA90 /* iOS-HHZUniversal.h */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
 		78FEEE9C1DE815A60040E248 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				78FA58591DE9064A00DEEA90 /* config */,
 				78FEEE9D1DE815A60040E248 /* base */,
 				78FEEEA31DE815A60040E248 /* category */,
-				78FEEEC91DE815A60040E248 /* config */,
 				78FEEECC1DE815A60040E248 /* customView */,
 				78FEEF1D1DE815A60040E248 /* demo */,
 				78FEEF221DE815A60040E248 /* exception */,
@@ -510,15 +519,6 @@
 				78FEEEC81DE815A60040E248 /* UIView+HHZCategory.m */,
 			);
 			path = uikit;
-			sourceTree = "<group>";
-		};
-		78FEEEC91DE815A60040E248 /* config */ = {
-			isa = PBXGroup;
-			children = (
-				78FEEECA1DE815A60040E248 /* HHZImportConfig.h */,
-				78FEEECB1DE815A60040E248 /* HHZMACROConfig.h */,
-			);
-			path = config;
 			sourceTree = "<group>";
 		};
 		78FEEECC1DE815A60040E248 /* customView */ = {

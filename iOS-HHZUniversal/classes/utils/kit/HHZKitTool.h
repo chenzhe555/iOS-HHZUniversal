@@ -1,6 +1,6 @@
 //
 //  HHZKitTool.h
-//  iOS_Universal_Project
+//  iOS-HHZUniversal
 //
 //  Created by chenzhe.376811578@qq.com on 16/11/16.
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
@@ -29,11 +29,11 @@
  *  获取项目Info信息,例如:
  BuildMachineOSBuild = 15A284;
  CFBundleDevelopmentRegion = en;
- CFBundleExecutable = "iOS_Universal_Project";
+ CFBundleExecutable = "iOS-HHZUniversal";
  CFBundleIdentifier = "com.chenzhe.haohaizi";
  CFBundleInfoDictionaryVersion = "6.0";
- CFBundleInfoPlistURL = "Info.plist -- file:///Users/chenzhe.376811578@qq.com/Library/Developer/CoreSimulator/Devices/847DF976-39E6-45D3-8951-7F7B5E08BEB2/data/Containers/Bundle/Application/39FF543C-F015-4841-85B4-C12DAD442CCE/iOS_Universal_Project.app/";
- CFBundleName = "iOS_Universal_Project";
+ CFBundleInfoPlistURL = "Info.plist -- file:///Users/chenzhe.376811578@qq.com/Library/Developer/CoreSimulator/Devices/847DF976-39E6-45D3-8951-7F7B5E08BEB2/data/Containers/Bundle/Application/39FF543C-F015-4841-85B4-C12DAD442CCE/iOS-HHZUniversal.app/";
+ CFBundleName = "iOS-HHZUniversal";
  CFBundleNumericVersion = 16809984;
  CFBundlePackageType = APPL;
  CFBundleShortVersionString = "1.0";
