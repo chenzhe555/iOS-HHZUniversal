@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "iOS-HHZUniversal"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "iOS基础工程"
   s.requires_arc = true
 
