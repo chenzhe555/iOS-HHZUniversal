@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-@class HHZLabel;
+#import <Foundation/Foundation.h>
+#import "HHZLabel.h"
 
 @protocol BaseNoneDataViewDelegate <NSObject>
 

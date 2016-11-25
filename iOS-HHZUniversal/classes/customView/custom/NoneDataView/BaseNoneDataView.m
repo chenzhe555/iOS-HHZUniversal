@@ -7,7 +7,6 @@
 //
 
 #import "BaseNoneDataView.h"
-#import "HHZLabel.h"
 
 @implementation BaseNoneDataView
 

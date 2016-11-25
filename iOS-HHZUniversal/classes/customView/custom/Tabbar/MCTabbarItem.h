@@ -9,6 +9,7 @@
 
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 @class MCTabbarItem;
 
 typedef NS_ENUM(NSInteger,MCTabbarItemType){

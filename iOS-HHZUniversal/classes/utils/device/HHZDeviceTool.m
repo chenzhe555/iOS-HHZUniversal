@@ -8,6 +8,7 @@
 
 #import "HHZDeviceTool.h"
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #include <sys/types.h>
 #include <sys/sysctl.h>
 #include <mach/mach.h>

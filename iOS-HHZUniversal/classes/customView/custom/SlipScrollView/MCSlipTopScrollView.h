@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //顶部按钮分布规则
 typedef NS_ENUM(NSInteger,MCSlipTopScrollViewItemAreaType) {

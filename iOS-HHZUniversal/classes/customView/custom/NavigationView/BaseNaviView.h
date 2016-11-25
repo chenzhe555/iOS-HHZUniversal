@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <Foundation/Foundation.h>
 //文字基本信息
 #define kBaseNaviViewTitleNormalColor    [UIColor lightGrayColor]
 #define kBaseNaviViewTitleSelectedColor  [UIColor redColor]

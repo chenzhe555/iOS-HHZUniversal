@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import "MCTabbarItem.h"
 
 @interface BaseTabbar : UITabBarController<MCTabbarItemDelegate>

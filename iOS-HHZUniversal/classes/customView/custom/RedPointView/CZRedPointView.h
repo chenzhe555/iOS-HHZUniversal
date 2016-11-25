@@ -9,6 +9,7 @@
 //待完善，等有时间要完善，参数提出来
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 @interface CZRedPointView : UIImageView
 

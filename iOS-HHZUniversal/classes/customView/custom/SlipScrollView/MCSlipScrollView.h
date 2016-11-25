@@ -11,6 +11,7 @@
  类似新闻类的滚动视图
  */
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import "MCSlipTopScrollView.h"
 #import "MCSlipMainScrollView.h"
 

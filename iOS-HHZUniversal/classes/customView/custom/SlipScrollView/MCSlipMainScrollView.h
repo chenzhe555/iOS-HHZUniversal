@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 @interface MCSlipMainScrollView : UITableView
 @property (nonatomic, strong) NSMutableArray * viewsArray;

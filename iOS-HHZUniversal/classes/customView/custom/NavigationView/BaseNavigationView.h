@@ -12,6 +12,7 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import "BaseNaviView.h"
 
 //Navi整体高度
