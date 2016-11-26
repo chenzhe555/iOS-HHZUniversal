@@ -1,6 +1,6 @@
 //
 //  MCLaunchView.h
-//  MeicaiStore
+//  iOS-HHZUniversal
 //
 //  Created by mc962 on 15/11/16.
 //  Copyright © 2015年 Beijing Yunshan Information Technology Co., Ltd. All rights reserved.

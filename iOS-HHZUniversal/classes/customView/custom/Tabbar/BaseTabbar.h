@@ -1,6 +1,6 @@
 //
 //  BaseTabbar.h
-//  core-ios-oc
+//  iOS-HHZUniversal
 //
 //  Created by mc962 on 16/2/27.
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.

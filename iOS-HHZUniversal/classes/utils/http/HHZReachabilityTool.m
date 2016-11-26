@@ -45,7 +45,7 @@ static void HHZReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRe
     static dispatch_queue_t queue;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        queue = dispatch_queue_create("com.meicai.universal.reachability", DISPATCH_QUEUE_SERIAL);
+        queue = dispatch_queue_create("com.chenzhe.universal.reachability", DISPATCH_QUEUE_SERIAL);
     });
     return queue;
 }
