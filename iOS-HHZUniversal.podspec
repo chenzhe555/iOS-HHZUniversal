@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "iOS-HHZUniversal"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "iOS基础工程"
   s.requires_arc = true
 
@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #
 
   
-  s.source_files = 'iOS-HHZUniversal/classes/config/HHZImportConfig.h'
+  s.source_files = 'iOS-HHZUniversal/classes/config/iOS-HHZUniversal.h'
 
   s.subspec 'iOS-HHZUniversal' do |one|
     one.subspec 'category' do |two|
@@ -193,6 +193,6 @@ Pod::Spec.new do |s|
   #s.dependency "IQKeyboardManager", "~> 4.0.6"
   #s.dependency "CocoaLumberjack", "~> 3.0.0"
   #s.dependency "SimpleKeychain", "~> 0.7.0"
-  s.dependency "ZYQAssetPickerController", "~> 1.0.0"
+  #s.dependency "ZYQAssetPickerController", "~> 1.0.0"
   s.dependency "SDWebImage", "~> 4.0.0-beta2"
 end
