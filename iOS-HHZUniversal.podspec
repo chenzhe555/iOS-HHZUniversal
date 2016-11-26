@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "iOS-HHZUniversal"
-  s.version      = "0.0.8"
+  s.version      = "0.0.9"
   s.summary      = "iOS基础工程"
   s.requires_arc = true
 
@@ -95,6 +95,10 @@ Pod::Spec.new do |s|
   s.source_files = 'iOS-HHZUniversal/classes/config/iOS-HHZUniversal.h'
 
   s.subspec 'iOS-HHZUniversal' do |one|
+    one.subspec 'config' do |two|
+      two.source_files = 'iOS-HHZUniversal/classes/config/HHZMACROConfig.h'
+    end
+
     one.subspec 'category' do |two|
       two.subspec 'foundation' do |three|
         three.source_files = 'iOS-HHZUniversal/classes/category/foundation/*.{h,m}'
@@ -112,6 +116,10 @@ Pod::Spec.new do |s|
 
       two.subspec 'file' do |three|
         three.source_files = 'iOS-HHZUniversal/classes/utils/file/*.{h,m}'
+      end
+
+      two.subspec 'json' do |three|
+        three.source_files = 'iOS-HHZUniversal/classes/utils/json/*.{h,m}'
       end
 
       two.subspec 'kit' do |three|
@@ -135,6 +143,30 @@ Pod::Spec.new do |s|
 
       two.subspec 'plist' do |three|
         three.source_files = 'iOS-HHZUniversal/classes/utils/plist/*.{h,m}'
+      end
+
+      two.subspec 'regular' do |three|
+        three.source_files = 'iOS-HHZUniversal/classes/utils/regular/*.{h,m}'
+      end
+
+      two.subspec 'date' do |three|
+        three.source_files = 'iOS-HHZUniversal/classes/utils/date/*.{h,m}'
+      end
+
+      two.subspec 'calculate' do |three|
+        three.source_files = 'iOS-HHZUniversal/classes/utils/calculate/*.{h,m}'
+      end
+
+      two.subspec 'IQKeyboardManager' do |three|
+        three.source_files = 'iOS-HHZUniversal/classes/utils/IQKeyboardManager/*.{h,m}'
+      end
+
+      two.subspec 'archive' do |three|
+        three.source_files = 'iOS-HHZUniversal/classes/utils/archive/*.{h,m}'
+      end
+
+      two.subspec 'application' do |three|
+        three.source_files = 'iOS-HHZUniversal/classes/utils/application/*.{h,m}'
       end
 
     end

@@ -7,7 +7,6 @@
 //
 
 #import "HHZApplicationTool.h"
-#import "HHZDeviceTool.h"
 
 @implementation HHZApplicationTool
 +(NSString *)getAppVersion
@@ -32,8 +31,9 @@
 
 +(BOOL)appIsPirated
 {
-    if ([HHZDeviceTool isSimulator]) return YES; // Simulator is not from appstore
-    
+#if TARGET_OS_SIMULATOR
+    return YES;
+#else
     if (getgid() <= 10) return YES; // process ID shouldn't be root
     
     if ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"SignerIdentity"]) {
@@ -51,6 +51,9 @@
     //if someone really want to crack your app, this method is useless..
     //you may change this method's name, encrypt the code and do more check..
     return NO;
+#endif
+    
+    
 }
 
 +(BOOL)fileExistInMainBundle:(NSString *)name
