@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "iOS-HHZUniversal"
-  s.version      = "0.0.9"
+  s.version      = "0.0.2"
   s.summary      = "iOS基础工程"
   s.requires_arc = true
 
@@ -99,6 +99,10 @@ Pod::Spec.new do |s|
       two.source_files = 'iOS-HHZUniversal/classes/config/HHZMACROConfig.h'
     end
 
+    one.subspec 'exception' do |two|
+      two.source_files = 'iOS-HHZUniversal/classes/exception/*.{h,m}'
+    end
+
     one.subspec 'category' do |two|
       two.subspec 'foundation' do |three|
         three.source_files = 'iOS-HHZUniversal/classes/category/foundation/*.{h,m}'
@@ -169,6 +173,90 @@ Pod::Spec.new do |s|
         three.source_files = 'iOS-HHZUniversal/classes/utils/application/*.{h,m}'
       end
 
+    end
+
+    one.subspec 'subclass' do |two|
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/utils'
+
+      two.source_files = 'iOS-HHZUniversal/classes/subclass/*.{h,m}'
+    end
+
+    one.subspec 'base' do |two|
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/utils'
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/category'
+
+      two.source_files = 'iOS-HHZUniversal/classes/base/*.{h,m}'
+    end
+
+    one.subspec 'customView' do |two|
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/subclass'
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/category'
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/utils'
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/config'      
+
+      two.subspec 'system' do |three|
+        three.source_files = 'iOS-HHZUniversal/classes/customView/system/*.{h,m}'
+      end
+
+      two.subspec 'custom' do |three|
+
+        three.subspec 'BlurMenu' do |four|
+          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/BlurMenu/*.{h,m}'
+        end
+
+        three.subspec 'BottomPopView' do |four|
+          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/BottomPopView/*.{h,m}'
+        end
+
+        three.subspec 'launchView' do |four|
+          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/launchView/*.{h,m}'
+        end
+
+        three.subspec 'LoadingView' do |four|
+          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/LoadingView/*.{h,m}'
+        end
+
+        three.subspec 'NavigationView' do |four|
+          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/NavigationView/*.{h,m}'
+        end
+
+        three.subspec 'NoneDataView' do |four|
+          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/NoneDataView/*.{h,m}'
+        end
+
+        three.subspec 'QRCode' do |four|
+          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/QRCode/*.{h,m}'
+        end
+
+        three.subspec 'RedPointView' do |four|
+          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/RedPointView/*.{h,m}'
+        end
+
+        three.subspec 'SlipScrollView' do |four|
+          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/SlipScrollView/*.{h,m}'
+        end
+
+        three.subspec 'Tabbar' do |four|
+          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/Tabbar/*.{h,m}'
+        end
+
+        three.subspec 'UpdateAlertView' do |four|
+          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/UpdateAlertView/*.{h,m}'
+        end
+      end
+    end
+
+    one.subspec 'http' do |two|
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/utils'
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/exception'
+
+      two.source_files = 'iOS-HHZUniversal/classes/http/*.{h,m}'
+    end
+
+    one.subspec 'demo' do |two|
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/http'
+
+      two.source_files = 'iOS-HHZUniversal/classes/demo/*.{h,m}'
     end
     
   end
