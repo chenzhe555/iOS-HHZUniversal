@@ -23,8 +23,6 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     self.window.backgroundColor = [UIColor whiteColor];
-    HHZMethodException * aaaa = [HHZMethodException new];
-    HHZLog(@"%@",aaaa);
     
     self.window.rootViewController = [self createTab];
     [self.window makeKeyAndVisible];;
