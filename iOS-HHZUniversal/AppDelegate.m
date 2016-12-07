@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "HHZTabbarModel.h"
+#import "DemoTabbar.h"
+#import "HHZMACROConfig.h"
+#import "HHZMethodException.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +21,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NSLog(@"%@",[[NSBundle mainBundle] infoDictionary]);
+    self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    self.window.backgroundColor = [UIColor whiteColor];
+    HHZMethodException * aaaa = [HHZMethodException new];
+    HHZLog(@"%@",aaaa);
+    
+    self.window.rootViewController = [self createTab];
+    [self.window makeKeyAndVisible];;
     return YES;
 }
 
@@ -41,6 +51,51 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void)configSomeThing
+{
+    
+}
+
+#pragma mark 创建Tabbar
+-(DemoTabbar *)createTab
+{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    //后续根据场景再优化
+    HHZTabbarModel * model1 = [HHZTabbarModel new];
+    model1.sourceVC = @"DemoOneViewController";
+    model1.title = @"一";
+    model1.normalImageUrl = @"icon_message_normal";
+    model1.selectImageUrl = @"icon_message_active";
+    
+    HHZTabbarModel * model2 = [HHZTabbarModel new];
+    model2.title = @"二";
+    model2.sourceVC = @"DemoTwoViewController";
+    model2.normalImageUrl = @"icon_activities_normal";
+    model2.selectImageUrl = @"icon_activities_active";
+    
+    HHZTabbarModel * model5 = [HHZTabbarModel new];
+    model5.isBigNoClicked = YES;
+    model5.normalImageUrl = @"icon_center";
+    model5.selectImageUrl = @"icon_center";
+    
+    HHZTabbarModel * model3 = [HHZTabbarModel new];
+    model3.sourceVC = @"DemoFourViewController";
+    model3.title = @"三";
+    model3.normalImageUrl = @"icon_app_normal";
+    model3.selectImageUrl = @"icon_app_active";
+    
+    HHZTabbarModel * model4 = [HHZTabbarModel new];
+    model4.title = @"四";
+    model4.sourceVC = @"DemoFiveViewController";
+    model4.normalImageUrl = @"icon_me_normal";
+    model4.selectImageUrl = @"icon_me_active";
+    
+    NSArray * tabbarArray = @[model1,model2,model5,model3,model4];
+    
+    return [DemoTabbar createTabbarWithTabArray:tabbarArray];
 }
 
 @end

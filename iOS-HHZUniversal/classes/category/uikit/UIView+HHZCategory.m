@@ -7,6 +7,7 @@
 //
 
 #import "UIView+HHZCategory.h"
+#import <objc/runtime.h>
 
 @implementation UIView (setFrame)
 
@@ -82,12 +83,12 @@
 
 @implementation UIView (FixViewDebugging)
 
-//+ (void)load
-//{
-//    Method original = class_getInstanceMethod(self, @selector(viewForBaselineLayout));
-//    class_addMethod(self, @selector(viewForFirstBaselineLayout), method_getImplementation(original), method_getTypeEncoding(original));
-//    class_addMethod(self, @selector(viewForLastBaselineLayout), method_getImplementation(original), method_getTypeEncoding(original));
-//}
++ (void)load
+{
+    Method original = class_getInstanceMethod(self, @selector(viewForBaselineLayout));
+    class_addMethod(self, @selector(viewForFirstBaselineLayout), method_getImplementation(original), method_getTypeEncoding(original));
+    class_addMethod(self, @selector(viewForLastBaselineLayout), method_getImplementation(original), method_getTypeEncoding(original));
+}
 
 @end
 

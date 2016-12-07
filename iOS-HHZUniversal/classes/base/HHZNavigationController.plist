@@ -9,6 +9,6 @@
 	<key>textFontSize</key>
 	<integer>18</integer>
 	<key>textColor</key>
-	<string>#DC143C</string>
+	<string>#0000FF</string>
 </dict>
 </plist>

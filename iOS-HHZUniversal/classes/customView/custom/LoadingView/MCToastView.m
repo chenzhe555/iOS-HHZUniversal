@@ -67,6 +67,7 @@ static BOOL isHavaBlock;
         custom.frame = window.bounds;
         [window addSubview:custom];
         custom.hidden = YES;
+        custom.backgroundColor = [UIColor redColor];
     });
     return custom;
 }

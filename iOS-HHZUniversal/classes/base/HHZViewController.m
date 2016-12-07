@@ -28,12 +28,12 @@
 
 -(void)initializeData
 {
-    @throw [NSException exceptionWithName:NSGenericException reason:[NSString stringWithFormat:@"( HHZViewController )You must override %@ in a subclass", NSStringFromSelector(_cmd)] userInfo:nil];
+    
 }
 
 -(void)createMainView
 {
-    @throw [NSException exceptionWithName:NSGenericException reason:[NSString stringWithFormat:@"( HHZViewController )You must override %@ in a subclass", NSStringFromSelector(_cmd)] userInfo:nil];
+    
 }
 
 -(void)back

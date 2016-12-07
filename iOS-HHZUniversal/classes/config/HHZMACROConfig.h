@@ -7,6 +7,12 @@
 //
 
 
+#ifdef DEBUG
+#define HHZLog(format, ...) printf("[Time:%s]\n   Method:%s\n   Line:%d--> %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
+#else
+#define HHZLog(format, ...)
+#endif
+
 /*************************************实用小工具******************************************/
 #define kUserDef [NSUserDefaults standardUserDefaults]
 #define kNotification [NSNotificationCenter defaultCenter]
@@ -27,6 +33,7 @@
 #define kIOS8_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"8.0"] != NSOrderedAscending )
 #define kIOS7_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
 #define kIOS6_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"6.0"] != NSOrderedAscending )
+
 
 
 /***************************************Block*******************************************/
