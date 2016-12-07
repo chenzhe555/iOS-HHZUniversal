@@ -60,6 +60,8 @@
 		78D9E9D21DE3E41C009D5E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D9E9D11DE3E41C009D5E55 /* Assets.xcassets */; };
 		78D9E9D51DE3E41C009D5E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D9E9D31DE3E41C009D5E55 /* LaunchScreen.storyboard */; };
 		78D9E9E01DE3E41C009D5E55 /* iOS_HHZUniversalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9DF1DE3E41C009D5E55 /* iOS_HHZUniversalTests.m */; };
+		78DFC4F21DF808AE003D25A0 /* DemoOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DFC4F01DF808AE003D25A0 /* DemoOneCell.m */; };
+		78DFC4F31DF808AE003D25A0 /* DemoOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78DFC4F11DF808AE003D25A0 /* DemoOneCell.xib */; };
 		78FEEF8A1DE815A60040E248 /* HHZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEE9F1DE815A60040E248 /* HHZNavigationController.m */; };
 		78FEEF8B1DE815A60040E248 /* HHZNavigationController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78FEEEA01DE815A60040E248 /* HHZNavigationController.plist */; };
 		78FEEF8C1DE815A60040E248 /* HHZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEEA21DE815A60040E248 /* HHZViewController.m */; };
@@ -78,7 +80,6 @@
 		78FEEF991DE815A60040E248 /* UILabel+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEEC01DE815A60040E248 /* UILabel+HHZCategory.m */; };
 		78FEEF9A1DE815A60040E248 /* UIScreen+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEEC21DE815A60040E248 /* UIScreen+Category.m */; };
 		78FEEF9B1DE815A60040E248 /* UITableView+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEEC41DE815A60040E248 /* UITableView+HHZCategory.m */; };
-		78FEEF9C1DE815A60040E248 /* UITableViewCell+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEEC61DE815A60040E248 /* UITableViewCell+HHZCategory.m */; };
 		78FEEF9D1DE815A60040E248 /* UIView+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEEC81DE815A60040E248 /* UIView+HHZCategory.m */; };
 		78FEEFBE1DE815A60040E248 /* ClientDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEF1F1DE815A60040E248 /* ClientDemo.m */; };
 		78FEEFBF1DE815A60040E248 /* ServiceDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEF211DE815A60040E248 /* ServiceDemo.m */; };
@@ -94,7 +95,7 @@
 		78FEEFC91DE815A60040E248 /* HHZAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEF3C1DE815A60040E248 /* HHZAppInfo.m */; };
 		78FEEFCA1DE815A60040E248 /* HHZAppInfoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEF411DE815A60040E248 /* HHZAppInfoTool.m */; settings = {COMPILER_FLAGS = "-Wno-undeclared-selector -Wno-shorten-64-to-32"; }; };
 		78FEEFCB1DE815A60040E248 /* HHZLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEF451DE815A60040E248 /* HHZLabel.m */; };
-		78FEEFCC1DE815A60040E248 /* HHZTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEF471DE815A60040E248 /* HHZTableViewCell.m */; };
+		78FEEFCC1DE815A60040E248 /* HHZTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEF471DE815A60040E248 /* HHZTableViewCell.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-implementation"; }; };
 		78FEEFCD1DE815A60040E248 /* HHZApplicationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEF4B1DE815A60040E248 /* HHZApplicationTool.m */; };
 		78FEEFCE1DE815A60040E248 /* HHZArchiveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEF4E1DE815A60040E248 /* HHZArchiveTool.m */; };
 		78FEEFCF1DE815A60040E248 /* HHZCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEF511DE815A60040E248 /* HHZCacheTool.m */; };
@@ -237,6 +238,9 @@
 		78D9E9DF1DE3E41C009D5E55 /* iOS_HHZUniversalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_HHZUniversalTests.m; sourceTree = "<group>"; };
 		78D9E9E11DE3E41C009D5E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78D9EAA91DE3E4E0009D5E55 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		78DFC4EF1DF808AE003D25A0 /* DemoOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoOneCell.h; sourceTree = "<group>"; };
+		78DFC4F01DF808AE003D25A0 /* DemoOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoOneCell.m; sourceTree = "<group>"; };
+		78DFC4F11DF808AE003D25A0 /* DemoOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoOneCell.xib; sourceTree = "<group>"; };
 		78FA585A1DE9064A00DEEA90 /* HHZMACROConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZMACROConfig.h; sourceTree = "<group>"; };
 		78FA585B1DE9064A00DEEA90 /* iOS-HHZUniversal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS-HHZUniversal.h"; sourceTree = "<group>"; };
 		78FEEE9E1DE815A60040E248 /* HHZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZNavigationController.h; sourceTree = "<group>"; };
@@ -274,8 +278,6 @@
 		78FEEEC21DE815A60040E248 /* UIScreen+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Category.m"; sourceTree = "<group>"; };
 		78FEEEC31DE815A60040E248 /* UITableView+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+HHZCategory.h"; sourceTree = "<group>"; };
 		78FEEEC41DE815A60040E248 /* UITableView+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+HHZCategory.m"; sourceTree = "<group>"; };
-		78FEEEC51DE815A60040E248 /* UITableViewCell+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+HHZCategory.h"; sourceTree = "<group>"; };
-		78FEEEC61DE815A60040E248 /* UITableViewCell+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+HHZCategory.m"; sourceTree = "<group>"; };
 		78FEEEC71DE815A60040E248 /* UIView+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HHZCategory.h"; sourceTree = "<group>"; };
 		78FEEEC81DE815A60040E248 /* UIView+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HHZCategory.m"; sourceTree = "<group>"; };
 		78FEEF1E1DE815A60040E248 /* ClientDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientDemo.h; sourceTree = "<group>"; };
@@ -768,6 +770,9 @@
 		781DB2821DF6F41E0087D87E /* view */ = {
 			isa = PBXGroup;
 			children = (
+				78DFC4EF1DF808AE003D25A0 /* DemoOneCell.h */,
+				78DFC4F01DF808AE003D25A0 /* DemoOneCell.m */,
+				78DFC4F11DF808AE003D25A0 /* DemoOneCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1008,8 +1013,6 @@
 				78FEEEC21DE815A60040E248 /* UIScreen+Category.m */,
 				78FEEEC31DE815A60040E248 /* UITableView+HHZCategory.h */,
 				78FEEEC41DE815A60040E248 /* UITableView+HHZCategory.m */,
-				78FEEEC51DE815A60040E248 /* UITableViewCell+HHZCategory.h */,
-				78FEEEC61DE815A60040E248 /* UITableViewCell+HHZCategory.m */,
 				78FEEEC71DE815A60040E248 /* UIView+HHZCategory.h */,
 				78FEEEC81DE815A60040E248 /* UIView+HHZCategory.m */,
 			);
@@ -1392,6 +1395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78DFC4F31DF808AE003D25A0 /* DemoOneCell.xib in Resources */,
 				781DB29B1DF6F45E0087D87E /* DemoThreeViewController.xib in Resources */,
 				781DB2911DF6F4380087D87E /* DemoOneViewController.xib in Resources */,
 				781DB2961DF6F44D0087D87E /* DemoTwoViewController.xib in Resources */,
@@ -1535,6 +1539,7 @@
 				78FEEF8E1DE815A60040E248 /* NSDictionary+HHZCategory.m in Sources */,
 				78FEEFD21DE815A60040E248 /* HHZDateTool_Format.m in Sources */,
 				78FEEFC31DE815A60040E248 /* HHZHttpManager.m in Sources */,
+				78DFC4F21DF808AE003D25A0 /* DemoOneCell.m in Sources */,
 				781DB2301DF688C70087D87E /* MCToastView.m in Sources */,
 				781DB2331DF688C70087D87E /* MCLeftNavigationView.m in Sources */,
 				78FEEFCC1DE815A60040E248 /* HHZTableViewCell.m in Sources */,
@@ -1573,7 +1578,6 @@
 				781DB2311DF688C70087D87E /* BaseNavigationView.m in Sources */,
 				781DB29F1DF6F46D0087D87E /* DemoFourViewController.m in Sources */,
 				781DB25F1DF68B8C0087D87E /* HHZTabbarItem.m in Sources */,
-				78FEEF9C1DE815A60040E248 /* UITableViewCell+HHZCategory.m in Sources */,
 				781DB2381DF688C70087D87E /* MCQRCenterView.m in Sources */,
 				781DB23B1DF688C70087D87E /* MCSlipScrollView.m in Sources */,
 				78FEEFD51DE815A60040E248 /* HHZDeviceTool.m in Sources */,

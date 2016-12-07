@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DemoOneViewController">
             <connections>
+                <outlet property="tableView" destination="SAI-fM-Y1c" id="kZq-qP-jQO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,16 +16,24 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyd-Zz-ffv">
-                    <rect key="frame" x="120" y="217" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SAI-fM-Y1c">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
-                        <action selector="test:" destination="-1" eventType="touchUpInside" id="rFy-S3-2sa"/>
+                        <outlet property="dataSource" destination="-1" id="wKt-jR-z5c"/>
+                        <outlet property="delegate" destination="-1" id="bqm-Na-GMH"/>
                     </connections>
-                </button>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SAI-fM-Y1c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="42C-um-o5H"/>
+                <constraint firstItem="SAI-fM-Y1c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Be0-lS-PXo"/>
+                <constraint firstAttribute="trailing" secondItem="SAI-fM-Y1c" secondAttribute="trailing" id="Blj-Vl-SX4"/>
+                <constraint firstAttribute="bottom" secondItem="SAI-fM-Y1c" secondAttribute="bottom" id="Lk1-OM-sdE"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="101" y="321"/>
         </view>
     </objects>
 </document>

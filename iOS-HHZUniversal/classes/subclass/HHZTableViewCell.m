@@ -25,6 +25,7 @@
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])
     {
+        [self addBasicInfoConfig];
         [self initSomeThing];
     }
     return self;
@@ -35,5 +36,19 @@
     self.spliteLine = [[UIView alloc] init];
     [self addSubview:self.spliteLine];
 }
+
+-(void)addDefaultSeparateLine:(UIColor *)color
+{
+    UIView * vie = [[UIView alloc] init];
+    vie.backgroundColor = [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1.0];
+    vie.frame = CGRectMake(10, self.frame.size.height - 0.5, self.frame.size.width - 10, 0.5);
+    [self addSubview:vie];
+}
+
+-(void)addBasicInfoConfig
+{
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+}
+
 
 @end

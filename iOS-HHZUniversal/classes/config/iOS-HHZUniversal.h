@@ -27,7 +27,6 @@
 #import "UIImageView+HHZCategory.h"
 #import "UILabel+HHZCategory.h"
 #import "UITableView+HHZCategory.h"
-#import "UITableViewCell+HHZCategory.h"
 #import "UIView+HHZCategory.h"
 #import "UIScreen+Category.h"
 

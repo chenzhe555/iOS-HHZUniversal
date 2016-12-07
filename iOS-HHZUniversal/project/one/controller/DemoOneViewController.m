@@ -8,10 +8,12 @@
 
 #import "DemoOneViewController.h"
 #import "HHZWebViewController.h"
+#import "DemoOneCell.h"
 
-@interface DemoOneViewController ()
-- (IBAction)test:(id)sender;
+@interface DemoOneViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (nonatomic, strong) NSArray * dataArray;
 @end
 
 @implementation DemoOneViewController
@@ -34,6 +36,7 @@
 {
     [super initializeData];
     self.title = @"第一个";
+    self.dataArray = @[@"跳转到WebView!"];
 }
 
 #pragma mark 视图创建
@@ -53,9 +56,40 @@
 
 #pragma mark 回调事件
 
-- (IBAction)test:(id)sender {
-    HHZWebViewController * web = [HHZWebViewController new];
-    web.urlString = @"https://home-test.yunshanmeicai.com/ysmail/sunxuehaohaohaizi.html";
-    [self.navigationController pushViewController:web animated:YES];
+#pragma mark 回调事件 --> TableView代理方法
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
 }
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DemoOneCell * cell = [DemoOneCell configCellWithTableView:tableView IndexPath:indexPath];
+    cell.textLabel.text = self.dataArray[indexPath.row];
+    
+    return cell;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.dataArray.count;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.row) {
+        case 0:
+        {
+            HHZWebViewController * vc = [HHZWebViewController new];
+            vc.urlString = @"http://www.baidu.com";
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
+
 @end

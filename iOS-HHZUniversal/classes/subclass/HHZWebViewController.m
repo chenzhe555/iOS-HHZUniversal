@@ -21,6 +21,7 @@
     // Do any additional setup after loading the view.
     [self createWebView];
     [self loadWebRequest];
+    [self createActivity];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,10 +49,8 @@
 -(void)createActivity
 {
     self.activityView = [[UIActivityIndicatorView alloc] init];
-    self.activityView.frame = CGRectMake(0, 0, 50, 50);
     self.activityView.center = _webView.center;
-    self.activityView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
-    self.activityView.color = [UIColor lightGrayColor];
+    self.activityView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
     [self.webView addSubview:self.activityView];
 }
 
@@ -72,4 +71,20 @@
 
 #pragma mark 回调事件
 
+#pragma mark 回调事件 --> UIWebViewDelegate
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    [self.activityView startAnimating];
+    return YES;
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [self.activityView stopAnimating];
+}
+
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    [self.activityView stopAnimating];
+}
 @end
