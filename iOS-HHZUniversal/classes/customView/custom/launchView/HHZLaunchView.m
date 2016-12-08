@@ -1,24 +1,25 @@
 //
-//  MCLaunchView.m
+//  HHZLaunchView.m
 //  iOS-HHZUniversal
 //
-//  Created by mc962 on 15/11/16.
-//  Copyright © 2015年 Beijing Yunshan Information Technology Co., Ltd. All rights reserved.
+//  Created by mc962 on 16/12/8.
+//  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
-#import "MCLaunchView.h"
+#import "HHZLaunchView.h"
 #import "HHZPathTool.h"
 #import "HHZKitTool.h"
 #import "UIView+HHZCategory.h"
-#import "HHZMACROConfig.h"
 #import <SDWebImage/SDWebImageManager.h>
 
+//图片存储位置
+#define kHHZLaunchViewImgURL @"kHHZLaunchViewImgURL"
+//图片网络地址
+#define kHHZLaunchViewImgNSStringURL @"kHHZLaunchViewImgNSStringURL"
 
-#define kMCLaunchViewImgURL @"kMCLaunchViewImgURL1"         //图片存储位置
-#define kMCLaunchViewImgNSStringURL @"kMCLaunchViewImgNSStringURL1"         //图片网络地址
 
-
-@interface MCLaunchView ()
+@interface HHZLaunchView ()
+@property (nonatomic, assign) id<HHZLaunchViewDelegate> delegate;
 /**
  *  显示网络图片
  */
@@ -42,7 +43,7 @@
 
 @end
 
-@implementation MCLaunchView
+@implementation HHZLaunchView
 
 - (instancetype)init
 {
@@ -69,12 +70,10 @@
         
         _MaxTime = 1;
         
-        
         [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapLaunchImageView)]];
     }
     return self;
 }
-
 
 //点击Launch事件
 -(void)tapLaunchImageView
@@ -91,18 +90,25 @@
     _MaxTime = time;
 }
 
--(void)downLoadImage:(NSString *)imgURL
+-(void)downLoadImage:(NSString *)imgURL UrlCache:(BOOL)isUrlCache
 {
-    if (imgURL.length > 0 && !([imgURL isEqualToString:[kUserDef objectForKey:kMCLaunchViewImgNSStringURL]]))
+    if (imgURL.length > 0 && !([imgURL isEqualToString:[[NSUserDefaults standardUserDefaults] objectForKey:kHHZLaunchViewImgNSStringURL]]))
     {
+        if (!isUrlCache)
+        {
+            [[SDImageCache sharedImageCache] removeImageForKey:imgURL withCompletion:^{
+                
+            }];
+        }
+        
         [[[SDWebImageManager sharedManager] imageDownloader] downloadImageWithURL:[NSURL URLWithString:imgURL] options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
             
         } completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
-            if (data.length > 0)
+            if (!data)
             {
-                [kUserDef setObject:imgURL forKey:kMCLaunchViewImgNSStringURL];
-                [kFileManager removeItemAtPath:[HHZPathTool getDocumentPath:kMCLaunchViewImgURL] error:nil];
-                [data writeToFile:[HHZPathTool getDocumentPath:kMCLaunchViewImgURL] atomically:YES];
+                [[NSUserDefaults standardUserDefaults] setObject:imgURL forKey:kHHZLaunchViewImgNSStringURL];
+                [[NSFileManager defaultManager] removeItemAtPath:[HHZPathTool getDocumentPath:kHHZLaunchViewImgURL] error:nil];
+                [data writeToFile:[HHZPathTool getDocumentPath:kHHZLaunchViewImgURL] atomically:YES];
             }
         }];
     }
@@ -110,25 +116,16 @@
 }
 
 
--(void)showLaunchViewWithDelegate:(id<MCLaunchViewDelegate>)delegate
+-(void)showLaunchViewWithDelegate:(id<HHZLaunchViewDelegate>)delegate PlaceHoldImageName:(NSString *)placeHoldImageName
 {
     _delegate = delegate;
     
-//    UIImage *img = [UIImage imageNamed:@"img_mainload_bg"];
-//    _launchView.image = img;
-//    [[MCKitTool getMainWindow] addSubview:self];
-//    _time = 0;
-//        
-//    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(showLaunchAnimation) userInfo:nil repeats:YES];
-    
-    
-    
-    UIImage * img = [UIImage imageWithContentsOfFile:[HHZPathTool getDocumentPath:kMCLaunchViewImgURL]];
+    UIImage * img = [UIImage imageWithContentsOfFile:[HHZPathTool getDocumentPath:kHHZLaunchViewImgURL]];
     if (!img)
     {
-        img = [UIImage imageNamed:@"Test"];
+        img = [UIImage imageNamed:placeHoldImageName];
     }
-
+    
     _launchView.image = img;
     [[HHZKitTool getMainWindow] addSubview:self];
     _time = 0;
@@ -149,7 +146,7 @@
 
 -(void)closeImmediately
 {
-    [kNotification removeObserver:self];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     _launchView = nil;
     _closeBtn = nil;
     [self removeFromSuperview];
@@ -157,7 +154,7 @@
 
 /** 正常关闭launch */
 - (void)closeLocloseLaunchView{
-    [kNotification removeObserver:self];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     [self hideWithAnimate];
 }
 

@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HHZViewController.h"
+#import "DemoViewController.h"
 
-@interface DemoOneViewController : HHZViewController
+@interface DemoOneViewController : DemoViewController
 
 @end

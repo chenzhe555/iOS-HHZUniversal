@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "MCActivityLoadingView.h"
-#import "MCToastView.h"
+#import "HHZActivityLoadingView.h"
+#import "HHZToastView.h"
 #import "HHZKitTool.h"
 #import "HHZRedPointView.h"
 
@@ -22,8 +22,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 //    NSLog(@"%@",[[NSBundle mainBundle] infoDictionary]);
-//    [[MCActivityLoadingView shareLoadingView] showMCActivityViewTopSpace:0 andBottomSpace:0 andText:@"Loading!!!"];
-//    [[MCToastView shareLoadingView] showToastInCenter:@"Loading!!!"];
+//    [[HHZActivityLoadingView shareLoadingView] showMCActivityViewTopSpace:0 andBottomSpace:0 andText:@"Loading!!!"];
+//    [[HHZToastView shareLoadingView] showToastInCenter:@"Loading!!!"];
     
 
     

@@ -9,7 +9,18 @@
 #import "HHZHttpStruct.h"
 
 @implementation HHZHttpRequest
-
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.requestMethod = @"POST";
+        self.timeOut = 30;
+        self.encryptionType = HHZEncryptionTypeNone;
+        self.isNeedToken = YES;
+        self.alertType = HHZHttpAlertTypeNone;
+    }
+    return self;
+}
 @end
 
 @implementation HHZHttpResponse

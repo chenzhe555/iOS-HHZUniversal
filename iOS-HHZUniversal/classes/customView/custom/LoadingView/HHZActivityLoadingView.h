@@ -1,21 +1,14 @@
 //
-//  MCActivityLoadingView.h
+//  HHZActivityLoadingView.h
 //  iOS-HHZUniversal
 //
-//  Created by 陈哲#376811578@qq.com on 16/2/23.
+//  Created by mc962 on 16/12/8.
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
-/*
- Demo:
- [[MCActivityLoadingView shareLoadingView] showMCActivityViewTopSpace:0 andBottomSpace:0 andText:@"当前正在加载数据,请稍等！"];
- [[MCActivityLoadingView shareLoadingView] showMCActivityViewTopSpace:0 andBottomSpace:0 andText:nil];
- */
-
 #import "BaseLoadingView.h"
 
-@interface MCActivityLoadingView : BaseLoadingView
-@property (nonatomic, strong) NSMutableDictionary * titleDic;
+@interface HHZActivityLoadingView : BaseLoadingView
 /**
  *  显示MCActivityView(文本覆盖)
  *

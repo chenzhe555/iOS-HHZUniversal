@@ -1,27 +1,28 @@
 //
-//  MCDomainLoadingView.m
+//  HHZPatchLoadingView.m
 //  iOS-HHZUniversal
 //
-//  Created by 陈哲#376811578@qq.com on 16/2/23.
+//  Created by mc962 on 16/12/8.
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
-#import "MCDomainLoadingView.h"
+#import "HHZPatchLoadingView.h"
 #import "HHZLabel.h"
 #import "UIView+HHZCategory.h"
 
 //MCActivityView宽高(带文字)
-#define kMCActivityViewBGWidth 120.0f
-#define kMCActivityViewBGHeight 120.0f
+static CGFloat kMCActivityViewBGWidth;
+static CGFloat kMCActivityViewBGHeight;
 
 //MCActivityView宽高(不带文字)
-#define kMCActivityViewNoTextBGWidth 70.0f
-#define kMCActivityViewNoTextBGHeight 70.0f
+static CGFloat kMCActivityViewNoTextBGWidth;
+static CGFloat kMCActivityViewNoTextBGHeight;
 
 //文字距bgView左右间隙
-#define kMCActivityViewLeftSpace       6.0f
+static CGFloat kMCActivityViewLeftSpace;
 
-@interface MCDomainLoadingView()
+
+@interface HHZPatchLoadingView()
 /**
  *  放置控件的View
  */
@@ -37,13 +38,13 @@
 @property (nonatomic, strong) UIActivityIndicatorView * activity;
 @end
 
-@implementation MCDomainLoadingView
+@implementation HHZPatchLoadingView
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        
+        [self initFrameParameters];
         
         _contentLabel = [[HHZLabel alloc] init];
         _contentLabel.numberOfLines = 0;
@@ -56,16 +57,26 @@
         _activity = [[UIActivityIndicatorView alloc] init];
         _activity.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
         [self.bgView addSubview:_activity];
+        
     }
     return self;
 }
 
-+(instancetype)createDomainLoadingView:(CGRect)frame parentView:(UIView *)parentView
+-(void)initFrameParameters
 {
-    MCDomainLoadingView * domianView = [[MCDomainLoadingView alloc] init];
-    domianView.frame = frame;
-    [parentView addSubview:domianView];
-    return domianView;
+    kMCActivityViewBGWidth = 120.0f;
+    kMCActivityViewBGHeight = 120.0f;
+    kMCActivityViewNoTextBGWidth = 70.0f;
+    kMCActivityViewNoTextBGHeight = 70.0f;
+    kMCActivityViewLeftSpace = 6.0f;
+}
+
++(instancetype)createPatchLoadingView:(CGRect)frame parentView:(UIView *)parentView
+{
+    HHZPatchLoadingView * patchView = [[HHZPatchLoadingView alloc] init];
+    patchView.frame = frame;
+    [parentView addSubview:patchView];
+    return patchView;
 }
 
 -(void)startShowWithText:(NSString *)showText
@@ -93,6 +104,5 @@
     [_activity stopAnimating];
     self.hidden = YES;
 }
-
 
 @end

@@ -20,9 +20,6 @@
 @property (nonatomic, assign) NSInteger loadingRetainCount;
 
 
-
-
-
 /**
  *  获取LoadingView实例
  *

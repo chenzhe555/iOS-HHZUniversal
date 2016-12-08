@@ -1,29 +1,33 @@
 //
-//  MCActivityLoadingView.m
+//  HHZActivityLoadingView.m
 //  iOS-HHZUniversal
 //
-//  Created by 陈哲#376811578@qq.com on 16/2/23.
+//  Created by mc962 on 16/12/8.
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
-#import "MCActivityLoadingView.h"
+#import "HHZActivityLoadingView.h"
 #import "HHZLabel.h"
 #import "HHZKitTool.h"
 #import "UIView+HHZCategory.h"
 #import "HHZMACROConfig.h"
 
 //MCActivityView宽高(带文字)
-#define kMCActivityViewBGWidth 120.0f
-#define kMCActivityViewBGHeight 120.0f
+static CGFloat kMCActivityViewBGWidth;
+static CGFloat kMCActivityViewBGHeight;
 
 //MCActivityView宽高(不带文字)
-#define kMCActivityViewNoTextBGWidth 70.0f
-#define kMCActivityViewNoTextBGHeight 70.0f
+static CGFloat kMCActivityViewNoTextBGWidth;
+static CGFloat kMCActivityViewNoTextBGHeight;
 
 //文字距bgView左右间隙
-#define kMCActivityViewLeftSpace       6.0f
+static CGFloat kMCActivityViewLeftSpace;
 
-@interface MCActivityLoadingView()
+@interface HHZActivityLoadingView ()
+/**
+ *  存放文字的字典
+ */
+@property (nonatomic, strong) NSMutableDictionary * titleDic;
 /**
  *  菊花转
  */
@@ -35,26 +39,14 @@
 @property (nonatomic, strong) HHZLabel * contentLabel;
 @end
 
-@implementation MCActivityLoadingView
-
-+(instancetype)shareLoadingView
-{
-    static MCActivityLoadingView * custom = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        custom = [[MCActivityLoadingView alloc] init];
-        UIWindow * window = [HHZKitTool getMainWindow];
-        custom.frame = window.bounds;
-        [window addSubview:custom];
-        custom.hidden = YES;
-    });
-    return custom;
-}
+@implementation HHZActivityLoadingView
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
+        [self initFrameParameters];
+        
         [[HHZKitTool getMainWindow] insertSubview:self atIndex:(INT32_MAX - 1)];
         
         self.bgView = [[UIView alloc] init];
@@ -77,8 +69,32 @@
         [self.bgView addSubview:_contentLabel];
         
         _titleDic = [NSMutableDictionary dictionary];
+        
     }
     return self;
+}
+
++(instancetype)shareLoadingView
+{
+    static HHZActivityLoadingView * custom = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        custom = [[HHZActivityLoadingView alloc] init];
+        UIWindow * window = [HHZKitTool getMainWindow];
+        custom.frame = window.bounds;
+        [window addSubview:custom];
+        custom.hidden = YES;
+    });
+    return custom;
+}
+
+-(void)initFrameParameters
+{
+    kMCActivityViewBGWidth = 120.0f;
+    kMCActivityViewBGHeight = 120.0f;
+    kMCActivityViewNoTextBGWidth = 70.0f;
+    kMCActivityViewNoTextBGHeight = 70.0f;
+    kMCActivityViewLeftSpace = 6.0f;
 }
 
 
@@ -181,6 +197,5 @@
     _titleDic = [NSMutableDictionary dictionary];
     [_activity stopAnimating];
 }
-
 
 @end

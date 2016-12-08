@@ -9,11 +9,14 @@
 #import "DemoOneViewController.h"
 #import "HHZWebViewController.h"
 #import "DemoOneCell.h"
+#import "HHZToastView.h"
 
 @interface DemoOneViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic, strong) NSArray * dataArray;
+
+@property (nonatomic, strong) HHZHttpResult * testResult;
 @end
 
 @implementation DemoOneViewController
@@ -22,6 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self loadRequest];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,6 +51,12 @@
 }
 
 #pragma mark 自定义辅助方法
+
+-(void)loadRequest
+{
+    _testResult = [self.currentService testHttpRequestArg1:@"11" Arg2:2 Condition:nil];
+}
+
 #pragma mark 触发事件
 
 -(void)back
@@ -92,4 +102,18 @@
     }
 }
 
+#pragma mark 回调事件 --> HttpService代理方法
+-(void)requestSuccess:(HHZHttpResponse *)response
+{
+    if (response.tag == _testResult.tag) {
+        [[HHZToastView shareLoadingView] showToastInCenter:[NSString stringWithFormat:@"返回的数据:%@",response.object[@"data"][@"aaa"]]];
+    }
+}
+
+-(void)requestFail:(HHZHttpResponse *)response
+{
+    if (response.tag == _testResult.tag) {
+        [self.currentService handleFailInfo:response];
+    }
+}
 @end

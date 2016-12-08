@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		780D74EF1DF929BF00734FA6 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D74EE1DF929BF00734FA6 /* DemoViewController.m */; };
+		780D74F21DF9315100734FA6 /* HHZActivityLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D74F11DF9315100734FA6 /* HHZActivityLoadingView.m */; };
+		780D74F51DF933A600734FA6 /* HHZPatchLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D74F41DF933A600734FA6 /* HHZPatchLoadingView.m */; };
+		780D74F81DF9348D00734FA6 /* HHZToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D74F71DF9348D00734FA6 /* HHZToastView.m */; };
+		780D74FB1DF9368000734FA6 /* HHZLaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D74FA1DF9368000734FA6 /* HHZLaunchView.m */; };
+		781D516E1DF82E8D00BA0965 /* DemoHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 781D516D1DF82E8D00BA0965 /* DemoHttpService.m */; };
 		781DB2271DF688C70087D87E /* MCChooseImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1D81DF688C70087D87E /* MCChooseImageView.m */; };
 		781DB2281DF688C70087D87E /* MCBlurItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1DB1DF688C70087D87E /* MCBlurItemView.m */; };
 		781DB2291DF688C70087D87E /* MCBlurMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1DD1DF688C70087D87E /* MCBlurMenuView.m */; };
 		781DB22A1DF688C70087D87E /* BasePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1E01DF688C70087D87E /* BasePopView.m */; };
 		781DB22B1DF688C70087D87E /* MCBottmPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1E21DF688C70087D87E /* MCBottmPopView.m */; };
-		781DB22C1DF688C70087D87E /* MCLaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1E51DF688C70087D87E /* MCLaunchView.m */; };
 		781DB22D1DF688C70087D87E /* BaseLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1E81DF688C70087D87E /* BaseLoadingView.m */; };
-		781DB22E1DF688C70087D87E /* MCActivityLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1EA1DF688C70087D87E /* MCActivityLoadingView.m */; };
-		781DB22F1DF688C70087D87E /* MCDomainLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1EC1DF688C70087D87E /* MCDomainLoadingView.m */; };
-		781DB2301DF688C70087D87E /* MCToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1EE1DF688C70087D87E /* MCToastView.m */; };
 		781DB2311DF688C70087D87E /* BaseNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1F11DF688C70087D87E /* BaseNavigationView.m */; };
 		781DB2321DF688C70087D87E /* BaseNaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1F31DF688C70087D87E /* BaseNaviView.m */; };
 		781DB2331DF688C70087D87E /* MCLeftNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1F51DF688C70087D87E /* MCLeftNavigationView.m */; };
@@ -137,6 +139,18 @@
 /* Begin PBXFileReference section */
 		0E7153FB32A3CE1A66DBD9A8 /* Pods-iOS-HHZUniversalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversalTests/Pods-iOS-HHZUniversalTests.release.xcconfig"; sourceTree = "<group>"; };
 		70CD4AB4D3116914A077127A /* Pods-iOS-HHZUniversalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversalTests/Pods-iOS-HHZUniversalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		780D74ED1DF929BF00734FA6 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		780D74EE1DF929BF00734FA6 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		780D74F01DF9315100734FA6 /* HHZActivityLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZActivityLoadingView.h; sourceTree = "<group>"; };
+		780D74F11DF9315100734FA6 /* HHZActivityLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZActivityLoadingView.m; sourceTree = "<group>"; };
+		780D74F31DF933A600734FA6 /* HHZPatchLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZPatchLoadingView.h; sourceTree = "<group>"; };
+		780D74F41DF933A600734FA6 /* HHZPatchLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZPatchLoadingView.m; sourceTree = "<group>"; };
+		780D74F61DF9348D00734FA6 /* HHZToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZToastView.h; sourceTree = "<group>"; };
+		780D74F71DF9348D00734FA6 /* HHZToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZToastView.m; sourceTree = "<group>"; };
+		780D74F91DF9368000734FA6 /* HHZLaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZLaunchView.h; sourceTree = "<group>"; };
+		780D74FA1DF9368000734FA6 /* HHZLaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZLaunchView.m; sourceTree = "<group>"; };
+		781D516C1DF82E8D00BA0965 /* DemoHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoHttpService.h; sourceTree = "<group>"; };
+		781D516D1DF82E8D00BA0965 /* DemoHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoHttpService.m; sourceTree = "<group>"; };
 		781DB1D71DF688C70087D87E /* MCChooseImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCChooseImageView.h; sourceTree = "<group>"; };
 		781DB1D81DF688C70087D87E /* MCChooseImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCChooseImageView.m; sourceTree = "<group>"; };
 		781DB1DA1DF688C70087D87E /* MCBlurItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCBlurItemView.h; sourceTree = "<group>"; };
@@ -147,16 +161,8 @@
 		781DB1E01DF688C70087D87E /* BasePopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePopView.m; sourceTree = "<group>"; };
 		781DB1E11DF688C70087D87E /* MCBottmPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCBottmPopView.h; sourceTree = "<group>"; };
 		781DB1E21DF688C70087D87E /* MCBottmPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCBottmPopView.m; sourceTree = "<group>"; };
-		781DB1E41DF688C70087D87E /* MCLaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLaunchView.h; sourceTree = "<group>"; };
-		781DB1E51DF688C70087D87E /* MCLaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLaunchView.m; sourceTree = "<group>"; };
 		781DB1E71DF688C70087D87E /* BaseLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLoadingView.h; sourceTree = "<group>"; };
 		781DB1E81DF688C70087D87E /* BaseLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLoadingView.m; sourceTree = "<group>"; };
-		781DB1E91DF688C70087D87E /* MCActivityLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCActivityLoadingView.h; sourceTree = "<group>"; };
-		781DB1EA1DF688C70087D87E /* MCActivityLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCActivityLoadingView.m; sourceTree = "<group>"; };
-		781DB1EB1DF688C70087D87E /* MCDomainLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDomainLoadingView.h; sourceTree = "<group>"; };
-		781DB1EC1DF688C70087D87E /* MCDomainLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDomainLoadingView.m; sourceTree = "<group>"; };
-		781DB1ED1DF688C70087D87E /* MCToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCToastView.h; sourceTree = "<group>"; };
-		781DB1EE1DF688C70087D87E /* MCToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCToastView.m; sourceTree = "<group>"; };
 		781DB1F01DF688C70087D87E /* BaseNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationView.h; sourceTree = "<group>"; };
 		781DB1F11DF688C70087D87E /* BaseNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationView.m; sourceTree = "<group>"; };
 		781DB1F21DF688C70087D87E /* BaseNaviView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNaviView.h; sourceTree = "<group>"; };
@@ -417,6 +423,8 @@
 		781DB1D21DF686AB0087D87E /* http */ = {
 			isa = PBXGroup;
 			children = (
+				781D516C1DF82E8D00BA0965 /* DemoHttpService.h */,
+				781D516D1DF82E8D00BA0965 /* DemoHttpService.m */,
 			);
 			path = http;
 			sourceTree = "<group>";
@@ -426,6 +434,8 @@
 			children = (
 				781DB2A61DF6F5690087D87E /* DemoNavigationController.h */,
 				781DB2A71DF6F5690087D87E /* DemoNavigationController.m */,
+				780D74ED1DF929BF00734FA6 /* DemoViewController.h */,
+				780D74EE1DF929BF00734FA6 /* DemoViewController.m */,
 			);
 			path = navigation;
 			sourceTree = "<group>";
@@ -492,8 +502,8 @@
 		781DB1E31DF688C70087D87E /* launchView */ = {
 			isa = PBXGroup;
 			children = (
-				781DB1E41DF688C70087D87E /* MCLaunchView.h */,
-				781DB1E51DF688C70087D87E /* MCLaunchView.m */,
+				780D74F91DF9368000734FA6 /* HHZLaunchView.h */,
+				780D74FA1DF9368000734FA6 /* HHZLaunchView.m */,
 			);
 			path = launchView;
 			sourceTree = "<group>";
@@ -503,12 +513,12 @@
 			children = (
 				781DB1E71DF688C70087D87E /* BaseLoadingView.h */,
 				781DB1E81DF688C70087D87E /* BaseLoadingView.m */,
-				781DB1E91DF688C70087D87E /* MCActivityLoadingView.h */,
-				781DB1EA1DF688C70087D87E /* MCActivityLoadingView.m */,
-				781DB1EB1DF688C70087D87E /* MCDomainLoadingView.h */,
-				781DB1EC1DF688C70087D87E /* MCDomainLoadingView.m */,
-				781DB1ED1DF688C70087D87E /* MCToastView.h */,
-				781DB1EE1DF688C70087D87E /* MCToastView.m */,
+				780D74F01DF9315100734FA6 /* HHZActivityLoadingView.h */,
+				780D74F11DF9315100734FA6 /* HHZActivityLoadingView.m */,
+				780D74F31DF933A600734FA6 /* HHZPatchLoadingView.h */,
+				780D74F41DF933A600734FA6 /* HHZPatchLoadingView.m */,
+				780D74F61DF9348D00734FA6 /* HHZToastView.h */,
+				780D74F71DF9348D00734FA6 /* HHZToastView.m */,
 			);
 			path = LoadingView;
 			sourceTree = "<group>";
@@ -1523,10 +1533,10 @@
 				78FEEF8D1DE815A60040E248 /* NSArray+HHZCategory.m in Sources */,
 				78FEEF911DE815A60040E248 /* NSNull+HHZCategory.m in Sources */,
 				781DB2A81DF6F5690087D87E /* DemoNavigationController.m in Sources */,
-				781DB22F1DF688C70087D87E /* MCDomainLoadingView.m in Sources */,
 				78FEEFC91DE815A60040E248 /* HHZAppInfo.m in Sources */,
 				78241A241DF7A8AC008C0914 /* HHZWebViewController.m in Sources */,
 				78FEEF901DE815A60040E248 /* NSNotificationCenter+Category.m in Sources */,
+				780D74F21DF9315100734FA6 /* HHZActivityLoadingView.m in Sources */,
 				781DB2401DF688C70087D87E /* HHZAlertView.m in Sources */,
 				781DB2731DF6F3660087D87E /* DemoTabbar.m in Sources */,
 				781DB22B1DF688C70087D87E /* MCBottmPopView.m in Sources */,
@@ -1540,7 +1550,6 @@
 				78FEEFD21DE815A60040E248 /* HHZDateTool_Format.m in Sources */,
 				78FEEFC31DE815A60040E248 /* HHZHttpManager.m in Sources */,
 				78DFC4F21DF808AE003D25A0 /* DemoOneCell.m in Sources */,
-				781DB2301DF688C70087D87E /* MCToastView.m in Sources */,
 				781DB2331DF688C70087D87E /* MCLeftNavigationView.m in Sources */,
 				78FEEFCC1DE815A60040E248 /* HHZTableViewCell.m in Sources */,
 				78FEEFD81DE815A60040E248 /* HHZBase64Encrption.m in Sources */,
@@ -1554,8 +1563,8 @@
 				78FEEFCE1DE815A60040E248 /* HHZArchiveTool.m in Sources */,
 				78FEEF8A1DE815A60040E248 /* HHZNavigationController.m in Sources */,
 				78FEEFE31DE815A60040E248 /* HHZPlistTool.m in Sources */,
+				781D516E1DF82E8D00BA0965 /* DemoHttpService.m in Sources */,
 				78FEEF991DE815A60040E248 /* UILabel+HHZCategory.m in Sources */,
-				781DB22C1DF688C70087D87E /* MCLaunchView.m in Sources */,
 				78FEEFD31DE815A60040E248 /* HHZDateToolFactory.m in Sources */,
 				78FEEFC21DE815A60040E248 /* HHZHttpEncryption.m in Sources */,
 				78FEEF8C1DE815A60040E248 /* HHZViewController.m in Sources */,
@@ -1584,18 +1593,19 @@
 				781DB26D1DF68E8D0087D87E /* HHZRedPointView.m in Sources */,
 				78FEEFCF1DE815A60040E248 /* HHZCacheTool.m in Sources */,
 				78FEEFD41DE815A60040E248 /* DDLoggerTool.m in Sources */,
+				780D74F51DF933A600734FA6 /* HHZPatchLoadingView.m in Sources */,
 				781DB23A1DF688C70087D87E /* MCSlipMainScrollView.m in Sources */,
 				781DB2371DF688C70087D87E /* BaseQRCodeVC.m in Sources */,
 				78FEEFC41DE815A60040E248 /* HHZHttpManagerFactory.m in Sources */,
 				78FEEFDE1DE815A60040E248 /* HHZIQKeyboardManagerTool.m in Sources */,
 				78FEEFDB1DE815A60040E248 /* HHZMD5Encryption.m in Sources */,
-				781DB22E1DF688C70087D87E /* MCActivityLoadingView.m in Sources */,
 				78FEEFDC1DE815A60040E248 /* HHZFileHashTool.m in Sources */,
 				78FEEFE41DE815A60040E248 /* HHZRegularTool.m in Sources */,
 				78FEEFD61DE815A60040E248 /* GTMBase64.m in Sources */,
 				781DB29A1DF6F45E0087D87E /* DemoThreeViewController.m in Sources */,
 				781DB2271DF688C70087D87E /* MCChooseImageView.m in Sources */,
 				781DB23E1DF688C70087D87E /* MCUpdateAlertView.m in Sources */,
+				780D74EF1DF929BF00734FA6 /* DemoViewController.m in Sources */,
 				78FEEFC01DE815A60040E248 /* HHZMethodException.m in Sources */,
 				78FEEF8F1DE815A60040E248 /* NSException+HHZCategory.m in Sources */,
 				78FEEFE01DE815A60040E248 /* HHZKitTool.m in Sources */,
@@ -1605,6 +1615,8 @@
 				78FEEFE21DE815A60040E248 /* HHZPathTool.m in Sources */,
 				78FEEF951DE815A60040E248 /* UIButton+HHZCategory.m in Sources */,
 				781DB2341DF688C70087D87E /* MCRightNavigationView.m in Sources */,
+				780D74FB1DF9368000734FA6 /* HHZLaunchView.m in Sources */,
+				780D74F81DF9348D00734FA6 /* HHZToastView.m in Sources */,
 				781DB2391DF688C70087D87E /* CZRedPointView.m in Sources */,
 				78FEEFC71DE815A60040E248 /* HHZHttpStruct.m in Sources */,
 				78FEEFC51DE815A60040E248 /* HHZHttpRequestCondition.m in Sources */,

@@ -1,34 +1,35 @@
 //
-//  MCToastView.m
+//  HHZToastView.m
 //  iOS-HHZUniversal
 //
-//  Created by 陈哲#376811578@qq.com on 16/2/23.
+//  Created by mc962 on 16/12/8.
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
-#import "MCToastView.h"
+#import "HHZToastView.h"
 #import "HHZKitTool.h"
 #import "HHZCalculateTool.h"
 #import "HHZMACROConfig.h"
 #import "UIView+HHZCategory.h"
 
 //背景透明度
-#define kMCToastViewAlpha           0.8f
+static CGFloat kMCToastViewAlpha;
 
 //Toast消失的时间
-#define kMCToastViewDuring          1.5f
-//Toast文字字体大小
-#define kMCToastViewFont            15.0f
-#define kMCToastViewLeftSpace       10.0f
-#define kMCToastViewTopSpace        10.0f
-//Toast图片和文字的间隙
-#define KMCToastViewBottomSpace     60.0f
+static CGFloat kMCToastViewDuring;
 
+//Toast文字字体大小
+static CGFloat kMCToastViewFont;
+static CGFloat kMCToastViewLeftSpace;
+static CGFloat kMCToastViewTopSpace;
+
+//Toast图片和文字的间隙
+static CGFloat KMCToastViewBottomSpace;
 
 //是否带完成的Block回调
 static BOOL isHavaBlock;
 
-@interface MCToastView()
+@interface HHZToastView()
 /**
  *  文字上方的图片
  */
@@ -42,7 +43,7 @@ static BOOL isHavaBlock;
 /**
  *  文字的位置类型
  */
-@property (nonatomic, assign) MCToastViewShowType type;
+@property (nonatomic, assign) HHZToastViewShowType type;
 
 /**
  *  完成的Block回调
@@ -55,19 +56,19 @@ static BOOL isHavaBlock;
 @property (nonatomic, strong) NSTimer * showTimer;
 @end
 
-@implementation MCToastView
+
+@implementation HHZToastView
 
 +(instancetype)shareLoadingView
 {
-    static MCToastView * custom = nil;
+    static HHZToastView * custom = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        custom = [[MCToastView alloc] init];
+        custom = [[HHZToastView alloc] init];
         UIWindow * window = [HHZKitTool getMainWindow];
         custom.frame = window.bounds;
         [window addSubview:custom];
         custom.hidden = YES;
-        custom.backgroundColor = [UIColor redColor];
     });
     return custom;
 }
@@ -76,6 +77,8 @@ static BOOL isHavaBlock;
 {
     self = [super init];
     if (self) {
+        [self initFrameParameters];
+        
         self.bgView.backgroundColor = [UIColor grayColor];
         self.bgView.alpha = kMCToastViewAlpha;
         [self addSubview:self.bgView];
@@ -85,7 +88,6 @@ static BOOL isHavaBlock;
         _titleLabel.numberOfLines = 0;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.textColor = [UIColor whiteColor];
-//        _titleLabel.backgroundColor = [UIColor redColor];
         [self.bgView addSubview:_titleLabel];
         
         
@@ -97,11 +99,22 @@ static BOOL isHavaBlock;
 }
 
 
+-(void)initFrameParameters
+{
+    kMCToastViewAlpha = 0.8f;
+    kMCToastViewDuring = 1.5f;
+    kMCToastViewFont = 15.0f;
+    kMCToastViewLeftSpace = 10.0f;
+    kMCToastViewTopSpace = 10.0f;
+    KMCToastViewBottomSpace = 60.0f;
+}
+
+
 -(void)showToast:(NSString *)toastString
 {
     isHavaBlock = NO;
     self.hidden = NO;
-    _type = MCToastViewShowTypeBottom;
+    _type = HHZToastViewShowTypeBottom;
     
     [self changeSubViewsFrameAndAnimation:toastString];
 }
@@ -111,7 +124,7 @@ static BOOL isHavaBlock;
     isHavaBlock = YES;
     self.hidden = NO;
     _toastBlock = block;
-    _type = MCToastViewShowTypeBottom;
+    _type = HHZToastViewShowTypeBottom;
     
     [self changeSubViewsFrameAndAnimation:toastString];
 }
@@ -120,7 +133,7 @@ static BOOL isHavaBlock;
 {
     isHavaBlock = NO;
     self.hidden = NO;
-    _type = MCToastViewShowTypeCenter;
+    _type = HHZToastViewShowTypeCenter;
     
     [self changeSubViewsFrameAndAnimation:toastString];
 }
@@ -130,7 +143,7 @@ static BOOL isHavaBlock;
     isHavaBlock = YES;
     self.hidden = NO;
     _toastBlock = block;
-    _type = MCToastViewShowTypeCenter;
+    _type = HHZToastViewShowTypeCenter;
     
     [self changeSubViewsFrameAndAnimation:toastString];
 }
@@ -139,7 +152,7 @@ static BOOL isHavaBlock;
 {
     isHavaBlock = NO;
     self.hidden = NO;
-    _type = MCToastViewShowTypeImageCenter;
+    _type = HHZToastViewShowTypeImageCenter;
     _titleImage.image = showImage;
     
     [self changeSubViewsFrameAndAnimation:toastString];
@@ -150,7 +163,7 @@ static BOOL isHavaBlock;
     isHavaBlock = YES;
     self.hidden = NO;
     _toastBlock = block;
-    _type = MCToastViewShowTypeImageCenter;
+    _type = HHZToastViewShowTypeImageCenter;
     _titleImage.image = showImage;
     
     [self changeSubViewsFrameAndAnimation:toastString];
@@ -172,19 +185,19 @@ static BOOL isHavaBlock;
     _titleLabel.hidden = NO;
     _titleImage.hidden = YES;
     switch (_type) {
-        case MCToastViewShowTypeBottom:
+        case HHZToastViewShowTypeBottom:
         {
             _titleLabel.frame = CGRectMake(kMCToastViewLeftSpace, kMCToastViewTopSpace, size.width, size.height);
             self.bgView.frame = CGRectMake((SCREENW - _titleLabel.width - kMCToastViewLeftSpace*2)/2, (SCREENH - KMCToastViewBottomSpace - _titleLabel.height - kMCToastViewTopSpace*2), _titleLabel.width + kMCToastViewLeftSpace*2, _titleLabel.height + kMCToastViewTopSpace*2);
             break;
         }
-        case MCToastViewShowTypeCenter:
+        case HHZToastViewShowTypeCenter:
         {
             _titleLabel.frame = CGRectMake(kMCToastViewLeftSpace, kMCToastViewTopSpace, size.width, size.height);
             self.bgView.frame = CGRectMake((SCREENW - _titleLabel.width - kMCToastViewLeftSpace*2)/2, (SCREENH - _titleLabel.height - kMCToastViewTopSpace*2)/2, _titleLabel.width + kMCToastViewLeftSpace*2, _titleLabel.height + kMCToastViewTopSpace*2);
             break;
         }
-        case MCToastViewShowTypeImageCenter:
+        case HHZToastViewShowTypeImageCenter:
         {
             _titleImage.hidden = NO;
             if (toastString == nil)
@@ -216,13 +229,13 @@ static BOOL isHavaBlock;
         }
     }
     
-//    dispatch_time_t toastDelay = dispatch_time(DISPATCH_TIME_NOW, kMCToastViewDuring * NSEC_PER_SEC);
-//    dispatch_queue_t currentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-//    dispatch_after(toastDelay, currentQueue, ^{
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            [self stopToastView];
-//        });
-//    });
+    //    dispatch_time_t toastDelay = dispatch_time(DISPATCH_TIME_NOW, kMCToastViewDuring * NSEC_PER_SEC);
+    //    dispatch_queue_t currentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    //    dispatch_after(toastDelay, currentQueue, ^{
+    //        dispatch_async(dispatch_get_main_queue(), ^{
+    //            [self stopToastView];
+    //        });
+    //    });
     self.showTimer = [NSTimer scheduledTimerWithTimeInterval:kMCToastViewDuring target:self selector:@selector(stopToastView) userInfo:nil repeats:NO];
     
 }

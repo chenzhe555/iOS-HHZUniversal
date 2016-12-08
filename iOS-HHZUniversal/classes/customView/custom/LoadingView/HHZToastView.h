@@ -1,8 +1,8 @@
 //
-//  MCToastView.h
+//  HHZToastView.h
 //  iOS-HHZUniversal
 //
-//  Created by 陈哲#376811578@qq.com on 16/2/23.
+//  Created by mc962 on 16/12/8.
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
@@ -10,13 +10,13 @@
 
 typedef void(^toastFinishedBlock) ();
 
-typedef NS_ENUM(NSUInteger, MCToastViewShowType) {
-    MCToastViewShowTypeBottom,
-    MCToastViewShowTypeCenter,
-    MCToastViewShowTypeImageCenter,
+typedef NS_ENUM(NSUInteger, HHZToastViewShowType) {
+    HHZToastViewShowTypeBottom,
+    HHZToastViewShowTypeCenter,
+    HHZToastViewShowTypeImageCenter,
 };
 
-@interface MCToastView : BaseLoadingView
+@interface HHZToastView : BaseLoadingView
 /**
  *  展示Toast,传入字符串,不带回调
  *

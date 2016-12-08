@@ -13,6 +13,8 @@
 #import "HHZHttpServiceDelegate.h"
 #import "HHZMethodException.h"
 #import "HHZHttpStruct.h"
+#import "HHZHttpRequestCondition.h"
+#import "HHZHttpClient.h"
 
 @interface HHZHttpService : NSObject
 @property (nonatomic, assign) id<HHZHttpServiceDelegate> serviceDelegate;
