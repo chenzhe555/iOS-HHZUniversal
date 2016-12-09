@@ -118,7 +118,7 @@
     
     HHZHttpRequest * request = [[HHZHttpRequest alloc] init];
     request.paramaters = parameters;
-    request.url = [NSString stringWithFormat:@"%@%@",@"https://home-test.yunshanmeicai.com/ysmail/mailapp",@"/chenzhe/test"];
+    request.url = [NSString stringWithFormat:@"%@%@",@"https://aaaaa",@"/chenzhe/test"];
     
     __weak typeof(self) weakSelf = self;
     return [HHZHttpClient sendRequest:request appendCondition:condition success:^(HHZHttpResponse * _Nonnull responseObject) {
