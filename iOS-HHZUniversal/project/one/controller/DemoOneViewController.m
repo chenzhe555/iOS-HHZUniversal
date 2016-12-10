@@ -10,6 +10,7 @@
 #import "HHZWebViewController.h"
 #import "DemoOneCell.h"
 #import "HHZToastView.h"
+#import "BottomPopViewController.h"
 
 @interface DemoOneViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -33,6 +34,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [[HHZTabbarTool shareManager].tabbar showTabbarView:YES];
+}
+
 
 #pragma mark 数据初始化
 
@@ -40,7 +47,7 @@
 {
     [super initializeData];
     self.title = @"第一个";
-    self.dataArray = @[@"跳转到WebView!"];
+    self.dataArray = @[@"跳转到WebView!",@"底部弹出视图"];
 }
 
 #pragma mark 视图创建
@@ -96,7 +103,12 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
-            
+        case 1:
+        {
+            BottomPopViewController * vc = [BottomPopViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
         default:
             break;
     }

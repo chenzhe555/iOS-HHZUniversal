@@ -7,10 +7,10 @@
 //
 
 #import "MCChooseImageView.h"
-#import "MCBottmPopView.h"
+#import "HHZBottomPopView.h"
 #import <ZYQAssetPickerController/ZYQAssetPickerController.h>
 
-@interface MCChooseImageView()<ZYQAssetPickerControllerDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate,BasePopViewDelegate>
+@interface MCChooseImageView()<ZYQAssetPickerControllerDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate,PopViewDelegate>
 /**
  *  弹出框的视图控制器
  */
@@ -36,7 +36,7 @@
 
 -(void)tapChooseImageView
 {
-    [[MCBottmPopView shareManager] showPopViewWithTitleArray:@[@"拍照",@"从相机中获取",@"取消"] andColorArray:@[[UIColor whiteColor],[UIColor whiteColor],[UIColor redColor]] andDelegate:self];
+    [[HHZBottomPopView shareManager] showPopViewWithTitleArray:@[@"拍照",@"从相机中获取",@"取消"] andColorArray:@[[UIColor whiteColor],[UIColor whiteColor],[UIColor redColor]] andDelegate:self];
 }
 
 -(void)initChooseImageVC:(UIViewController *)vc andDelegate:(id<MCChooseImageViewDelegate>)delegate
@@ -56,7 +56,7 @@
     UIImagePickerController *picker=[[UIImagePickerController alloc] init];
     picker.delegate = self;
     picker.allowsEditing = NO;
-    [[MCBottmPopView shareManager] stopView];
+    [[HHZBottomPopView shareManager] stopView];
     switch ([btnTag integerValue]) {
         case 0:
         {

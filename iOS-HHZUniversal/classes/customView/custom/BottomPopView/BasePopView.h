@@ -9,15 +9,15 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@protocol BasePopViewDelegate <NSObject>
+@protocol PopViewDelegate <NSObject>
 
 @optional
--(void)dlBasePopViewButtonClicked:(NSNumber *)btnTag;
+-(void)dlPopViewButtonClicked:(NSNumber *)btnTag;
 
 @end
 
 @interface BasePopView : UIView
-@property (nonatomic, assign) id<BasePopViewDelegate> delegate;
+@property (nonatomic, assign) id<PopViewDelegate> delegate;
 /**
  *  整个灰色背景
  */

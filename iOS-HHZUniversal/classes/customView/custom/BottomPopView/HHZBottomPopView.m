@@ -1,32 +1,65 @@
 //
-//  MCBottmPopView.m
+//  HHZBottomPopView.m
 //  iOS-HHZUniversal
 //
-//  Created by 陈哲#376811578@qq.com on 16/2/23.
+//  Created by mc962 on 16/12/10.
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
-#import "MCBottmPopView.h"
+#import "HHZBottomPopView.h"
 #import "HHZMACROConfig.h"
 #import "UIView+HHZCategory.h"
 
-static const CGFloat buttonHeight = 40.0f;                      //每个button高度
-static CGFloat height;                                          //用于标记的button Y
+//每个button高度
+static const CGFloat buttonHeight = 40.0f;
 
-@interface MCBottmPopView()
+//用于标记的button Y
+static CGFloat height;
+
+@interface HHZBottomPopView()
 /**
  *  底部弹出的视图
  */
 @property (nonatomic, strong) UIView * popView;
 @end
 
-@implementation MCBottmPopView
 
--(void)showPopViewWithTitleArray:(NSArray *)titleArray andColorArray:(NSArray *)colorArray andDelegate:(id<BasePopViewDelegate>)delegat
+@implementation HHZBottomPopView
+
+-(void)showPopViewWithCancelTitle:(NSString *)cancelTitle andotherTitles:(NSArray *)otherTitles andDelegate:(id<PopViewDelegate>)delegate
+{
+    //如果都没值,则直接返回
+    if (cancelTitle == nil && otherTitles == nil) return;
+    NSMutableArray * titleArray = [NSMutableArray array];
+    
+    if (otherTitles != nil) [titleArray addObjectsFromArray:otherTitles];
+    if (cancelTitle != nil) [titleArray addObject:cancelTitle];
+    if (titleArray.count == 0) return;
+    
+    NSMutableArray * colorArray = [NSMutableArray array];
+    for (NSInteger i = 0; i < titleArray.count; ++i)
+    {
+        if (i == (titleArray.count - 1))
+        {
+            if (cancelTitle != nil) {
+                [colorArray addObject:[UIColor redColor]];
+                break;
+            }
+        }
+        else
+        {
+            [colorArray addObject:[UIColor whiteColor]];
+        }
+    }
+    
+    [self showPopViewWithTitleArray:titleArray andColorArray:colorArray andDelegate:delegate];
+}
+
+-(void)showPopViewWithTitleArray:(NSArray *)titleArray andColorArray:(NSArray *)colorArray andDelegate:(id<PopViewDelegate>)delegate
 {
     [super initTheme];
     
-    self.delegate = delegat;
+    self.delegate = delegate;
     
     
     _popView = [[UIView alloc] init];
@@ -63,9 +96,9 @@ static CGFloat height;                                          //用于标记�
 
 -(void)buttonCliked:(UIButton *)btn
 {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(dlBasePopViewButtonClicked:)])
+    if (self.delegate && [self.delegate respondsToSelector:@selector(dlPopViewButtonClicked:)])
     {
-        [self.delegate performSelector:@selector(dlBasePopViewButtonClicked:) withObject:[NSNumber numberWithInteger:(btn.tag - 123)]];
+        [self.delegate performSelector:@selector(dlPopViewButtonClicked:) withObject:[NSNumber numberWithInteger:(btn.tag - 123)]];
         [self stopView];
     }
 }

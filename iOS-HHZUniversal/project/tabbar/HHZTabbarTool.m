@@ -7,7 +7,6 @@
 //
 
 #import "HHZTabbarTool.h"
-#import "HHZTabbar.h"
 
 @implementation HHZTabbarTool
 -(void)getTabbarInstance:(id)tabbar

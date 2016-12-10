@@ -17,7 +17,6 @@
 		781DB2281DF688C70087D87E /* MCBlurItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1DB1DF688C70087D87E /* MCBlurItemView.m */; };
 		781DB2291DF688C70087D87E /* MCBlurMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1DD1DF688C70087D87E /* MCBlurMenuView.m */; };
 		781DB22A1DF688C70087D87E /* BasePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1E01DF688C70087D87E /* BasePopView.m */; };
-		781DB22B1DF688C70087D87E /* MCBottmPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1E21DF688C70087D87E /* MCBottmPopView.m */; };
 		781DB22D1DF688C70087D87E /* BaseLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1E81DF688C70087D87E /* BaseLoadingView.m */; };
 		781DB2311DF688C70087D87E /* BaseNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1F11DF688C70087D87E /* BaseNavigationView.m */; };
 		781DB2321DF688C70087D87E /* BaseNaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1F31DF688C70087D87E /* BaseNaviView.m */; };
@@ -27,7 +26,6 @@
 		781DB2361DF688C70087D87E /* MCNoneDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1FC1DF688C70087D87E /* MCNoneDataView.m */; };
 		781DB2371DF688C70087D87E /* BaseQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB1FF1DF688C70087D87E /* BaseQRCodeVC.m */; };
 		781DB2381DF688C70087D87E /* MCQRCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB2011DF688C70087D87E /* MCQRCenterView.m */; };
-		781DB2391DF688C70087D87E /* CZRedPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB2041DF688C70087D87E /* CZRedPointView.m */; };
 		781DB23A1DF688C70087D87E /* MCSlipMainScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB2071DF688C70087D87E /* MCSlipMainScrollView.m */; };
 		781DB23B1DF688C70087D87E /* MCSlipScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB2091DF688C70087D87E /* MCSlipScrollView.m */; };
 		781DB23C1DF688C70087D87E /* MCSlipTopItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB20C1DF688C70087D87E /* MCSlipTopItemCell.m */; };
@@ -55,6 +53,9 @@
 		781DB2A51DF6F47C0087D87E /* DemoFiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 781DB2A31DF6F47C0087D87E /* DemoFiveViewController.xib */; };
 		781DB2A81DF6F5690087D87E /* DemoNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB2A71DF6F5690087D87E /* DemoNavigationController.m */; };
 		78241A241DF7A8AC008C0914 /* HHZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78241A231DF7A8AC008C0914 /* HHZWebViewController.m */; };
+		78766D011DFC3987008A45E8 /* BottomPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78766CFF1DFC3987008A45E8 /* BottomPopViewController.m */; };
+		78766D021DFC3987008A45E8 /* BottomPopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78766D001DFC3987008A45E8 /* BottomPopViewController.xib */; };
+		78766D051DFC3BBC008A45E8 /* HHZBottomPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78766D041DFC3BBC008A45E8 /* HHZBottomPopView.m */; };
 		78D9E9C71DE3E41C009D5E55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9C61DE3E41C009D5E55 /* main.m */; };
 		78D9E9CA1DE3E41C009D5E55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9C91DE3E41C009D5E55 /* AppDelegate.m */; };
 		78D9E9CD1DE3E41C009D5E55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9CC1DE3E41C009D5E55 /* ViewController.m */; };
@@ -159,8 +160,6 @@
 		781DB1DD1DF688C70087D87E /* MCBlurMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCBlurMenuView.m; sourceTree = "<group>"; };
 		781DB1DF1DF688C70087D87E /* BasePopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePopView.h; sourceTree = "<group>"; };
 		781DB1E01DF688C70087D87E /* BasePopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePopView.m; sourceTree = "<group>"; };
-		781DB1E11DF688C70087D87E /* MCBottmPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCBottmPopView.h; sourceTree = "<group>"; };
-		781DB1E21DF688C70087D87E /* MCBottmPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCBottmPopView.m; sourceTree = "<group>"; };
 		781DB1E71DF688C70087D87E /* BaseLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLoadingView.h; sourceTree = "<group>"; };
 		781DB1E81DF688C70087D87E /* BaseLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLoadingView.m; sourceTree = "<group>"; };
 		781DB1F01DF688C70087D87E /* BaseNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationView.h; sourceTree = "<group>"; };
@@ -179,8 +178,6 @@
 		781DB1FF1DF688C70087D87E /* BaseQRCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseQRCodeVC.m; sourceTree = "<group>"; };
 		781DB2001DF688C70087D87E /* MCQRCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCQRCenterView.h; sourceTree = "<group>"; };
 		781DB2011DF688C70087D87E /* MCQRCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCQRCenterView.m; sourceTree = "<group>"; };
-		781DB2031DF688C70087D87E /* CZRedPointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZRedPointView.h; sourceTree = "<group>"; };
-		781DB2041DF688C70087D87E /* CZRedPointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZRedPointView.m; sourceTree = "<group>"; };
 		781DB2061DF688C70087D87E /* MCSlipMainScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSlipMainScrollView.h; sourceTree = "<group>"; };
 		781DB2071DF688C70087D87E /* MCSlipMainScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSlipMainScrollView.m; sourceTree = "<group>"; };
 		781DB2081DF688C70087D87E /* MCSlipScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSlipScrollView.h; sourceTree = "<group>"; };
@@ -230,6 +227,11 @@
 		781DB2A71DF6F5690087D87E /* DemoNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoNavigationController.m; sourceTree = "<group>"; };
 		78241A221DF7A8AC008C0914 /* HHZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZWebViewController.h; sourceTree = "<group>"; };
 		78241A231DF7A8AC008C0914 /* HHZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZWebViewController.m; sourceTree = "<group>"; };
+		78766CFE1DFC3987008A45E8 /* BottomPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomPopViewController.h; sourceTree = "<group>"; };
+		78766CFF1DFC3987008A45E8 /* BottomPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomPopViewController.m; sourceTree = "<group>"; };
+		78766D001DFC3987008A45E8 /* BottomPopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomPopViewController.xib; sourceTree = "<group>"; };
+		78766D031DFC3BBC008A45E8 /* HHZBottomPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZBottomPopView.h; sourceTree = "<group>"; };
+		78766D041DFC3BBC008A45E8 /* HHZBottomPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZBottomPopView.m; sourceTree = "<group>"; };
 		78D9E9C21DE3E41C009D5E55 /* iOS-HHZUniversal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-HHZUniversal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D9E9C61DE3E41C009D5E55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78D9E9C81DE3E41C009D5E55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -461,7 +463,6 @@
 				781DB1EF1DF688C70087D87E /* NavigationView */,
 				781DB1F81DF688C70087D87E /* NoneDataView */,
 				781DB1FD1DF688C70087D87E /* QRCode */,
-				781DB2021DF688C70087D87E /* RedPointView */,
 				781DB2051DF688C70087D87E /* SlipScrollView */,
 				781DB20F1DF688C70087D87E /* UpdateAlertView */,
 			);
@@ -493,8 +494,8 @@
 			children = (
 				781DB1DF1DF688C70087D87E /* BasePopView.h */,
 				781DB1E01DF688C70087D87E /* BasePopView.m */,
-				781DB1E11DF688C70087D87E /* MCBottmPopView.h */,
-				781DB1E21DF688C70087D87E /* MCBottmPopView.m */,
+				78766D031DFC3BBC008A45E8 /* HHZBottomPopView.h */,
+				78766D041DFC3BBC008A45E8 /* HHZBottomPopView.m */,
 			);
 			path = BottomPopView;
 			sourceTree = "<group>";
@@ -558,15 +559,6 @@
 				781DB2011DF688C70087D87E /* MCQRCenterView.m */,
 			);
 			path = QRCode;
-			sourceTree = "<group>";
-		};
-		781DB2021DF688C70087D87E /* RedPointView */ = {
-			isa = PBXGroup;
-			children = (
-				781DB2031DF688C70087D87E /* CZRedPointView.h */,
-				781DB2041DF688C70087D87E /* CZRedPointView.m */,
-			);
-			path = RedPointView;
 			sourceTree = "<group>";
 		};
 		781DB2051DF688C70087D87E /* SlipScrollView */ = {
@@ -759,6 +751,9 @@
 				781DB28D1DF6F4380087D87E /* DemoOneViewController.h */,
 				781DB28E1DF6F4380087D87E /* DemoOneViewController.m */,
 				781DB28F1DF6F4380087D87E /* DemoOneViewController.xib */,
+				78766CFE1DFC3987008A45E8 /* BottomPopViewController.h */,
+				78766CFF1DFC3987008A45E8 /* BottomPopViewController.m */,
+				78766D001DFC3987008A45E8 /* BottomPopViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1408,6 +1403,7 @@
 				78DFC4F31DF808AE003D25A0 /* DemoOneCell.xib in Resources */,
 				781DB29B1DF6F45E0087D87E /* DemoThreeViewController.xib in Resources */,
 				781DB2911DF6F4380087D87E /* DemoOneViewController.xib in Resources */,
+				78766D021DFC3987008A45E8 /* BottomPopViewController.xib in Resources */,
 				781DB2961DF6F44D0087D87E /* DemoTwoViewController.xib in Resources */,
 				781DB2A51DF6F47C0087D87E /* DemoFiveViewController.xib in Resources */,
 				78D9E9D51DE3E41C009D5E55 /* LaunchScreen.storyboard in Resources */,
@@ -1539,7 +1535,6 @@
 				780D74F21DF9315100734FA6 /* HHZActivityLoadingView.m in Sources */,
 				781DB2401DF688C70087D87E /* HHZAlertView.m in Sources */,
 				781DB2731DF6F3660087D87E /* DemoTabbar.m in Sources */,
-				781DB22B1DF688C70087D87E /* MCBottmPopView.m in Sources */,
 				78FEEF971DE815A60040E248 /* UIImage+HHZCategory.m in Sources */,
 				781DB25E1DF68B8C0087D87E /* HHZTabbar.m in Sources */,
 				78FEEFD01DE815A60040E248 /* HHZCalculateTool.m in Sources */,
@@ -1557,6 +1552,7 @@
 				78FEEFCA1DE815A60040E248 /* HHZAppInfoTool.m in Sources */,
 				781DB2281DF688C70087D87E /* MCBlurItemView.m in Sources */,
 				781DB2701DF6F23D0087D87E /* HHZTabbarModel.m in Sources */,
+				78766D011DFC3987008A45E8 /* BottomPopViewController.m in Sources */,
 				781DB22D1DF688C70087D87E /* BaseLoadingView.m in Sources */,
 				781DB2321DF688C70087D87E /* BaseNaviView.m in Sources */,
 				781DB2351DF688C70087D87E /* BaseNoneDataView.m in Sources */,
@@ -1617,11 +1613,11 @@
 				781DB2341DF688C70087D87E /* MCRightNavigationView.m in Sources */,
 				780D74FB1DF9368000734FA6 /* HHZLaunchView.m in Sources */,
 				780D74F81DF9348D00734FA6 /* HHZToastView.m in Sources */,
-				781DB2391DF688C70087D87E /* CZRedPointView.m in Sources */,
 				78FEEFC71DE815A60040E248 /* HHZHttpStruct.m in Sources */,
 				78FEEFC51DE815A60040E248 /* HHZHttpRequestCondition.m in Sources */,
 				781DB26A1DF68D3E0087D87E /* HHZTabbarTool.m in Sources */,
 				781DB23F1DF688C70087D87E /* HHZActionSheet.m in Sources */,
+				78766D051DFC3BBC008A45E8 /* HHZBottomPopView.m in Sources */,
 				78FEEFDF1DE815A60040E248 /* HHZJSONTool.m in Sources */,
 				78FEEFD71DE815A60040E248 /* HHZAESEncryption.m in Sources */,
 				78FEEFC81DE815A60040E248 /* HHZHttpTagBuilder.m in Sources */,
