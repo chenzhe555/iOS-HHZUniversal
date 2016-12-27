@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  iOS-HHZUniversal
 //
-//  Created by mc962 on 16/11/22.
+//  Created by chenzhe.376811578@qq.com on 16/11/22.
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
@@ -11,6 +11,9 @@
 #import "DemoTabbar.h"
 #import "HHZMACROConfig.h"
 #import "HHZMethodException.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "SDWebImageDownloaderOperation+HHZCategory.h"
+
 
 @interface AppDelegate ()
 
@@ -22,12 +25,26 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
-    self.window.backgroundColor = [UIColor whiteColor];
     
-    self.window.rootViewController = [self createTab];
-    [self.window makeKeyAndVisible];;
+
+    
+    
+//    self.window.rootViewController = [self createTab];
+    [self.window addSubview:imgView];
+    [self.window makeKeyAndVisible];
     return YES;
 }
+
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+    UIImageView * imgView = [[UIImageView alloc] init];
+    imgView.frame = self.window.bounds;
+    UIImage *image = [UIImage imageWithData:data];
+    imgView.image = image;
+    [self.window addSubview:imgView];
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

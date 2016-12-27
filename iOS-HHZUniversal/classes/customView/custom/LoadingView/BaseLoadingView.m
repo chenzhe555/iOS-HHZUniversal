@@ -7,6 +7,7 @@
 //
 
 #import "BaseLoadingView.h"
+#import "HHZKitTool.h"
 
 @implementation BaseLoadingView
 
@@ -36,6 +37,16 @@
 
 -(void)stopLoadingView
 {
+    self.hidden = YES;
+}
+
+-(void)exchangeNewMainWindow
+{
+    [self removeFromSuperview];
+    UIWindow * window = [HHZKitTool getMainWindow];
+    self.backgroundColor = [UIColor clearColor];
+    self.frame = window.bounds;
+    [window addSubview:self];
     self.hidden = YES;
 }
 @end

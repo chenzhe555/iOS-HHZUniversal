@@ -36,4 +36,9 @@
  *  关闭LoadingView
  */
 -(void)stopLoadingView;
+
+/**
+ *  切换RootViewController后调用
+ */
+-(void)exchangeNewMainWindow;
 @end

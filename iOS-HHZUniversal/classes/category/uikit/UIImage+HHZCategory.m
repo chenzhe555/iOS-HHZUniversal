@@ -248,9 +248,7 @@
     
     CGColorSpaceRelease(colorSpace);
     
-    if (context == NULL) {
-        return nil;
-    }
+    if (!context) return nil;
     
     CGContextDrawImage(context,
                        CGRectMake(0, 0, width, height), self.CGImage);

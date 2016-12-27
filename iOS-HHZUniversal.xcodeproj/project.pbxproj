@@ -53,6 +53,8 @@
 		781DB2A51DF6F47C0087D87E /* DemoFiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 781DB2A31DF6F47C0087D87E /* DemoFiveViewController.xib */; };
 		781DB2A81DF6F5690087D87E /* DemoNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781DB2A71DF6F5690087D87E /* DemoNavigationController.m */; };
 		78241A241DF7A8AC008C0914 /* HHZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78241A231DF7A8AC008C0914 /* HHZWebViewController.m */; };
+		7826FD381E0231D000A33C07 /* SDWebImageDownloaderOperation+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7826FD371E0231D000A33C07 /* SDWebImageDownloaderOperation+HHZCategory.m */; };
+		7826FD3A1E02325700A33C07 /* AllowDomainsUrl.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7826FD391E02325700A33C07 /* AllowDomainsUrl.plist */; };
 		78766D011DFC3987008A45E8 /* BottomPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78766CFF1DFC3987008A45E8 /* BottomPopViewController.m */; };
 		78766D021DFC3987008A45E8 /* BottomPopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78766D001DFC3987008A45E8 /* BottomPopViewController.xib */; };
 		78766D051DFC3BBC008A45E8 /* HHZBottomPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78766D041DFC3BBC008A45E8 /* HHZBottomPopView.m */; };
@@ -63,6 +65,7 @@
 		78D9E9D21DE3E41C009D5E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D9E9D11DE3E41C009D5E55 /* Assets.xcassets */; };
 		78D9E9D51DE3E41C009D5E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D9E9D31DE3E41C009D5E55 /* LaunchScreen.storyboard */; };
 		78D9E9E01DE3E41C009D5E55 /* iOS_HHZUniversalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9DF1DE3E41C009D5E55 /* iOS_HHZUniversalTests.m */; };
+		78DC4B411E1224A800B700D6 /* NSNumber+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DC4B401E1224A800B700D6 /* NSNumber+HHZCategory.m */; };
 		78DFC4F21DF808AE003D25A0 /* DemoOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DFC4F01DF808AE003D25A0 /* DemoOneCell.m */; };
 		78DFC4F31DF808AE003D25A0 /* DemoOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78DFC4F11DF808AE003D25A0 /* DemoOneCell.xib */; };
 		78FEEF8A1DE815A60040E248 /* HHZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEE9F1DE815A60040E248 /* HHZNavigationController.m */; };
@@ -227,6 +230,9 @@
 		781DB2A71DF6F5690087D87E /* DemoNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoNavigationController.m; sourceTree = "<group>"; };
 		78241A221DF7A8AC008C0914 /* HHZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZWebViewController.h; sourceTree = "<group>"; };
 		78241A231DF7A8AC008C0914 /* HHZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZWebViewController.m; sourceTree = "<group>"; };
+		7826FD361E0231D000A33C07 /* SDWebImageDownloaderOperation+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDWebImageDownloaderOperation+HHZCategory.h"; sourceTree = "<group>"; };
+		7826FD371E0231D000A33C07 /* SDWebImageDownloaderOperation+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDWebImageDownloaderOperation+HHZCategory.m"; sourceTree = "<group>"; };
+		7826FD391E02325700A33C07 /* AllowDomainsUrl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AllowDomainsUrl.plist; sourceTree = "<group>"; };
 		78766CFE1DFC3987008A45E8 /* BottomPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomPopViewController.h; sourceTree = "<group>"; };
 		78766CFF1DFC3987008A45E8 /* BottomPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomPopViewController.m; sourceTree = "<group>"; };
 		78766D001DFC3987008A45E8 /* BottomPopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomPopViewController.xib; sourceTree = "<group>"; };
@@ -246,6 +252,8 @@
 		78D9E9DF1DE3E41C009D5E55 /* iOS_HHZUniversalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_HHZUniversalTests.m; sourceTree = "<group>"; };
 		78D9E9E11DE3E41C009D5E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78D9EAA91DE3E4E0009D5E55 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		78DC4B3F1E1224A800B700D6 /* NSNumber+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+HHZCategory.h"; sourceTree = "<group>"; };
+		78DC4B401E1224A800B700D6 /* NSNumber+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+HHZCategory.m"; sourceTree = "<group>"; };
 		78DFC4EF1DF808AE003D25A0 /* DemoOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoOneCell.h; sourceTree = "<group>"; };
 		78DFC4F01DF808AE003D25A0 /* DemoOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoOneCell.m; sourceTree = "<group>"; };
 		78DFC4F11DF808AE003D25A0 /* DemoOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoOneCell.xib; sourceTree = "<group>"; };
@@ -418,6 +426,7 @@
 				781DB2651DF68D3E0087D87E /* tabbar */,
 				781DB1D21DF686AB0087D87E /* http */,
 				781DB1D31DF686AB0087D87E /* navigation */,
+				7826FD391E02325700A33C07 /* AllowDomainsUrl.plist */,
 			);
 			path = project;
 			sourceTree = "<group>";
@@ -866,6 +875,15 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		7826FD351E0231D000A33C07 /* others */ = {
+			isa = PBXGroup;
+			children = (
+				7826FD361E0231D000A33C07 /* SDWebImageDownloaderOperation+HHZCategory.h */,
+				7826FD371E0231D000A33C07 /* SDWebImageDownloaderOperation+HHZCategory.m */,
+			);
+			path = others;
+			sourceTree = "<group>";
+		};
 		78D9E9B91DE3E41B009D5E55 = {
 			isa = PBXGroup;
 			children = (
@@ -964,8 +982,8 @@
 		78FEEEA31DE815A60040E248 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				7826FD351E0231D000A33C07 /* others */,
 				78FEEEA41DE815A60040E248 /* foundation */,
-				78FEEEB51DE815A60040E248 /* others */,
 				78FEEEB61DE815A60040E248 /* uikit */,
 			);
 			path = category;
@@ -990,15 +1008,10 @@
 				78FEEEB21DE815A60040E248 /* NSString+HHZCategory.m */,
 				78FEEEB31DE815A60040E248 /* NSTimer+HHZCategory.h */,
 				78FEEEB41DE815A60040E248 /* NSTimer+HHZCategory.m */,
+				78DC4B3F1E1224A800B700D6 /* NSNumber+HHZCategory.h */,
+				78DC4B401E1224A800B700D6 /* NSNumber+HHZCategory.m */,
 			);
 			path = foundation;
-			sourceTree = "<group>";
-		};
-		78FEEEB51DE815A60040E248 /* others */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = others;
 			sourceTree = "<group>";
 		};
 		78FEEEB61DE815A60040E248 /* uikit */ = {
@@ -1409,6 +1422,7 @@
 				78D9E9D51DE3E41C009D5E55 /* LaunchScreen.storyboard in Resources */,
 				78FEEF8B1DE815A60040E248 /* HHZNavigationController.plist in Resources */,
 				78D9E9D21DE3E41C009D5E55 /* Assets.xcassets in Resources */,
+				7826FD3A1E02325700A33C07 /* AllowDomainsUrl.plist in Resources */,
 				781DB2A01DF6F46D0087D87E /* DemoFourViewController.xib in Resources */,
 				78D9E9D01DE3E41C009D5E55 /* Main.storyboard in Resources */,
 				781DB2691DF68D3E0087D87E /* HHZTabbar.plist in Resources */,
@@ -1567,10 +1581,12 @@
 				78FEEF9B1DE815A60040E248 /* UITableView+HHZCategory.m in Sources */,
 				78FEEF941DE815A60040E248 /* NSTimer+HHZCategory.m in Sources */,
 				78FEEFE11DE815A60040E248 /* HHZMapTool.m in Sources */,
+				78DC4B411E1224A800B700D6 /* NSNumber+HHZCategory.m in Sources */,
 				78FEEF981DE815A60040E248 /* UIImageView+HHZCategory.m in Sources */,
 				78FEEFDA1DE815A60040E248 /* HHZEncrptionFactory.m in Sources */,
 				78FEEFDD1DE815A60040E248 /* HHZReachabilityTool.m in Sources */,
 				78FEEFD91DE815A60040E248 /* HHZDESEncryption.m in Sources */,
+				7826FD381E0231D000A33C07 /* SDWebImageDownloaderOperation+HHZCategory.m in Sources */,
 				78FEEF931DE815A60040E248 /* NSString+HHZCategory.m in Sources */,
 				781DB2951DF6F44D0087D87E /* DemoTwoViewController.m in Sources */,
 				78D9E9C71DE3E41C009D5E55 /* main.m in Sources */,

@@ -8,6 +8,8 @@
 
 #import "HHZHttpStruct.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation HHZHttpRequest
 - (instancetype)init
 {
@@ -37,3 +39,5 @@
     return result;
 }
 @end
+
+NS_ASSUME_NONNULL_END

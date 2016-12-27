@@ -153,15 +153,17 @@
         }
 
         // In order to prevent from potential duplicate caching (NSURLCache + SDImageCache) we disable the cache for image requests if told otherwise
-        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url cachePolicy:(options & SDWebImageDownloaderUseNSURLCache ? NSURLRequestUseProtocolCachePolicy : NSURLRequestReloadIgnoringLocalCacheData) timeoutInterval:timeoutInterval];
-        request.HTTPShouldHandleCookies = (options & SDWebImageDownloaderHandleCookies);
-        request.HTTPShouldUsePipelining = YES;
-        if (sself.headersFilter) {
-            request.allHTTPHeaderFields = sself.headersFilter(url, [sself.HTTPHeaders copy]);
-        }
-        else {
-            request.allHTTPHeaderFields = sself.HTTPHeaders;
-        }
+        
+//        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url cachePolicy:(options & SDWebImageDownloaderUseNSURLCache ? NSURLRequestUseProtocolCachePolicy : NSURLRequestReloadIgnoringLocalCacheData) timeoutInterval:timeoutInterval];
+        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+//        request.HTTPShouldHandleCookies = (options & SDWebImageDownloaderHandleCookies);
+//        request.HTTPShouldUsePipelining = YES;
+//        if (sself.headersFilter) {
+//            request.allHTTPHeaderFields = sself.headersFilter(url, [sself.HTTPHeaders copy]);
+//        }
+//        else {
+//            request.allHTTPHeaderFields = sself.HTTPHeaders;
+//        }
         SDWebImageDownloaderOperation *operation = [[sself.operationClass alloc] initWithRequest:request inSession:sself.session options:options];
         operation.shouldDecompressImages = sself.shouldDecompressImages;
         

@@ -20,6 +20,7 @@
 #import "NSObject+HHZCategory.h"
 #import "NSNull+HHZCategory.h"
 #import "NSNotificationCenter+Category.h"
+#import "NSNumber+HHZCategory.h"
 
 #import "UIButton+HHZCategory.h"
 #import "UIColor+HHZCategory.h"

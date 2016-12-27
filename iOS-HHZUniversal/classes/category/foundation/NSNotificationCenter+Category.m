@@ -2,7 +2,7 @@
 //  NSNotificationCenter+Category.m
 //  iOS-HHZUniversal
 //
-//  Created by mc962 on 16/11/24.
+//  Created by chenzhe.376811578@qq.com on 16/11/24.
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
@@ -20,6 +20,7 @@
     
     NSMutableDictionary * dic = [NSMutableDictionary dictionaryWithCapacity:3];
     [dic setObject:name forKey:@"name"];
+#pragma mark 无内存泄露
     if (!object) [dic setObject:object forKey:@"object"];
     if (!userInfo) [dic setObject:userInfo forKey:@"userInfo"];
     
