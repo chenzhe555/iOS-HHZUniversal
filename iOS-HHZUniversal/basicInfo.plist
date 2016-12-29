@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>gitCommit</key>
+	<string>2008366a0190788dd7994a4fb5ae27f07f0b172a</string>
+	<key>gitBranch</key>
+	<string>master</string>
+</dict>
+</plist>

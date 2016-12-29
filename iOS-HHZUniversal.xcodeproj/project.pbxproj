@@ -55,9 +55,11 @@
 		78241A241DF7A8AC008C0914 /* HHZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78241A231DF7A8AC008C0914 /* HHZWebViewController.m */; };
 		7826FD381E0231D000A33C07 /* SDWebImageDownloaderOperation+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7826FD371E0231D000A33C07 /* SDWebImageDownloaderOperation+HHZCategory.m */; };
 		7826FD3A1E02325700A33C07 /* AllowDomainsUrl.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7826FD391E02325700A33C07 /* AllowDomainsUrl.plist */; };
+		7864E5A01E1515B800F53212 /* HHZHttpURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7864E59F1E1515B800F53212 /* HHZHttpURLManager.m */; };
 		78766D011DFC3987008A45E8 /* BottomPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78766CFF1DFC3987008A45E8 /* BottomPopViewController.m */; };
 		78766D021DFC3987008A45E8 /* BottomPopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78766D001DFC3987008A45E8 /* BottomPopViewController.xib */; };
 		78766D051DFC3BBC008A45E8 /* HHZBottomPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78766D041DFC3BBC008A45E8 /* HHZBottomPopView.m */; };
+		789ADC731E13C7820021537E /* basicInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 789ADC721E13C7820021537E /* basicInfo.plist */; };
 		78D9E9C71DE3E41C009D5E55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9C61DE3E41C009D5E55 /* main.m */; };
 		78D9E9CA1DE3E41C009D5E55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9C91DE3E41C009D5E55 /* AppDelegate.m */; };
 		78D9E9CD1DE3E41C009D5E55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9CC1DE3E41C009D5E55 /* ViewController.m */; };
@@ -233,11 +235,14 @@
 		7826FD361E0231D000A33C07 /* SDWebImageDownloaderOperation+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDWebImageDownloaderOperation+HHZCategory.h"; sourceTree = "<group>"; };
 		7826FD371E0231D000A33C07 /* SDWebImageDownloaderOperation+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDWebImageDownloaderOperation+HHZCategory.m"; sourceTree = "<group>"; };
 		7826FD391E02325700A33C07 /* AllowDomainsUrl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AllowDomainsUrl.plist; sourceTree = "<group>"; };
+		7864E59E1E1515B800F53212 /* HHZHttpURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpURLManager.h; sourceTree = "<group>"; };
+		7864E59F1E1515B800F53212 /* HHZHttpURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpURLManager.m; sourceTree = "<group>"; };
 		78766CFE1DFC3987008A45E8 /* BottomPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomPopViewController.h; sourceTree = "<group>"; };
 		78766CFF1DFC3987008A45E8 /* BottomPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomPopViewController.m; sourceTree = "<group>"; };
 		78766D001DFC3987008A45E8 /* BottomPopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomPopViewController.xib; sourceTree = "<group>"; };
 		78766D031DFC3BBC008A45E8 /* HHZBottomPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZBottomPopView.h; sourceTree = "<group>"; };
 		78766D041DFC3BBC008A45E8 /* HHZBottomPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZBottomPopView.m; sourceTree = "<group>"; };
+		789ADC721E13C7820021537E /* basicInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = basicInfo.plist; sourceTree = "<group>"; };
 		78D9E9C21DE3E41C009D5E55 /* iOS-HHZUniversal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-HHZUniversal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D9E9C61DE3E41C009D5E55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78D9E9C81DE3E41C009D5E55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -913,6 +918,7 @@
 				78D9E9C91DE3E41C009D5E55 /* AppDelegate.m */,
 				78D9E9CB1DE3E41C009D5E55 /* ViewController.h */,
 				78D9E9CC1DE3E41C009D5E55 /* ViewController.m */,
+				789ADC721E13C7820021537E /* basicInfo.plist */,
 				78D9E9CE1DE3E41C009D5E55 /* Main.storyboard */,
 				78D9E9D11DE3E41C009D5E55 /* Assets.xcassets */,
 				78D9E9D31DE3E41C009D5E55 /* LaunchScreen.storyboard */,
@@ -1062,6 +1068,8 @@
 			children = (
 				78FEEF261DE815A60040E248 /* HHZHttpClient.h */,
 				78FEEF271DE815A60040E248 /* HHZHttpClient.m */,
+				7864E59E1E1515B800F53212 /* HHZHttpURLManager.h */,
+				7864E59F1E1515B800F53212 /* HHZHttpURLManager.m */,
 				78FEEF281DE815A60040E248 /* HHZHttpEncryption.h */,
 				78FEEF291DE815A60040E248 /* HHZHttpEncryption.m */,
 				78FEEF2A1DE815A60040E248 /* HHZHttpEnum.h */,
@@ -1340,6 +1348,7 @@
 				78D9E9C01DE3E41C009D5E55 /* Resources */,
 				39F8A15E9A3D87F622C0A6CC /* [CP] Embed Pods Frameworks */,
 				759B752F1C430ACC1047B70B /* [CP] Copy Pods Resources */,
+				789ADC6F1E13C2230021537E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1424,6 +1433,7 @@
 				78D9E9D21DE3E41C009D5E55 /* Assets.xcassets in Resources */,
 				7826FD3A1E02325700A33C07 /* AllowDomainsUrl.plist in Resources */,
 				781DB2A01DF6F46D0087D87E /* DemoFourViewController.xib in Resources */,
+				789ADC731E13C7820021537E /* basicInfo.plist in Resources */,
 				78D9E9D01DE3E41C009D5E55 /* Main.storyboard in Resources */,
 				781DB2691DF68D3E0087D87E /* HHZTabbar.plist in Resources */,
 			);
@@ -1514,6 +1524,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		789ADC6F1E13C2230021537E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "branch=$(git rev-parse --abbrev-ref HEAD)\ncommitID=$(git rev-list HEAD --max-count=1)\nbasicInfo_plist=$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.app/basicInfo.plist\n/usr/libexec/PlistBuddy -c \"Set:gitBranch $branch\" $basicInfo_plist\n/usr/libexec/PlistBuddy -c \"Set:gitCommit $commitID\" $basicInfo_plist\n";
+		};
 		FE714F328D0B2B7121105AC2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1564,6 +1587,7 @@
 				78FEEFD81DE815A60040E248 /* HHZBase64Encrption.m in Sources */,
 				78FEEF961DE815A60040E248 /* UIColor+HHZCategory.m in Sources */,
 				78FEEFCA1DE815A60040E248 /* HHZAppInfoTool.m in Sources */,
+				7864E5A01E1515B800F53212 /* HHZHttpURLManager.m in Sources */,
 				781DB2281DF688C70087D87E /* MCBlurItemView.m in Sources */,
 				781DB2701DF6F23D0087D87E /* HHZTabbarModel.m in Sources */,
 				78766D011DFC3987008A45E8 /* BottomPopViewController.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "DemoHttpService.h"
+#import "HHZHttpURLManager.h"
 
 @implementation DemoHttpService
 #pragma mark 重载网络请求处理
@@ -114,11 +115,10 @@
     [parameters setObject:arg1 forKey:@"one"];
     [parameters setObject:@(arg2) forKey:@"two"];
     
-
     
     HHZHttpRequest * request = [[HHZHttpRequest alloc] init];
     request.paramaters = parameters;
-    request.url = [NSString stringWithFormat:@"%@%@",@"https://aaaaa",@"/chenzhe/test"];
+    request.url = [[HHZHttpURLManager shareManager] getTestUrl];
     
     __weak typeof(self) weakSelf = self;
     return [HHZHttpClient sendRequest:request appendCondition:condition success:^(HHZHttpResponse * _Nonnull responseObject) {
