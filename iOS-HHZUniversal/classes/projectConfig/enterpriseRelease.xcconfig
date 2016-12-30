@@ -5,3 +5,14 @@
 //  Created by mc962 on 16/12/30.
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
+
+#include "Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal.enterpriserelease.xcconfig"
+
+//签名证书
+CODE_SIGN_IDENTITY = iPhone Distribution: Beijing Yunshan Information Technology Co., Ltd.
+
+//描述文件
+PROVISIONING_PROFILE = 85b78b91-55ed-44d6-acd5-017083dd2787
+
+//APP显示的名称
+APP_SHOW_NAME = 神奇宝贝R
