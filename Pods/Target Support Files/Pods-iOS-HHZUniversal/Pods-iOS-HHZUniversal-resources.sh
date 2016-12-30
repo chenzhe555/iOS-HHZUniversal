@@ -76,7 +76,19 @@ EOM
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
 fi
+if [[ "$CONFIGURATION" == "enterpriseDebug" ]]; then
+  install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
+fi
+if [[ "$CONFIGURATION" == "companyDebug" ]]; then
+  install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
+fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
+fi
+if [[ "$CONFIGURATION" == "enterpriseRelease" ]]; then
+  install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
+fi
+if [[ "$CONFIGURATION" == "companyRelease" ]]; then
   install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
 fi
 

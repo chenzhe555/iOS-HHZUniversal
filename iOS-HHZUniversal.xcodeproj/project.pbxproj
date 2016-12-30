@@ -143,8 +143,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C115B127D9B4384D0F1F207 /* Pods-iOS-HHZUniversalTests.companyrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversalTests.companyrelease.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversalTests/Pods-iOS-HHZUniversalTests.companyrelease.xcconfig"; sourceTree = "<group>"; };
 		0E7153FB32A3CE1A66DBD9A8 /* Pods-iOS-HHZUniversalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversalTests/Pods-iOS-HHZUniversalTests.release.xcconfig"; sourceTree = "<group>"; };
+		1BB4642AF5F9A96BAF3172BA /* Pods-iOS-HHZUniversal.enterpriserelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversal.enterpriserelease.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal.enterpriserelease.xcconfig"; sourceTree = "<group>"; };
+		2006685BB8E52ABD72BF30CA /* Pods-iOS-HHZUniversalTests.companydebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversalTests.companydebug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversalTests/Pods-iOS-HHZUniversalTests.companydebug.xcconfig"; sourceTree = "<group>"; };
+		37283C42DF6748B4DAA9681E /* Pods-iOS-HHZUniversalTests.enterprisedebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversalTests.enterprisedebug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversalTests/Pods-iOS-HHZUniversalTests.enterprisedebug.xcconfig"; sourceTree = "<group>"; };
 		70CD4AB4D3116914A077127A /* Pods-iOS-HHZUniversalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversalTests/Pods-iOS-HHZUniversalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		780326CA1E166068008D2F02 /* companyDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = companyDebug.xcconfig; sourceTree = "<group>"; };
+		780326CB1E166077008D2F02 /* companyRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = companyRelease.xcconfig; sourceTree = "<group>"; };
+		780326CC1E1660B2008D2F02 /* enterpriseDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = enterpriseDebug.xcconfig; sourceTree = "<group>"; };
+		780326CD1E1660BF008D2F02 /* enterpriseRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = enterpriseRelease.xcconfig; sourceTree = "<group>"; };
 		780D74ED1DF929BF00734FA6 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		780D74EE1DF929BF00734FA6 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		780D74F01DF9315100734FA6 /* HHZActivityLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZActivityLoadingView.h; sourceTree = "<group>"; };
@@ -387,7 +395,9 @@
 		78FEEF891DE815A60040E248 /* HHZRegularTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZRegularTool.m; sourceTree = "<group>"; };
 		95A02CFD3A02A60E15887B80 /* libPods-iOS-HHZUniversal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-HHZUniversal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9644A4E204CBBC88EF4E1046 /* Pods-iOS-HHZUniversal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversal.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal.release.xcconfig"; sourceTree = "<group>"; };
+		CA5D235BA42D5BCA2D1D1D5C /* Pods-iOS-HHZUniversal.enterprisedebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversal.enterprisedebug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal.enterprisedebug.xcconfig"; sourceTree = "<group>"; };
 		D732F2D9CF5B727F4AB86546 /* libPods-iOS-HHZUniversalTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-HHZUniversalTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D77F6B120F0B2DFF8E1C43B7 /* Pods-iOS-HHZUniversalTests.enterpriserelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversalTests.enterpriserelease.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversalTests/Pods-iOS-HHZUniversalTests.enterpriserelease.xcconfig"; sourceTree = "<group>"; };
 		DEF0F1841E80C7F5DB9209FD /* Pods-iOS-HHZUniversal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -418,6 +428,17 @@
 				D732F2D9CF5B727F4AB86546 /* libPods-iOS-HHZUniversalTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		780326C91E16603C008D2F02 /* projectConfig */ = {
+			isa = PBXGroup;
+			children = (
+				780326CA1E166068008D2F02 /* companyDebug.xcconfig */,
+				780326CB1E166077008D2F02 /* companyRelease.xcconfig */,
+				780326CC1E1660B2008D2F02 /* enterpriseDebug.xcconfig */,
+				780326CD1E1660BF008D2F02 /* enterpriseRelease.xcconfig */,
+			);
+			path = projectConfig;
 			sourceTree = "<group>";
 		};
 		781DB1D11DF6864E0087D87E /* project */ = {
@@ -958,6 +979,7 @@
 		78FEEE9C1DE815A60040E248 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				780326C91E16603C008D2F02 /* projectConfig */,
 				781DB1D41DF688C70087D87E /* customView */,
 				78FA58591DE9064A00DEEA90 /* config */,
 				78FEEE9D1DE815A60040E248 /* base */,
@@ -1331,6 +1353,12 @@
 				9644A4E204CBBC88EF4E1046 /* Pods-iOS-HHZUniversal.release.xcconfig */,
 				70CD4AB4D3116914A077127A /* Pods-iOS-HHZUniversalTests.debug.xcconfig */,
 				0E7153FB32A3CE1A66DBD9A8 /* Pods-iOS-HHZUniversalTests.release.xcconfig */,
+				CA5D235BA42D5BCA2D1D1D5C /* Pods-iOS-HHZUniversal.enterprisedebug.xcconfig */,
+				1BB4642AF5F9A96BAF3172BA /* Pods-iOS-HHZUniversal.enterpriserelease.xcconfig */,
+				37283C42DF6748B4DAA9681E /* Pods-iOS-HHZUniversalTests.enterprisedebug.xcconfig */,
+				2006685BB8E52ABD72BF30CA /* Pods-iOS-HHZUniversalTests.companydebug.xcconfig */,
+				D77F6B120F0B2DFF8E1C43B7 /* Pods-iOS-HHZUniversalTests.enterpriserelease.xcconfig */,
+				0C115B127D9B4384D0F1F207 /* Pods-iOS-HHZUniversalTests.companyrelease.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1706,6 +1734,286 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		780326CE1E1660ED008D2F02 /* companyDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = companyDebug;
+		};
+		780326CF1E1660ED008D2F02 /* companyDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 780326CA1E166068008D2F02 /* companyDebug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
+				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhe.company.debug.universal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = companyDebug;
+		};
+		780326D01E1660ED008D2F02 /* companyDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2006685BB8E52ABD72BF30CA /* Pods-iOS-HHZUniversalTests.companydebug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "iOS-HHZUniversalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-------.iOS-HHZUniversalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-HHZUniversal.app/iOS-HHZUniversal";
+			};
+			name = companyDebug;
+		};
+		780326DA1E16612C008D2F02 /* enterpriseDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = enterpriseDebug;
+		};
+		780326DB1E16612C008D2F02 /* enterpriseDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA5D235BA42D5BCA2D1D1D5C /* Pods-iOS-HHZUniversal.enterprisedebug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
+				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhe.enterprise.debug.universal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = enterpriseDebug;
+		};
+		780326DC1E16612C008D2F02 /* enterpriseDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37283C42DF6748B4DAA9681E /* Pods-iOS-HHZUniversalTests.enterprisedebug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "iOS-HHZUniversalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-------.iOS-HHZUniversalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-HHZUniversal.app/iOS-HHZUniversal";
+			};
+			name = enterpriseDebug;
+		};
+		780326DD1E166138008D2F02 /* companyRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = companyRelease;
+		};
+		780326DE1E166138008D2F02 /* companyRelease */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 780326CB1E166077008D2F02 /* companyRelease.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
+				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhe.universal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = companyRelease;
+		};
+		780326DF1E166138008D2F02 /* companyRelease */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C115B127D9B4384D0F1F207 /* Pods-iOS-HHZUniversalTests.companyrelease.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "iOS-HHZUniversalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-------.iOS-HHZUniversalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-HHZUniversal.app/iOS-HHZUniversal";
+			};
+			name = companyRelease;
+		};
+		78057C9B1E16618D00E9797B /* enterpriseRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = enterpriseRelease;
+		};
+		78057C9C1E16618D00E9797B /* enterpriseRelease */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB4642AF5F9A96BAF3172BA /* Pods-iOS-HHZUniversal.enterpriserelease.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
+				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhe.universalE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = enterpriseRelease;
+		};
+		78057C9D1E16618D00E9797B /* enterpriseRelease */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D77F6B120F0B2DFF8E1C43B7 /* Pods-iOS-HHZUniversalTests.enterpriserelease.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "iOS-HHZUniversalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-------.iOS-HHZUniversalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-HHZUniversal.app/iOS-HHZUniversal";
+			};
+			name = enterpriseRelease;
+		};
 		78D9E9E21DE3E41C009D5E55 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1743,7 +2051,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1781,7 +2089,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1793,26 +2101,29 @@
 			baseConfigurationReference = DEF0F1841E80C7F5DB9209FD /* Pods-iOS-HHZUniversal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhe.universal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		78D9E9E61DE3E41C009D5E55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9644A4E204CBBC88EF4E1046 /* Pods-iOS-HHZUniversal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhe.universal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -1849,7 +2160,11 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				78D9E9E21DE3E41C009D5E55 /* Debug */,
+				780326DA1E16612C008D2F02 /* enterpriseDebug */,
+				780326CE1E1660ED008D2F02 /* companyDebug */,
 				78D9E9E31DE3E41C009D5E55 /* Release */,
+				78057C9B1E16618D00E9797B /* enterpriseRelease */,
+				780326DD1E166138008D2F02 /* companyRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1858,7 +2173,11 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				78D9E9E51DE3E41C009D5E55 /* Debug */,
+				780326DB1E16612C008D2F02 /* enterpriseDebug */,
+				780326CF1E1660ED008D2F02 /* companyDebug */,
 				78D9E9E61DE3E41C009D5E55 /* Release */,
+				78057C9C1E16618D00E9797B /* enterpriseRelease */,
+				780326DE1E166138008D2F02 /* companyRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1867,7 +2186,11 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				78D9E9E81DE3E41C009D5E55 /* Debug */,
+				780326DC1E16612C008D2F02 /* enterpriseDebug */,
+				780326D01E1660ED008D2F02 /* companyDebug */,
 				78D9E9E91DE3E41C009D5E55 /* Release */,
+				78057C9D1E16618D00E9797B /* enterpriseRelease */,
+				780326DF1E166138008D2F02 /* companyRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
