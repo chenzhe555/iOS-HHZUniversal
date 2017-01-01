@@ -2114,6 +2114,7 @@
 		};
 		78D9E9E61DE3E41C009D5E55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9644A4E204CBBC88EF4E1046 /* Pods-iOS-HHZUniversal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Yunshan Information Technology Co., Ltd.";

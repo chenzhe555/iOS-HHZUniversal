@@ -20,6 +20,7 @@ PODS:
   - PINCache/Arc-exception-safe (3.0.1-beta.2):
     - PINCache/Core
   - PINCache/Core (3.0.1-beta.2)
+  - pop (1.0.9)
   - SDWebImage (4.0.0-beta2):
     - SDWebImage/Core (= 4.0.0-beta2)
   - SDWebImage/Core (4.0.0-beta2)
@@ -28,15 +29,17 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - PINCache (~> 3.0.1-beta)
+  - pop (~> 1.0.9)
   - SDWebImage (~> 4.0.0-beta2)
   - ZYQAssetPickerController (~> 1.0.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   PINCache: 6d273a6e0754bd26e3f12a38a90dde73cc6a42b2
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SDWebImage: e379f33106cf8d6766f970c0ef1c3fb609c94d78
   ZYQAssetPickerController: e5cf51ee6c05fa06746830026c247cb9f6699e84
 
-PODFILE CHECKSUM: 1ae9b3a8cc4765f56e8dccfb0466285ab977613b
+PODFILE CHECKSUM: 0fadc8d1b7452f4f4120bf28a17e67c5a63ca224
 
 COCOAPODS: 1.1.0.rc.3

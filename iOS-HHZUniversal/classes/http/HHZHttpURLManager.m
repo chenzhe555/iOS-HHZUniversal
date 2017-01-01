@@ -46,8 +46,6 @@
          *  2.然后再在本地设置请求地址们.
          */
         [self pushURL:[self getCommonComleteURL:@"/chenzhe/test"] Key:@"testUrl"];
-        
-        
     }
     return self;
 }

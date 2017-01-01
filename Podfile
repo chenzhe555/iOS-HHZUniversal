@@ -13,6 +13,7 @@ target 'iOS-HHZUniversal' do
   #pod 'SimpleKeychain', '~> 0.7.0'
   pod 'ZYQAssetPickerController', '~> 1.0.0'
   pod 'SDWebImage', '~> 4.0.0-beta2'
+  pod 'pop', '~> 1.0.9'
   target 'iOS-HHZUniversalTests' do
     inherit! :search_paths
     # Pods for testing
