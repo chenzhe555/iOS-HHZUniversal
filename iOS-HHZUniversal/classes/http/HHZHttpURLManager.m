@@ -33,11 +33,11 @@
         self.urlDic = [[NSMutableDictionary alloc] init];
         
         /**
-         *  1.先从缓存中读取请求地址
+         *  1.先从缓存中读取请求地址,除非有服务器接口强制要求取本地，否则都是先读缓存
          */
-        NSDictionary * dic = [[NSUserDefaults standardUserDefaults] objectForKey:@"serviceURLDictionary"];
+        NSDictionary * dic = [[NSUserDefaults standardUserDefaults] objectForKey:@"HHZ_serviceURLDictionary"];
         if (!dic && (dic.allKeys.count != 0)) {
-            for(NSString * key in dic) {
+            for (NSString * key in dic) {
                 [self.urlDic setObject:dic[key] forKey:key];
             }
         }
@@ -76,7 +76,7 @@
         }
         
         //暂时先用UserDefaults缓存下.
-        [[NSUserDefaults standardUserDefaults] setObject:self.urlDic.mutableCopy forKey:@"serviceURLDictionary"];
+        [[NSUserDefaults standardUserDefaults] setObject:self.urlDic.mutableCopy forKey:@"HHZ_serviceURLDictionary"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
 }
@@ -84,7 +84,7 @@
 
 
 
-
+#pragma mark 业务自行设置网络请求参数
 
 -(NSString *)getTestUrl
 {

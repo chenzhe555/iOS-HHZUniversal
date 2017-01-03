@@ -18,6 +18,8 @@
         manager = [[HHZHttpManager alloc] initWithBaseURL:[NSURL URLWithString:[self getPlistValueForKey:@"AF_BASE_HTTP_URL" plistName:@"HHZHTTPConfigPlist"]]];
         //默认不是HTTPS和允许抓包
         manager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+        //默认支持以下几种返回值类型
+        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html",@"text/json",@"text/javascript",nil];
     });
     
     return manager;

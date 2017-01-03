@@ -57,14 +57,14 @@
 #pragma mark 自定义辅助方法
 -(void)generateCookieName:(NSString *)cookieName Value:(NSString *)cookieValue Domain:(NSString *)cookieDomain Path:(NSString *)cookiePath Expires:(NSTimeInterval)expires
 {
-    NSMutableDictionary *cookieProperties = [NSMutableDictionary dictionary];
-    [cookieProperties setObject:cookieName forKey:NSHTTPCookieName];
-    [cookieProperties setObject:cookieValue forKey:NSHTTPCookieValue];
-    [cookieProperties setObject:cookieDomain forKey:NSHTTPCookieDomain];
-    [cookieProperties setObject:cookiePath forKey:NSHTTPCookiePath];
-    [cookieProperties setObject:[[NSDate date] dateByAddingTimeInterval:expires] forKey:NSHTTPCookieExpires];
-    NSHTTPCookie *cookieuser = [NSHTTPCookie cookieWithProperties:cookieProperties];
-    [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookie:cookieuser];
+    NSMutableDictionary * cookiePropertie = [NSMutableDictionary dictionary];
+    [cookiePropertie setObject:cookieName forKey:NSHTTPCookieName];
+    [cookiePropertie setObject:cookieValue forKey:NSHTTPCookieValue];
+    [cookiePropertie setObject:cookieDomain forKey:NSHTTPCookieDomain];
+    [cookiePropertie setObject:cookiePath forKey:NSHTTPCookiePath];
+    [cookiePropertie setObject:[[NSDate date] dateByAddingTimeInterval:expires] forKey:NSHTTPCookieExpires];
+    NSHTTPCookie * cookie = [NSHTTPCookie cookieWithProperties:cookiePropertie];
+    [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookie:cookie];
 }
 
 #pragma mark 触发事件

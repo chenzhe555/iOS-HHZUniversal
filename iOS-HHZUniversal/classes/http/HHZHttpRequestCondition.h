@@ -32,6 +32,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) HHZHttpProtocalType httpType;
 
 /**
+ *  Header头们
+ */
+@property (nonatomic, strong) NSDictionary * headersDic;
+
+/**
+ *  Cookies们
+ */
+@property (nonatomic, strong) NSArray<NSHTTPCookie *> * cookiesDic;
+
+/**
  *  是否允许抓包(默认允许抓包)
  */
 @property (nonatomic, assign) BOOL allowSniffer;

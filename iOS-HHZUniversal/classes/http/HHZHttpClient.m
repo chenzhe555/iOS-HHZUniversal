@@ -14,13 +14,17 @@
 {
     //生成Tag唯一标识
     NSUInteger httpTag = [[HHZHttpTagBuilder shareManager] getSoleHttpTag];
+    
     //添加附加请求参数
     [self addExtraParamatersWithCondition:request];
+    
 #if DEBUG
     NSLog(@"<网络请求(加密前):%lu>\n%@\n",(long)httpTag,request.paramaters);
 #endif
+    
     //对参数加密
     [self encryptionRequest:request];
+    
 #if DEBUG
     NSLog(@"<网络请求(加密后):%lu>\n%@\n",(long)httpTag,request.paramaters);
 #endif
@@ -88,6 +92,20 @@
 +(void)handleHttpCondition:(HHZHttpRequestCondition *)condition
 {
     //处理请求Content-Type
+    [self handleSerializerType:condition];
+    
+    //处理请求方式和是否允许抓包
+    [self handleHttpProtocalType:condition];
+    
+    //添加Headers
+    
+    
+    //添加Cookies
+    
+}
+
++(void)handleSerializerType:(HHZHttpRequestCondition *)condition
+{
     switch (condition.serializerType) {
         case HHZHttpSerializerType1: {
             [AFHTTPSessionManager manager].requestSerializer = [AFJSONRequestSerializer serializer];
@@ -112,8 +130,10 @@
         default:
             break;
     }
-    
-    //处理请求方式和是否允许抓包
+}
+
++(void)handleHttpProtocalType:(HHZHttpRequestCondition *)condition
+{
     switch (condition.httpType) {
         case HHZHttpProtocalTypeHTTP: {
             
@@ -145,8 +165,27 @@
             break;
         }
     }
-    
-   
-    
+}
+
++(void)addHttpHeaders:(HHZHttpRequestCondition *)condition
+{
+    if (!condition.headersDic && condition.headersDic.allKeys.count > 0)
+    {
+        for (NSString * key in condition.headersDic)
+        {
+            [[HHZHttpManager shareManager] setValue:condition.headersDic[key] forKey:key];
+        }
+    }
+}
+
++(void)addHttpCookies:(HHZHttpRequestCondition *)condition
+{
+    if (!condition.cookiesDic && condition.cookiesDic.count > 0)
+    {
+        for (NSHTTPCookie * cookie in condition.cookiesDic)
+        {
+            [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookie:cookie];
+        }
+    }
 }
 @end

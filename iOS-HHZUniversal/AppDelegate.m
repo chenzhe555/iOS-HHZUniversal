@@ -15,6 +15,7 @@
 #import "SDWebImageDownloaderOperation+HHZCategory.h"
 #import "HHZDeviceTool.h"
 #import "HHZPlistTool.h"
+#import "HHZNumericalTool.h"
 
 @interface AppDelegate ()
 
@@ -26,8 +27,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
-   
-    NSLog(@"ID:%@",[[NSBundle mainBundle] bundleIdentifier]);
+    
+    NSLog(@"计算:%@",[HHZNumericalTool dividNumbers:@(10.1),@"21",@"2", nil]);
     
     self.window.rootViewController = [self createTab];
     [self.window makeKeyAndVisible];

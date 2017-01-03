@@ -55,6 +55,8 @@
 		78241A241DF7A8AC008C0914 /* HHZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78241A231DF7A8AC008C0914 /* HHZWebViewController.m */; };
 		7826FD381E0231D000A33C07 /* SDWebImageDownloaderOperation+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7826FD371E0231D000A33C07 /* SDWebImageDownloaderOperation+HHZCategory.m */; };
 		7826FD3A1E02325700A33C07 /* AllowDomainsUrl.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7826FD391E02325700A33C07 /* AllowDomainsUrl.plist */; };
+		782FCD981E1BB32600A4FC0B /* HHZNumericalTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 782FCD971E1BB32600A4FC0B /* HHZNumericalTool.m */; };
+		782FCD9B1E1BB33400A4FC0B /* HHZCookieGenerateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 782FCD9A1E1BB33400A4FC0B /* HHZCookieGenerateUtil.m */; };
 		7864E5A01E1515B800F53212 /* HHZHttpURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7864E59F1E1515B800F53212 /* HHZHttpURLManager.m */; };
 		78766D011DFC3987008A45E8 /* BottomPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78766CFF1DFC3987008A45E8 /* BottomPopViewController.m */; };
 		78766D021DFC3987008A45E8 /* BottomPopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78766D001DFC3987008A45E8 /* BottomPopViewController.xib */; };
@@ -243,6 +245,10 @@
 		7826FD361E0231D000A33C07 /* SDWebImageDownloaderOperation+HHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDWebImageDownloaderOperation+HHZCategory.h"; sourceTree = "<group>"; };
 		7826FD371E0231D000A33C07 /* SDWebImageDownloaderOperation+HHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDWebImageDownloaderOperation+HHZCategory.m"; sourceTree = "<group>"; };
 		7826FD391E02325700A33C07 /* AllowDomainsUrl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AllowDomainsUrl.plist; sourceTree = "<group>"; };
+		782FCD961E1BB32600A4FC0B /* HHZNumericalTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZNumericalTool.h; sourceTree = "<group>"; };
+		782FCD971E1BB32600A4FC0B /* HHZNumericalTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZNumericalTool.m; sourceTree = "<group>"; };
+		782FCD991E1BB33400A4FC0B /* HHZCookieGenerateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZCookieGenerateUtil.h; sourceTree = "<group>"; };
+		782FCD9A1E1BB33400A4FC0B /* HHZCookieGenerateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZCookieGenerateUtil.m; sourceTree = "<group>"; };
 		7864E59E1E1515B800F53212 /* HHZHttpURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpURLManager.h; sourceTree = "<group>"; };
 		7864E59F1E1515B800F53212 /* HHZHttpURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpURLManager.m; sourceTree = "<group>"; };
 		78766CFE1DFC3987008A45E8 /* BottomPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomPopViewController.h; sourceTree = "<group>"; };
@@ -910,6 +916,24 @@
 			path = others;
 			sourceTree = "<group>";
 		};
+		782FCD911E1BA7E800A4FC0B /* cookie */ = {
+			isa = PBXGroup;
+			children = (
+				782FCD991E1BB33400A4FC0B /* HHZCookieGenerateUtil.h */,
+				782FCD9A1E1BB33400A4FC0B /* HHZCookieGenerateUtil.m */,
+			);
+			path = cookie;
+			sourceTree = "<group>";
+		};
+		782FCD951E1BB31000A4FC0B /* numerical */ = {
+			isa = PBXGroup;
+			children = (
+				782FCD961E1BB32600A4FC0B /* HHZNumericalTool.h */,
+				782FCD971E1BB32600A4FC0B /* HHZNumericalTool.m */,
+			);
+			path = numerical;
+			sourceTree = "<group>";
+		};
 		78D9E9B91DE3E41B009D5E55 = {
 			isa = PBXGroup;
 			children = (
@@ -1165,6 +1189,8 @@
 		78FEEF481DE815A60040E248 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				782FCD951E1BB31000A4FC0B /* numerical */,
+				782FCD911E1BA7E800A4FC0B /* cookie */,
 				78FEEF491DE815A60040E248 /* application */,
 				78FEEF4C1DE815A60040E248 /* archive */,
 				78FEEF4F1DE815A60040E248 /* cache */,
@@ -1600,6 +1626,7 @@
 				780D74F21DF9315100734FA6 /* HHZActivityLoadingView.m in Sources */,
 				781DB2401DF688C70087D87E /* HHZAlertView.m in Sources */,
 				781DB2731DF6F3660087D87E /* DemoTabbar.m in Sources */,
+				782FCD981E1BB32600A4FC0B /* HHZNumericalTool.m in Sources */,
 				78FEEF971DE815A60040E248 /* UIImage+HHZCategory.m in Sources */,
 				781DB25E1DF68B8C0087D87E /* HHZTabbar.m in Sources */,
 				78FEEFD01DE815A60040E248 /* HHZCalculateTool.m in Sources */,
@@ -1651,6 +1678,7 @@
 				781DB2311DF688C70087D87E /* BaseNavigationView.m in Sources */,
 				781DB29F1DF6F46D0087D87E /* DemoFourViewController.m in Sources */,
 				781DB25F1DF68B8C0087D87E /* HHZTabbarItem.m in Sources */,
+				782FCD9B1E1BB33400A4FC0B /* HHZCookieGenerateUtil.m in Sources */,
 				781DB2381DF688C70087D87E /* MCQRCenterView.m in Sources */,
 				781DB23B1DF688C70087D87E /* MCSlipScrollView.m in Sources */,
 				78FEEFD51DE815A60040E248 /* HHZDeviceTool.m in Sources */,
