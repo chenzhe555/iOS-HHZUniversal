@@ -102,4 +102,27 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface UIImage (HHZ_Watermark)
+/**
+ *  添加水印文字到图片上(默认字体大小40,颜色黑色)
+ *
+ *  @param text  水印文字
+ *  @param rect  坐标地址
+ *
+ *  @return 
+ */
+-(nullable UIImage *)addWatermarkText_hhz:(NSString *)text Rect:(CGRect)rect;
+
+/**
+ *  添加水印文字到图片上
+ *
+ *  @param text      水印文字
+ *  @param rect      坐标地址
+ *  @param attribute 字体属性
+ *
+ *  @return 
+ */
+-(nullable UIImage *)addWatermarkText_hhz:(NSString *)text Rect:(CGRect)rect Attribute:(nullable NSDictionary *)attribute;
+@end
+
 NS_ASSUME_NONNULL_END

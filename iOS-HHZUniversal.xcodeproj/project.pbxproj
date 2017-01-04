@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		780CFE651E1C950D000728C1 /* WatermarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 780CFE631E1C950D000728C1 /* WatermarkViewController.m */; };
+		780CFE661E1C950D000728C1 /* WatermarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 780CFE641E1C950D000728C1 /* WatermarkViewController.xib */; };
 		780D74EF1DF929BF00734FA6 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D74EE1DF929BF00734FA6 /* DemoViewController.m */; };
 		780D74F21DF9315100734FA6 /* HHZActivityLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D74F11DF9315100734FA6 /* HHZActivityLoadingView.m */; };
 		780D74F51DF933A600734FA6 /* HHZPatchLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D74F41DF933A600734FA6 /* HHZPatchLoadingView.m */; };
@@ -155,6 +157,9 @@
 		780326CB1E166077008D2F02 /* companyRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = companyRelease.xcconfig; sourceTree = "<group>"; };
 		780326CC1E1660B2008D2F02 /* enterpriseDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = enterpriseDebug.xcconfig; sourceTree = "<group>"; };
 		780326CD1E1660BF008D2F02 /* enterpriseRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = enterpriseRelease.xcconfig; sourceTree = "<group>"; };
+		780CFE621E1C950D000728C1 /* WatermarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatermarkViewController.h; sourceTree = "<group>"; };
+		780CFE631E1C950D000728C1 /* WatermarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatermarkViewController.m; sourceTree = "<group>"; };
+		780CFE641E1C950D000728C1 /* WatermarkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WatermarkViewController.xib; sourceTree = "<group>"; };
 		780D74ED1DF929BF00734FA6 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		780D74EE1DF929BF00734FA6 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		780D74F01DF9315100734FA6 /* HHZActivityLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZActivityLoadingView.h; sourceTree = "<group>"; };
@@ -795,6 +800,9 @@
 				78766CFE1DFC3987008A45E8 /* BottomPopViewController.h */,
 				78766CFF1DFC3987008A45E8 /* BottomPopViewController.m */,
 				78766D001DFC3987008A45E8 /* BottomPopViewController.xib */,
+				780CFE621E1C950D000728C1 /* WatermarkViewController.h */,
+				780CFE631E1C950D000728C1 /* WatermarkViewController.m */,
+				780CFE641E1C950D000728C1 /* WatermarkViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1489,6 +1497,7 @@
 				781DB2A01DF6F46D0087D87E /* DemoFourViewController.xib in Resources */,
 				789ADC731E13C7820021537E /* basicInfo.plist in Resources */,
 				78D9E9D01DE3E41C009D5E55 /* Main.storyboard in Resources */,
+				780CFE661E1C950D000728C1 /* WatermarkViewController.xib in Resources */,
 				781DB2691DF68D3E0087D87E /* HHZTabbar.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1674,6 +1683,7 @@
 				78FEEFC11DE815A60040E248 /* HHZHttpClient.m in Sources */,
 				78FEEFBE1DE815A60040E248 /* ClientDemo.m in Sources */,
 				78FEEF9D1DE815A60040E248 /* UIView+HHZCategory.m in Sources */,
+				780CFE651E1C950D000728C1 /* WatermarkViewController.m in Sources */,
 				781DB2901DF6F4380087D87E /* DemoOneViewController.m in Sources */,
 				781DB2311DF688C70087D87E /* BaseNavigationView.m in Sources */,
 				781DB29F1DF6F46D0087D87E /* DemoFourViewController.m in Sources */,
@@ -1811,7 +1821,7 @@
 			baseConfigurationReference = 780326CA1E166068008D2F02 /* companyDebug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Yunshan Information Technology Co., Ltd.";
+				CODE_SIGN_IDENTITY = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1884,7 +1894,7 @@
 			baseConfigurationReference = CA5D235BA42D5BCA2D1D1D5C /* Pods-iOS-HHZUniversal.enterprisedebug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Yunshan Information Technology Co., Ltd.";
+				CODE_SIGN_IDENTITY = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1951,7 +1961,7 @@
 			baseConfigurationReference = 780326CB1E166077008D2F02 /* companyRelease.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Yunshan Information Technology Co., Ltd.";
+				CODE_SIGN_IDENTITY = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -2018,7 +2028,7 @@
 			baseConfigurationReference = 1BB4642AF5F9A96BAF3172BA /* Pods-iOS-HHZUniversal.enterpriserelease.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Yunshan Information Technology Co., Ltd.";
+				CODE_SIGN_IDENTITY = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -2129,7 +2139,7 @@
 			baseConfigurationReference = DEF0F1841E80C7F5DB9209FD /* Pods-iOS-HHZUniversal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Yunshan Information Technology Co., Ltd.";
+				CODE_SIGN_IDENTITY = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -2145,7 +2155,7 @@
 			baseConfigurationReference = 9644A4E204CBBC88EF4E1046 /* Pods-iOS-HHZUniversal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Yunshan Information Technology Co., Ltd.";
+				CODE_SIGN_IDENTITY = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

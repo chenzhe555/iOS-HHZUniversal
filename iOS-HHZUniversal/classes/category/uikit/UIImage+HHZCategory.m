@@ -496,3 +496,38 @@
 }
 
 @end
+
+@implementation UIImage (HHZ_Watermark)
+
+-(UIImage *)addWatermarkText_hhz:(NSString *)text Rect:(CGRect)rect
+{
+    NSDictionary * dic = @{NSFontAttributeName :[UIFont systemFontOfSize:40],
+                           NSForegroundColorAttributeName : [UIColor blackColor]};
+    
+    return [self addWatermarkText_hhz:text Rect:rect Attribute:dic];
+}
+
+-(UIImage *)addWatermarkText_hhz:(NSString *)text Rect:(CGRect)rect Attribute:(NSDictionary *)attribute
+{
+    CGFloat scale = [UIScreen mainScreen].scale;
+    if (!text) return nil;
+    
+    //1.获取图片的上下文
+    UIGraphicsBeginImageContext(self.size);
+    
+    //2.绘制当前图片
+    [self drawInRect:CGRectMake(0, 0, self.size.width, self.size.height)];
+    
+    //3.添加水印文字
+    [text drawInRect:CGRectMake(rect.origin.x * scale, rect.origin.y * scale, rect.size.width * scale, rect.size.height * scale) withAttributes:attribute];
+    
+    //4.获取合成后的图片
+    UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    //5.结束绘制
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
+@end

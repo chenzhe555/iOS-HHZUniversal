@@ -11,6 +11,7 @@
 #import "DemoOneCell.h"
 #import "HHZToastView.h"
 #import "BottomPopViewController.h"
+#import "WatermarkViewController.h"
 
 @interface DemoOneViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -47,7 +48,7 @@
 {
     [super initializeData];
     self.title = @"第一个";
-    self.dataArray = @[@"跳转到WebView!",@"底部弹出视图"];
+    self.dataArray = @[@"跳转到WebView!",@"底部弹出视图",@"添加水印"];
 }
 
 #pragma mark 视图创建
@@ -106,6 +107,12 @@
         case 1:
         {
             BottomPopViewController * vc = [BottomPopViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 2:
+        {
+            WatermarkViewController * vc = [WatermarkViewController new];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
