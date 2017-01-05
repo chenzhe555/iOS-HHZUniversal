@@ -48,7 +48,7 @@
 {
     [super initializeData];
     self.title = @"第一个";
-    self.dataArray = @[@"跳转到WebView!",@"底部弹出视图",@"添加水印"];
+    self.dataArray = @[@"跳转到WebView!",@"底部弹出视图",@"添加水印",@"陈哲"];
 }
 
 #pragma mark 视图创建

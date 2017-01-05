@@ -74,6 +74,8 @@
 		78DC4B411E1224A800B700D6 /* NSNumber+HHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DC4B401E1224A800B700D6 /* NSNumber+HHZCategory.m */; };
 		78DFC4F21DF808AE003D25A0 /* DemoOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DFC4F01DF808AE003D25A0 /* DemoOneCell.m */; };
 		78DFC4F31DF808AE003D25A0 /* DemoOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78DFC4F11DF808AE003D25A0 /* DemoOneCell.xib */; };
+		78E4A0C61E1E011400E53117 /* HHZThreadSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E4A0C51E1E011400E53117 /* HHZThreadSafeArray.m */; };
+		78E4A0C91E1E012900E53117 /* HHZThreadSafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E4A0C81E1E012900E53117 /* HHZThreadSafeDictionary.m */; };
 		78FEEF8A1DE815A60040E248 /* HHZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEE9F1DE815A60040E248 /* HHZNavigationController.m */; };
 		78FEEF8B1DE815A60040E248 /* HHZNavigationController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78FEEEA01DE815A60040E248 /* HHZNavigationController.plist */; };
 		78FEEF8C1DE815A60040E248 /* HHZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEEEA21DE815A60040E248 /* HHZViewController.m */; };
@@ -281,6 +283,10 @@
 		78DFC4EF1DF808AE003D25A0 /* DemoOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoOneCell.h; sourceTree = "<group>"; };
 		78DFC4F01DF808AE003D25A0 /* DemoOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoOneCell.m; sourceTree = "<group>"; };
 		78DFC4F11DF808AE003D25A0 /* DemoOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoOneCell.xib; sourceTree = "<group>"; };
+		78E4A0C41E1E011400E53117 /* HHZThreadSafeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZThreadSafeArray.h; sourceTree = "<group>"; };
+		78E4A0C51E1E011400E53117 /* HHZThreadSafeArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZThreadSafeArray.m; sourceTree = "<group>"; };
+		78E4A0C71E1E012900E53117 /* HHZThreadSafeDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZThreadSafeDictionary.h; sourceTree = "<group>"; };
+		78E4A0C81E1E012900E53117 /* HHZThreadSafeDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZThreadSafeDictionary.m; sourceTree = "<group>"; };
 		78FA585A1DE9064A00DEEA90 /* HHZMACROConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZMACROConfig.h; sourceTree = "<group>"; };
 		78FA585B1DE9064A00DEEA90 /* iOS-HHZUniversal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS-HHZUniversal.h"; sourceTree = "<group>"; };
 		78FEEE9E1DE815A60040E248 /* HHZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZNavigationController.h; sourceTree = "<group>"; };
@@ -450,6 +456,13 @@
 				780326CD1E1660BF008D2F02 /* enterpriseRelease.xcconfig */,
 			);
 			path = projectConfig;
+			sourceTree = "<group>";
+		};
+		780CFE671E1CE0EC000728C1 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = runtime;
 			sourceTree = "<group>";
 		};
 		781DB1D11DF6864E0087D87E /* project */ = {
@@ -999,6 +1012,17 @@
 			path = "iOS-HHZUniversalTests";
 			sourceTree = "<group>";
 		};
+		78E4A0C31E1DFFA600E53117 /* system */ = {
+			isa = PBXGroup;
+			children = (
+				78E4A0C41E1E011400E53117 /* HHZThreadSafeArray.h */,
+				78E4A0C51E1E011400E53117 /* HHZThreadSafeArray.m */,
+				78E4A0C71E1E012900E53117 /* HHZThreadSafeDictionary.h */,
+				78E4A0C81E1E012900E53117 /* HHZThreadSafeDictionary.m */,
+			);
+			path = system;
+			sourceTree = "<group>";
+		};
 		78FA58591DE9064A00DEEA90 /* config */ = {
 			isa = PBXGroup;
 			children = (
@@ -1011,6 +1035,7 @@
 		78FEEE9C1DE815A60040E248 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				780CFE671E1CE0EC000728C1 /* runtime */,
 				780326C91E16603C008D2F02 /* projectConfig */,
 				781DB1D41DF688C70087D87E /* customView */,
 				78FA58591DE9064A00DEEA90 /* config */,
@@ -1197,6 +1222,7 @@
 		78FEEF481DE815A60040E248 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				78E4A0C31E1DFFA600E53117 /* system */,
 				782FCD951E1BB31000A4FC0B /* numerical */,
 				782FCD911E1BA7E800A4FC0B /* cookie */,
 				78FEEF491DE815A60040E248 /* application */,
@@ -1651,6 +1677,7 @@
 				78FEEFD81DE815A60040E248 /* HHZBase64Encrption.m in Sources */,
 				78FEEF961DE815A60040E248 /* UIColor+HHZCategory.m in Sources */,
 				78FEEFCA1DE815A60040E248 /* HHZAppInfoTool.m in Sources */,
+				78E4A0C61E1E011400E53117 /* HHZThreadSafeArray.m in Sources */,
 				7864E5A01E1515B800F53212 /* HHZHttpURLManager.m in Sources */,
 				781DB2281DF688C70087D87E /* MCBlurItemView.m in Sources */,
 				781DB2701DF6F23D0087D87E /* HHZTabbarModel.m in Sources */,
@@ -1726,6 +1753,7 @@
 				78766D051DFC3BBC008A45E8 /* HHZBottomPopView.m in Sources */,
 				78FEEFDF1DE815A60040E248 /* HHZJSONTool.m in Sources */,
 				78FEEFD71DE815A60040E248 /* HHZAESEncryption.m in Sources */,
+				78E4A0C91E1E012900E53117 /* HHZThreadSafeDictionary.m in Sources */,
 				78FEEFC81DE815A60040E248 /* HHZHttpTagBuilder.m in Sources */,
 				781DB2A41DF6F47C0087D87E /* DemoFiveViewController.m in Sources */,
 				781DB2411DF688C70087D87E /* HHZLocalNotification.m in Sources */,

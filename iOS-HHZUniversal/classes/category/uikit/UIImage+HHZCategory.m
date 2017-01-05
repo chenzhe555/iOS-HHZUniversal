@@ -509,25 +509,47 @@
 
 -(UIImage *)addWatermarkText_hhz:(NSString *)text Rect:(CGRect)rect Attribute:(NSDictionary *)attribute
 {
-    CGFloat scale = [UIScreen mainScreen].scale;
     if (!text) return nil;
     
-    //1.获取图片的上下文
     UIGraphicsBeginImageContext(self.size);
     
-    //2.绘制当前图片
     [self drawInRect:CGRectMake(0, 0, self.size.width, self.size.height)];
     
-    //3.添加水印文字
-    [text drawInRect:CGRectMake(rect.origin.x * scale, rect.origin.y * scale, rect.size.width * scale, rect.size.height * scale) withAttributes:attribute];
+    [text drawInRect:[UIImage getDrawRealRect:rect Scale:[UIScreen mainScreen].scale] withAttributes:attribute];
     
-    //4.获取合成后的图片
     UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
     
-    //5.结束绘制
     UIGraphicsEndImageContext();
     
     return image;
+}
+
+-(UIImage *)addWatermarkImage_hhz:(UIImage *)image Rect:(CGRect)rect BGRect:(CGRect)bgRect
+{
+    return [UIImage mergeImage_hhz:self WithBImage:image OneRect:bgRect TwoRect:rect BGRect:bgRect];
+}
+
++(UIImage *)mergeImage_hhz:(UIImage *)imageOne WithBImage:(UIImage *)imageTwo OneRect:(CGRect)oneRect TwoRect:(CGRect)twoRect BGRect:(CGRect)bgRect
+{
+    if (!imageOne || !imageTwo) return nil;
+    CGFloat scale = [UIScreen mainScreen].scale;
+    
+    UIGraphicsBeginImageContext([UIImage getDrawRealRect:bgRect Scale:scale].size);
+    
+    [imageOne drawInRect:[UIImage getDrawRealRect:oneRect Scale:scale]];
+    
+    [imageTwo drawInRect:[UIImage getDrawRealRect:twoRect Scale:scale]];
+    
+    UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
++(CGRect)getDrawRealRect:(CGRect)rect Scale:(CGFloat)scale
+{
+    return CGRectMake(rect.origin.x * scale, rect.origin.y * scale, rect.size.width * scale, rect.size.height * scale);
 }
 
 @end

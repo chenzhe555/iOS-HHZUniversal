@@ -123,6 +123,30 @@ NS_ASSUME_NONNULL_BEGIN
  *  @return 
  */
 -(nullable UIImage *)addWatermarkText_hhz:(NSString *)text Rect:(CGRect)rect Attribute:(nullable NSDictionary *)attribute;
+
+/**
+ *  添加水印图片
+ *
+ *  @param image  水印图片
+ *  @param rect   水印图片Rect
+ *  @param bgRect 底部画布的Rect
+ *
+ *  @return
+ */
+-(nullable UIImage *)addWatermarkImage_hhz:(UIImage *)image Rect:(CGRect)rect BGRect:(CGRect)bgRect;
+
+/**
+ *  合并两个图片
+ *
+ *  @param imageOne 图片1
+ *  @param imageTwo 图片2
+ *  @param oneRect  图片1Rect
+ *  @param twoRect  图片2Rect
+ *  @param bgRect   底部画布的Rect
+ *
+ *  @return 
+ */
++(nullable UIImage *)mergeImage_hhz:(UIImage *)imageOne WithBImage:(UIImage *)imageTwo OneRect:(CGRect)oneRect TwoRect:(CGRect)twoRect BGRect:(CGRect)bgRect;
 @end
 
 NS_ASSUME_NONNULL_END

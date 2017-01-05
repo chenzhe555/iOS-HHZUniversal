@@ -23,7 +23,6 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
@@ -32,17 +31,6 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
-
-
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
-{
-    UIImageView * imgView = [[UIImageView alloc] init];
-    imgView.frame = self.window.bounds;
-    UIImage *image = [UIImage imageWithData:data];
-    imgView.image = image;
-    [self.window addSubview:imgView];
-}
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

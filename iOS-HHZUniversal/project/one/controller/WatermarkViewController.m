@@ -9,6 +9,7 @@
 #import "WatermarkViewController.h"
 #import "UIImage+HHZCategory.h"
 
+
 @interface WatermarkViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *testImage;
 
@@ -55,6 +56,13 @@
 }
 
 - (IBAction)addImage:(id)sender {
+    UIImage * image1 = [UIImage imageNamed:@"test1"];
+    UIImage * image2 = [UIImage imageNamed:@"test2"];
+    self.testImage.image = image2;
+    
+    self.testImage.image = [UIImage mergeImage_hhz:image1 WithBImage:image2 OneRect:CGRectMake(0, 0, 120, 60) TwoRect:CGRectMake(120, 0, 120, 120) BGRect:self.testImage.bounds];
+    
+//    self.testImage.image = [self.testImage.image addWatermarkImage_hhz:image1 Rect:CGRectMake(120, 0, 120, 60) BGRect:self.testImage.bounds];
 }
 
 #pragma mark 触发事件
