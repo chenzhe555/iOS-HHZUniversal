@@ -6,6 +6,10 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
+/*
+ 后续根据项目扩展
+ */
+
 #import "HHZHttpStruct.h"
 #import "HHZHttpEnum.h"
 

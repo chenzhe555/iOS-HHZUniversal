@@ -117,7 +117,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString * requestURL;
 
 /**
- *  网络请求的Task，可以进行自定义操作
+ *  网络请求的Task，可以进行自定义操作(暂时先不提供细节操作，自行先处理，比如取消请求等)
  */
 @property (nonatomic, strong) NSURLSessionDataTask * requestTask;
 

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "85269C807F3523AC4F497EB585EDA25F"
-               BuildableName = "libPods-iOS-HHZUniversalTests.a"
-               BlueprintName = "Pods-iOS-HHZUniversalTests"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "7813E45E1E1FA35F000B16A9"
+               BuildableName = "libTabbar.a"
+               BlueprintName = "Tabbar"
+               ReferencedContainer = "container:Tabbar.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "85269C807F3523AC4F497EB585EDA25F"
-            BuildableName = "libPods-iOS-HHZUniversalTests.a"
-            BlueprintName = "Pods-iOS-HHZUniversalTests"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "7813E45E1E1FA35F000B16A9"
+            BuildableName = "libTabbar.a"
+            BlueprintName = "Tabbar"
+            ReferencedContainer = "container:Tabbar.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -60,6 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7813E45E1E1FA35F000B16A9"
+            BuildableName = "libTabbar.a"
+            BlueprintName = "Tabbar"
+            ReferencedContainer = "container:Tabbar.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

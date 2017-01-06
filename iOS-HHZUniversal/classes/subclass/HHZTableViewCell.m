@@ -50,5 +50,10 @@
     self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
++(instancetype)configCellWithTableView:(UITableView *)tableView IndexPath:(NSIndexPath *)indexPath
+{
+    return nil;
+}
+
 
 @end

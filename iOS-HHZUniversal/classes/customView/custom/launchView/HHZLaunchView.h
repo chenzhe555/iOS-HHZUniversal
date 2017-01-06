@@ -13,6 +13,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
+
 @protocol HHZLaunchViewDelegate <NSObject>
 /**
  *  点击Launch图片的事件回调

@@ -18,7 +18,7 @@
 #define kHHZLaunchViewImgNSStringURL @"kHHZLaunchViewImgNSStringURL"
 
 
-@interface HHZLaunchView ()
+@interface HHZLaunchView ()<CAAnimationDelegate>
 @property (nonatomic, assign) id<HHZLaunchViewDelegate> delegate;
 /**
  *  显示网络图片

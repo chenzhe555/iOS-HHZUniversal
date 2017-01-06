@@ -55,7 +55,8 @@
 @property(readonly, nonatomic) NSString *bundleIdentifier;
 - (void)dealloc;
 - (id)_initWithBundleUnit:(unsigned int)arg1 bundleType:(unsigned long long)arg2 BundleID:(id)arg3 localizedName:(id)arg4 bundleContainerURL:(id)arg5 dataContainerURL:(id)arg6 resourcesDirectoryURL:(id)arg7 iconsDictionary:(id)arg8 iconFileNames:(id)arg9 version:(id)arg10;
-- (unsigned char)_createContext:(struct LSContext *)arg1 andGetBundle:(unsigned int *)arg2 withData:(const struct LSBundleData **)arg3;
+#pragma mark 因为警告暂时注释掉
+//- (unsigned char)_createContext:(struct LSContext *)arg1 andGetBundle:(unsigned int *)arg2 withData:(const struct LSBundleData **)arg3;
 - (id)_plistValueForKey:(id)arg1;
 
 @end

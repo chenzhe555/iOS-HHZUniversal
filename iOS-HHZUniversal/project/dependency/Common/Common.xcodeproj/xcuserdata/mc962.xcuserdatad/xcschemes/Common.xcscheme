@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "85269C807F3523AC4F497EB585EDA25F"
-               BuildableName = "libPods-iOS-HHZUniversalTests.a"
-               BlueprintName = "Pods-iOS-HHZUniversalTests"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "7813E4281E1FA343000B16A9"
+               BuildableName = "libCommon.a"
+               BlueprintName = "Common"
+               ReferencedContainer = "container:Common.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "85269C807F3523AC4F497EB585EDA25F"
-            BuildableName = "libPods-iOS-HHZUniversalTests.a"
-            BlueprintName = "Pods-iOS-HHZUniversalTests"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "7813E4281E1FA343000B16A9"
+            BuildableName = "libCommon.a"
+            BlueprintName = "Common"
+            ReferencedContainer = "container:Common.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -60,6 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7813E4281E1FA343000B16A9"
+            BuildableName = "libCommon.a"
+            BlueprintName = "Common"
+            ReferencedContainer = "container:Common.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
