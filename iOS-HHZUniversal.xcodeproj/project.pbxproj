@@ -83,7 +83,6 @@
 		7813E61D1E1FA8AC000B16A9 /* HHZDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813E5501E1FA8AC000B16A9 /* HHZDateTool.m */; };
 		7813E61E1E1FA8AC000B16A9 /* HHZDateTool_Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813E5521E1FA8AC000B16A9 /* HHZDateTool_Format.m */; };
 		7813E61F1E1FA8AC000B16A9 /* HHZDateToolFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813E5541E1FA8AC000B16A9 /* HHZDateToolFactory.m */; };
-		7813E6201E1FA8AC000B16A9 /* DDLoggerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813E5571E1FA8AC000B16A9 /* DDLoggerTool.m */; };
 		7813E6211E1FA8AC000B16A9 /* HHZDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813E55A1E1FA8AC000B16A9 /* HHZDeviceTool.m */; };
 		7813E6221E1FA8AC000B16A9 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813E55E1E1FA8AC000B16A9 /* GTMBase64.m */; };
 		7813E6231E1FA8AC000B16A9 /* HHZAESEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813E5611E1FA8AC000B16A9 /* HHZAESEncryption.m */; };
@@ -123,6 +122,7 @@
 		7813E66A1E1FA992000B16A9 /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7813E65D1E1FA8CC000B16A9 /* libCommon.a */; };
 		7813E66B1E1FA992000B16A9 /* libHttpService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7813E6631E1FA8D4000B16A9 /* libHttpService.a */; };
 		7813E66C1E1FA992000B16A9 /* libTabbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7813E6691E1FA8DA000B16A9 /* libTabbar.a */; };
+		78165A151E24DA7300AE762A /* HHZLoggerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78165A131E24DA7300AE762A /* HHZLoggerTool.m */; };
 		789ADC731E13C7820021537E /* basicInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 789ADC721E13C7820021537E /* basicInfo.plist */; };
 		78D9E9C71DE3E41C009D5E55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9C61DE3E41C009D5E55 /* main.m */; };
 		78D9E9CA1DE3E41C009D5E55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9C91DE3E41C009D5E55 /* AppDelegate.m */; };
@@ -131,7 +131,6 @@
 		78D9E9D21DE3E41C009D5E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D9E9D11DE3E41C009D5E55 /* Assets.xcassets */; };
 		78D9E9D51DE3E41C009D5E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D9E9D31DE3E41C009D5E55 /* LaunchScreen.storyboard */; };
 		78D9E9E01DE3E41C009D5E55 /* iOS_HHZUniversalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9DF1DE3E41C009D5E55 /* iOS_HHZUniversalTests.m */; };
-		78E0D51A1E248D1C00476741 /* HHZLoggerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E0D5191E248D1C00476741 /* HHZLoggerTool.m */; };
 		D91A2AC77285ED1564546243 /* libPods-iOS-HHZUniversal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A02CFD3A02A60E15887B80 /* libPods-iOS-HHZUniversal.a */; };
 		E2317C593A94D06F85AE145C /* libPods-iOS-HHZUniversalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D732F2D9CF5B727F4AB86546 /* libPods-iOS-HHZUniversalTests.a */; };
 /* End PBXBuildFile section */
@@ -334,8 +333,6 @@
 		7813E5521E1FA8AC000B16A9 /* HHZDateTool_Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZDateTool_Format.m; sourceTree = "<group>"; };
 		7813E5531E1FA8AC000B16A9 /* HHZDateToolFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZDateToolFactory.h; sourceTree = "<group>"; };
 		7813E5541E1FA8AC000B16A9 /* HHZDateToolFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZDateToolFactory.m; sourceTree = "<group>"; };
-		7813E5561E1FA8AC000B16A9 /* DDLoggerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLoggerTool.h; sourceTree = "<group>"; };
-		7813E5571E1FA8AC000B16A9 /* DDLoggerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLoggerTool.m; sourceTree = "<group>"; };
 		7813E5591E1FA8AC000B16A9 /* HHZDeviceTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZDeviceTool.h; sourceTree = "<group>"; };
 		7813E55A1E1FA8AC000B16A9 /* HHZDeviceTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZDeviceTool.m; sourceTree = "<group>"; };
 		7813E55D1E1FA8AC000B16A9 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
@@ -407,6 +404,8 @@
 		7813E6581E1FA8CC000B16A9 /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = Common/Common.xcodeproj; sourceTree = "<group>"; };
 		7813E65E1E1FA8D4000B16A9 /* HttpService.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HttpService.xcodeproj; path = HttpService/HttpService.xcodeproj; sourceTree = "<group>"; };
 		7813E6641E1FA8D9000B16A9 /* Tabbar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Tabbar.xcodeproj; path = Tabbar/Tabbar.xcodeproj; sourceTree = "<group>"; };
+		78165A121E24DA7300AE762A /* HHZLoggerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZLoggerTool.h; sourceTree = "<group>"; };
+		78165A131E24DA7300AE762A /* HHZLoggerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZLoggerTool.m; sourceTree = "<group>"; };
 		789ADC721E13C7820021537E /* basicInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = basicInfo.plist; sourceTree = "<group>"; };
 		78D9E9C21DE3E41C009D5E55 /* iOS-HHZUniversal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-HHZUniversal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D9E9C61DE3E41C009D5E55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -422,8 +421,6 @@
 		78D9E9DF1DE3E41C009D5E55 /* iOS_HHZUniversalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_HHZUniversalTests.m; sourceTree = "<group>"; };
 		78D9E9E11DE3E41C009D5E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78D9EAA91DE3E4E0009D5E55 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		78E0D5181E248D1C00476741 /* HHZLoggerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZLoggerTool.h; sourceTree = "<group>"; };
-		78E0D5191E248D1C00476741 /* HHZLoggerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZLoggerTool.m; sourceTree = "<group>"; };
 		95A02CFD3A02A60E15887B80 /* libPods-iOS-HHZUniversal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-HHZUniversal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9644A4E204CBBC88EF4E1046 /* Pods-iOS-HHZUniversal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversal.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal.release.xcconfig"; sourceTree = "<group>"; };
 		B98E6BBC653E4542BD15F7DA /* Pods-iOS-HHZUniversal.companyrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversal.companyrelease.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal.companyrelease.xcconfig"; sourceTree = "<group>"; };
@@ -859,13 +856,13 @@
 		7813E53E1E1FA8AC000B16A9 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				78165A0F1E24DA7300AE762A /* logger */,
 				7813E53F1E1FA8AC000B16A9 /* application */,
 				7813E5421E1FA8AC000B16A9 /* archive */,
 				7813E5451E1FA8AC000B16A9 /* cache */,
 				7813E5481E1FA8AC000B16A9 /* calculate */,
 				7813E54B1E1FA8AC000B16A9 /* cookie */,
 				7813E54E1E1FA8AC000B16A9 /* date */,
-				7813E5551E1FA8AC000B16A9 /* ddLogger */,
 				7813E5581E1FA8AC000B16A9 /* device */,
 				7813E55B1E1FA8AC000B16A9 /* encryption */,
 				7813E56A1E1FA8AC000B16A9 /* file */,
@@ -937,17 +934,6 @@
 				7813E5541E1FA8AC000B16A9 /* HHZDateToolFactory.m */,
 			);
 			path = date;
-			sourceTree = "<group>";
-		};
-		7813E5551E1FA8AC000B16A9 /* ddLogger */ = {
-			isa = PBXGroup;
-			children = (
-				7813E5561E1FA8AC000B16A9 /* DDLoggerTool.h */,
-				7813E5571E1FA8AC000B16A9 /* DDLoggerTool.m */,
-				78E0D5181E248D1C00476741 /* HHZLoggerTool.h */,
-				78E0D5191E248D1C00476741 /* HHZLoggerTool.m */,
-			);
-			path = ddLogger;
 			sourceTree = "<group>";
 		};
 		7813E5581E1FA8AC000B16A9 /* device */ = {
@@ -1239,6 +1225,15 @@
 				7813E6691E1FA8DA000B16A9 /* libTabbar.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		78165A0F1E24DA7300AE762A /* logger */ = {
+			isa = PBXGroup;
+			children = (
+				78165A121E24DA7300AE762A /* HHZLoggerTool.h */,
+				78165A131E24DA7300AE762A /* HHZLoggerTool.m */,
+			);
+			path = logger;
 			sourceTree = "<group>";
 		};
 		78D9E9B91DE3E41B009D5E55 = {
@@ -1595,7 +1590,6 @@
 				7813E63E1E1FA8AC000B16A9 /* BottomPopViewController.m in Sources */,
 				7813E5EA1E1FA8AC000B16A9 /* MCBlurItemView.m in Sources */,
 				7813E6131E1FA8AC000B16A9 /* HHZAppInfo.m in Sources */,
-				7813E6201E1FA8AC000B16A9 /* DDLoggerTool.m in Sources */,
 				7813E5ED1E1FA8AC000B16A9 /* HHZBottomPopView.m in Sources */,
 				7813E60D1E1FA8AC000B16A9 /* HHZHttpManagerFactory.m in Sources */,
 				7813E6331E1FA8AC000B16A9 /* HHZThreadSafeDictionary.m in Sources */,
@@ -1646,7 +1640,7 @@
 				7813E5F71E1FA8AC000B16A9 /* BaseNoneDataView.m in Sources */,
 				7813E6211E1FA8AC000B16A9 /* HHZDeviceTool.m in Sources */,
 				7813E6281E1FA8AC000B16A9 /* HHZFileHashTool.m in Sources */,
-				78E0D51A1E248D1C00476741 /* HHZLoggerTool.m in Sources */,
+				78165A151E24DA7300AE762A /* HHZLoggerTool.m in Sources */,
 				7813E5EF1E1FA8AC000B16A9 /* BaseLoadingView.m in Sources */,
 				7813E5D41E1FA8AC000B16A9 /* HHZNavigationController.m in Sources */,
 				7813E63C1E1FA8AC000B16A9 /* DemoFourViewController.m in Sources */,

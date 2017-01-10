@@ -10,8 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/*
+ 暂时先用着三方的,项目中用着NSLogger的，便于在应用中查看
+ */
+
 @interface HHZLoggerTool : NSObject
-+(void)turnOnDDLogger;
+/**
+ *  打开
+ */
++(void)turnOnLogger;
 @end
 
 NS_ASSUME_NONNULL_END

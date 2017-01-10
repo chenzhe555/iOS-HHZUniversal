@@ -19,7 +19,6 @@ typedef NS_ENUM(NSInteger,HHZNumericalToolType){
 @implementation HHZNumericalTool
 +(NSDecimalNumber *)addNumbers:(NSObject *)numbers, ...
 {
-    //获取参数
     va_list nums;
     va_start(nums, numbers);
     NSDecimalNumber * result = [self handleNumbersType:HHZNumericalToolTypeAdd Numbers:numbers Args:nums];
@@ -29,7 +28,6 @@ typedef NS_ENUM(NSInteger,HHZNumericalToolType){
 
 +(NSDecimalNumber *)subtractNumbers:(NSObject *)numbers, ...
 {
-    //获取参数
     va_list nums;
     va_start(nums, numbers);
     NSDecimalNumber * result = [self handleNumbersType:HHZNumericalToolTypeSubtract Numbers:numbers Args:nums];
@@ -39,7 +37,6 @@ typedef NS_ENUM(NSInteger,HHZNumericalToolType){
 
 +(NSDecimalNumber *)multiplyNumbers:(NSObject *)numbers, ...
 {
-    //获取参数
     va_list nums;
     va_start(nums, numbers);
     NSDecimalNumber * result = [self handleNumbersType:HHZNumericalToolTypeMultiply Numbers:numbers Args:nums];
@@ -49,7 +46,6 @@ typedef NS_ENUM(NSInteger,HHZNumericalToolType){
 
 +(NSDecimalNumber *)dividNumbers:(NSObject *)numbers, ...
 {
-    //获取参数
     va_list nums;
     va_start(nums, numbers);
     NSDecimalNumber * result = [self handleNumbersType:HHZNumericalToolTypeDivid Numbers:numbers Args:nums];
