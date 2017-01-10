@@ -39,7 +39,7 @@ typedef NS_ENUM(NSInteger,HHZEncryptionType){
 
 //http/https
 typedef NS_ENUM(NSUInteger,HHZHttpProtocalType) {
-    HHZHttpProtocalTypeHTTP,
+    HHZHttpProtocalTypeHTTP = 400,
     HHZHttpProtocalTypeHTTPS
 };
 

@@ -9,7 +9,7 @@
 #import "HHZNumericalTool.h"
 
 typedef NS_ENUM(NSInteger,HHZNumericalToolType){
-    HHZNumericalToolTypeAdd,
+    HHZNumericalToolTypeAdd = 110,
     HHZNumericalToolTypeSubtract,
     HHZNumericalToolTypeMultiply,
     HHZNumericalToolTypeDivid

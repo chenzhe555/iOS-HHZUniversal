@@ -11,7 +11,7 @@
 typedef void(^toastFinishedBlock) ();
 
 typedef NS_ENUM(NSUInteger, HHZToastViewShowType) {
-    HHZToastViewShowTypeBottom,
+    HHZToastViewShowTypeBottom = 1001,
     HHZToastViewShowTypeCenter,
     HHZToastViewShowTypeImageCenter,
 };

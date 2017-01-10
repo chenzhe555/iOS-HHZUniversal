@@ -131,6 +131,7 @@
 		78D9E9D21DE3E41C009D5E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D9E9D11DE3E41C009D5E55 /* Assets.xcassets */; };
 		78D9E9D51DE3E41C009D5E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D9E9D31DE3E41C009D5E55 /* LaunchScreen.storyboard */; };
 		78D9E9E01DE3E41C009D5E55 /* iOS_HHZUniversalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9DF1DE3E41C009D5E55 /* iOS_HHZUniversalTests.m */; };
+		78E0D51A1E248D1C00476741 /* HHZLoggerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E0D5191E248D1C00476741 /* HHZLoggerTool.m */; };
 		D91A2AC77285ED1564546243 /* libPods-iOS-HHZUniversal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A02CFD3A02A60E15887B80 /* libPods-iOS-HHZUniversal.a */; };
 		E2317C593A94D06F85AE145C /* libPods-iOS-HHZUniversalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D732F2D9CF5B727F4AB86546 /* libPods-iOS-HHZUniversalTests.a */; };
 /* End PBXBuildFile section */
@@ -171,6 +172,7 @@
 		0E7153FB32A3CE1A66DBD9A8 /* Pods-iOS-HHZUniversalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversalTests/Pods-iOS-HHZUniversalTests.release.xcconfig"; sourceTree = "<group>"; };
 		1BB4642AF5F9A96BAF3172BA /* Pods-iOS-HHZUniversal.enterpriserelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversal.enterpriserelease.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal.enterpriserelease.xcconfig"; sourceTree = "<group>"; };
 		2006685BB8E52ABD72BF30CA /* Pods-iOS-HHZUniversalTests.companydebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversalTests.companydebug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversalTests/Pods-iOS-HHZUniversalTests.companydebug.xcconfig"; sourceTree = "<group>"; };
+		2B76864861DA6A6265E3BAA3 /* Pods-iOS-HHZUniversal.companydebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversal.companydebug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal.companydebug.xcconfig"; sourceTree = "<group>"; };
 		37283C42DF6748B4DAA9681E /* Pods-iOS-HHZUniversalTests.enterprisedebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversalTests.enterprisedebug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversalTests/Pods-iOS-HHZUniversalTests.enterprisedebug.xcconfig"; sourceTree = "<group>"; };
 		70CD4AB4D3116914A077127A /* Pods-iOS-HHZUniversalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversalTests/Pods-iOS-HHZUniversalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7813E4921E1FA8AC000B16A9 /* HHZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZNavigationController.h; sourceTree = "<group>"; };
@@ -420,8 +422,11 @@
 		78D9E9DF1DE3E41C009D5E55 /* iOS_HHZUniversalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_HHZUniversalTests.m; sourceTree = "<group>"; };
 		78D9E9E11DE3E41C009D5E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78D9EAA91DE3E4E0009D5E55 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		78E0D5181E248D1C00476741 /* HHZLoggerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZLoggerTool.h; sourceTree = "<group>"; };
+		78E0D5191E248D1C00476741 /* HHZLoggerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZLoggerTool.m; sourceTree = "<group>"; };
 		95A02CFD3A02A60E15887B80 /* libPods-iOS-HHZUniversal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-HHZUniversal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9644A4E204CBBC88EF4E1046 /* Pods-iOS-HHZUniversal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversal.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal.release.xcconfig"; sourceTree = "<group>"; };
+		B98E6BBC653E4542BD15F7DA /* Pods-iOS-HHZUniversal.companyrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversal.companyrelease.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal.companyrelease.xcconfig"; sourceTree = "<group>"; };
 		CA5D235BA42D5BCA2D1D1D5C /* Pods-iOS-HHZUniversal.enterprisedebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversal.enterprisedebug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal.enterprisedebug.xcconfig"; sourceTree = "<group>"; };
 		D732F2D9CF5B727F4AB86546 /* libPods-iOS-HHZUniversalTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-HHZUniversalTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77F6B120F0B2DFF8E1C43B7 /* Pods-iOS-HHZUniversalTests.enterpriserelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversalTests.enterpriserelease.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversalTests/Pods-iOS-HHZUniversalTests.enterpriserelease.xcconfig"; sourceTree = "<group>"; };
@@ -939,6 +944,8 @@
 			children = (
 				7813E5561E1FA8AC000B16A9 /* DDLoggerTool.h */,
 				7813E5571E1FA8AC000B16A9 /* DDLoggerTool.m */,
+				78E0D5181E248D1C00476741 /* HHZLoggerTool.h */,
+				78E0D5191E248D1C00476741 /* HHZLoggerTool.m */,
 			);
 			path = ddLogger;
 			sourceTree = "<group>";
@@ -1304,6 +1311,8 @@
 				2006685BB8E52ABD72BF30CA /* Pods-iOS-HHZUniversalTests.companydebug.xcconfig */,
 				D77F6B120F0B2DFF8E1C43B7 /* Pods-iOS-HHZUniversalTests.enterpriserelease.xcconfig */,
 				0C115B127D9B4384D0F1F207 /* Pods-iOS-HHZUniversalTests.companyrelease.xcconfig */,
+				2B76864861DA6A6265E3BAA3 /* Pods-iOS-HHZUniversal.companydebug.xcconfig */,
+				B98E6BBC653E4542BD15F7DA /* Pods-iOS-HHZUniversal.companyrelease.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1637,6 +1646,7 @@
 				7813E5F71E1FA8AC000B16A9 /* BaseNoneDataView.m in Sources */,
 				7813E6211E1FA8AC000B16A9 /* HHZDeviceTool.m in Sources */,
 				7813E6281E1FA8AC000B16A9 /* HHZFileHashTool.m in Sources */,
+				78E0D51A1E248D1C00476741 /* HHZLoggerTool.m in Sources */,
 				7813E5EF1E1FA8AC000B16A9 /* BaseLoadingView.m in Sources */,
 				7813E5D41E1FA8AC000B16A9 /* HHZNavigationController.m in Sources */,
 				7813E63C1E1FA8AC000B16A9 /* DemoFourViewController.m in Sources */,
@@ -1767,6 +1777,7 @@
 		};
 		780326CF1E1660ED008D2F02 /* companyDebug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B76864861DA6A6265E3BAA3 /* Pods-iOS-HHZUniversal.companydebug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
@@ -1924,6 +1935,7 @@
 		};
 		780326DE1E166138008D2F02 /* companyRelease */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B98E6BBC653E4542BD15F7DA /* Pods-iOS-HHZUniversal.companyrelease.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";

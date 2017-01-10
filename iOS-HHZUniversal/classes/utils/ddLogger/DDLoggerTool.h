@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DDLoggerTool : NSObject
+
 +(void)turnOnDDLogger;
 @end
 

@@ -13,13 +13,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, HHZReachabilityType) {
-    HHZReachabilityTypeNone,    //无网络
+    HHZReachabilityTypeNone = 555,    //无网络
     HHZReachabilityTypeWWAN,    //蜂窝网络
     HHZReachabilityTypeWIFI     //无线网
 };
 
 typedef NS_ENUM(NSUInteger, HHZReachabilityWWANStatus) {
-    HHZReachabilityWWANStatusNone,      //无网络
+    HHZReachabilityWWANStatusNone = 666,      //无网络
     HHZReachabilityWWANStatus2G,        //2G
     HHZReachabilityWWANStatus3G,        //3G
     HHZReachabilityWWANStatus4G,        //4G
