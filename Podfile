@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '7.0'
+platform :ios, '8.0'
 
 target 'iOS-HHZUniversal' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
@@ -14,6 +14,7 @@ target 'iOS-HHZUniversal' do
   pod 'ZYQAssetPickerController', '~> 1.0.0'
   pod 'SDWebImage', '~> 4.0.0-beta2'
   pod 'pop', '~> 1.0.9'
+  pod 'NSLogger', '~> 1.7.0'
   target 'iOS-HHZUniversalTests' do
     inherit! :search_paths
     # Pods for testing

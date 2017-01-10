@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 
 @interface HHZAESEncryption : NSObject
 /**
@@ -52,3 +53,5 @@
  */
 +(NSString *)AES128Decrypt:(NSString *)str WithKey:(NSString *)key;
 @end
+
+NS_ASSUME_NONNULL_END

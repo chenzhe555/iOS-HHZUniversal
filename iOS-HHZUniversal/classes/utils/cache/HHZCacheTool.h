@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 
 @interface HHZCacheTool : NSObject
 
@@ -17,12 +19,14 @@
  *  @param object 缓存对象
  *  @param key    
  */
-+(void)setCacheObject:(__nonnull id <NSCoding>)object forKey:( NSString * __nonnull )key;
++(void)setCacheObject:(id <NSCoding>)object forKey:(NSString *)key;
 
 /**
  *  获取Key对应的缓存数据
  *
  *  @param key
  */
-+(__nonnull id)getCacheObjectforKey:(NSString * __nonnull)key;
++(id)getCacheObjectforKey:(NSString *)key;
 @end
+
+NS_ASSUME_NONNULL_END

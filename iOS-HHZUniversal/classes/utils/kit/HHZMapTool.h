@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 
 @interface HHZMapTool : NSObject
 #pragma mark 检查当前手机是否能打开相应地图应用
@@ -39,3 +40,5 @@
  */
 +(BOOL)canOpenGoogleMap;
 @end
+
+NS_ASSUME_NONNULL_END

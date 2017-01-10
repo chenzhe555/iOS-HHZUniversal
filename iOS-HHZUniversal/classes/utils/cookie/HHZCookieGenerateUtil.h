@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface HHZCookieGenerateUtil : NSObject
 /**
  *  生成Http的Cookie
@@ -22,3 +24,5 @@
  */
 +(NSHTTPCookie *)generateCookieName:(NSString *)cookieName Value:(NSString *)cookieValue Domain:(NSString *)cookieDomain Path:(NSString *)cookiePath Expires:(NSTimeInterval)expires;
 @end
+
+NS_ASSUME_NONNULL_END

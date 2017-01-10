@@ -27,6 +27,8 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     
+    LoggerError(0,@"陈哲是个好孩子");
+    
     self.window.rootViewController = [self createTab];
     [self.window makeKeyAndVisible];
     return YES;

@@ -7,6 +7,7 @@
 //
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 
 @interface HHZBase64Encrption : NSObject
 /**
@@ -28,3 +29,5 @@
  */
 +(nullable NSString *)base64FromBase64String:(nonnull NSString *)base64;
 @end
+
+NS_ASSUME_NONNULL_END

@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CGGeometry.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface HHZCalculateTool : NSObject
 #pragma mark 计算文字宽度
 /**
@@ -36,3 +38,5 @@
  */
 +(CGSize)getLabelActualSizeWithString:(NSString *)str andFont:(CGFloat)fontSize andLines:(NSInteger)lines andlabelWidth:(CGFloat)labelWidth andFontName:(NSString *)fontName;
 @end
+
+NS_ASSUME_NONNULL_END
