@@ -57,7 +57,7 @@
 
 -(NSString *)getCommonComleteURL:(NSString *)suffix
 {
-    return [NSString stringWithFormat:@"%@%@",@"https://chenzhe.com",suffix];
+    return [NSString stringWithFormat:@"%@%@",@"https://home.yunshanmeicai.com/ysmail/mailapp",suffix];
 }
 
 -(void)pushURL:(NSString *)httpURL Key:(NSString *)key

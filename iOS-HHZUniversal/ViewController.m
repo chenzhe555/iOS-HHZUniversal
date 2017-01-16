@@ -22,8 +22,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 //    NSLog(@"%@",[[NSBundle mainBundle] infoDictionary]);
-//    [[HHZActivityLoadingView shareLoadingView] showMCActivityViewTopSpace:0 andBottomSpace:0 andText:@"Loading!!!"];
-//    [[HHZToastView shareLoadingView] showToastInCenter:@"Loading!!!"];
+//    [[HHZActivityLoadingView shareLoadingView] showMCActivityViewTopSpace:0 andBottomSpace:0 andText:@"Loading!.!!"];
+//    [[HHZToastView shareLoadingView] showToastInCenter:@"Loading!.!!"];
     
 
     

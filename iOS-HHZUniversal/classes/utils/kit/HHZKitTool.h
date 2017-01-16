@@ -38,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
  CFBundleNumericVersion = 16809984;
  CFBundlePackageType = APPL;
  CFBundleShortVersionString = "1.0";
- CFBundleSignature = "????";
+ CFBundleSignature = "?";
  CFBundleSupportedPlatforms =     (
  iPhoneSimulator
  );

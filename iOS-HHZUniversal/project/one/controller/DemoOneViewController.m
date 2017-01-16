@@ -12,6 +12,7 @@
 #import "HHZToastView.h"
 #import "BottomPopViewController.h"
 #import "WatermarkViewController.h"
+#import "ShowAlertViewController.h"
 
 @interface DemoOneViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -28,6 +29,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self loadRequest];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,7 +50,7 @@
 {
     [super initializeData];
     self.title = @"第一个";
-    self.dataArray = @[@"跳转到WebView!",@"底部弹出视图",@"添加水印"];
+    self.dataArray = @[@"跳转到WebView!",@"底部弹出视图",@"添加水印",@"弹出框"];
 }
 
 #pragma mark 视图创建
@@ -63,6 +65,8 @@
 -(void)loadRequest
 {
     _testResult = [self.currentService testHttpRequestArg1:@"11" Arg2:2 Condition:nil];
+    //取消当前请求
+    [_testResult.requestTask cancel];
 }
 
 #pragma mark 触发事件
@@ -116,6 +120,12 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
+        case 3:
+        {
+            ShowAlertViewController * vc = [ShowAlertViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
         default:
             break;
     }
@@ -125,7 +135,8 @@
 -(void)requestSuccess:(HHZHttpResponse *)response
 {
     if (response.tag == _testResult.tag) {
-        [[HHZToastView shareLoadingView] showToastInCenter:[NSString stringWithFormat:@"返回的数据:%@",response.object[@"data"][@"aaa"]]];
+        LoggerApp(4,@"%@",response.object[@"data"][@"aaa"]);
+        [[HHZToastView shareManager] showToastInCenter:[NSString stringWithFormat:@"返回的数据:%@",response.object[@"data"][@"aaa"]]];
     }
 }
 

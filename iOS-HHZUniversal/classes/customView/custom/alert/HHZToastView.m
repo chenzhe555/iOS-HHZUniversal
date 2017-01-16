@@ -11,6 +11,7 @@
 #import "HHZCalculateTool.h"
 #import "HHZMACROConfig.h"
 #import "UIView+HHZCategory.h"
+#import "HHZLabel.h"
 
 //背景透明度
 static CGFloat kMCToastViewAlpha;
@@ -38,7 +39,7 @@ static BOOL isHavaBlock;
 /**
  *  文字文本
  */
-@property (nonatomic, strong) UILabel * titleLabel;
+@property (nonatomic, strong) HHZLabel * titleLabel;
 
 /**
  *  文字的位置类型
@@ -59,7 +60,7 @@ static BOOL isHavaBlock;
 
 @implementation HHZToastView
 
-+(instancetype)shareLoadingView
++(instancetype)shareManager
 {
     static HHZToastView * custom = nil;
     static dispatch_once_t onceToken;
@@ -79,11 +80,11 @@ static BOOL isHavaBlock;
     if (self) {
         [self initFrameParameters];
         
-        self.bgView.backgroundColor = [UIColor grayColor];
         self.bgView.alpha = kMCToastViewAlpha;
-        [self addSubview:self.bgView];
         
-        self.titleLabel = [[UILabel alloc] init];
+       
+        
+        self.titleLabel = [[HHZLabel alloc] init];
         _titleLabel.font = [UIFont systemFontOfSize:kMCToastViewFont];
         _titleLabel.numberOfLines = 0;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -94,6 +95,7 @@ static BOOL isHavaBlock;
         self.titleImage = [[UIImageView alloc] init];
         [self.bgView addSubview:self.titleImage];
         
+        
     }
     return self;
 }
@@ -102,7 +104,7 @@ static BOOL isHavaBlock;
 -(void)initFrameParameters
 {
     kMCToastViewAlpha = 0.8f;
-    kMCToastViewDuring = 1.5f;
+    kMCToastViewDuring = 2.0f;
     kMCToastViewFont = 15.0f;
     kMCToastViewLeftSpace = 10.0f;
     kMCToastViewTopSpace = 10.0f;
@@ -113,7 +115,6 @@ static BOOL isHavaBlock;
 -(void)showToast:(NSString *)toastString
 {
     isHavaBlock = NO;
-    self.hidden = NO;
     _type = HHZToastViewShowTypeBottom;
     
     [self changeSubViewsFrameAndAnimation:toastString];
@@ -122,7 +123,6 @@ static BOOL isHavaBlock;
 -(void)showToast:(NSString *)toastString andFinishedBlock:(toastFinishedBlock)block
 {
     isHavaBlock = YES;
-    self.hidden = NO;
     _toastBlock = block;
     _type = HHZToastViewShowTypeBottom;
     
@@ -132,7 +132,6 @@ static BOOL isHavaBlock;
 -(void)showToastInCenter:(NSString *)toastString
 {
     isHavaBlock = NO;
-    self.hidden = NO;
     _type = HHZToastViewShowTypeCenter;
     
     [self changeSubViewsFrameAndAnimation:toastString];
@@ -141,7 +140,6 @@ static BOOL isHavaBlock;
 -(void)showToastInCenter:(NSString *)toastString andFinishedBlock:(toastFinishedBlock)block
 {
     isHavaBlock = YES;
-    self.hidden = NO;
     _toastBlock = block;
     _type = HHZToastViewShowTypeCenter;
     
@@ -151,7 +149,6 @@ static BOOL isHavaBlock;
 -(void)showToastWithImage:(UIImage *)showImage andToastString:(NSString *)toastString
 {
     isHavaBlock = NO;
-    self.hidden = NO;
     _type = HHZToastViewShowTypeImageCenter;
     _titleImage.image = showImage;
     
@@ -161,7 +158,6 @@ static BOOL isHavaBlock;
 -(void)showToastWithImage:(UIImage *)showImage andToastString:(NSString *)toastString andFinishedBlock:(toastFinishedBlock)block
 {
     isHavaBlock = YES;
-    self.hidden = NO;
     _toastBlock = block;
     _type = HHZToastViewShowTypeImageCenter;
     _titleImage.image = showImage;
@@ -176,25 +172,27 @@ static BOOL isHavaBlock;
         toastString = @"";
     }
     
-    if (self.showTimer != nil)
+    if ([self.showTimer isValid])
     {
+        [self stopToastView];
         [self.showTimer invalidate];
     }
-    CGSize size = [HHZCalculateTool getLabelActualSizeWithString:toastString andFont:kMCToastViewFont andLines:0 andlabelWidth:(SCREENW - kMCToastViewLeftSpace*4)];
+    self.hidden = NO;
+    
     _titleLabel.text = toastString;
     _titleLabel.hidden = NO;
     _titleImage.hidden = YES;
     switch (_type) {
         case HHZToastViewShowTypeBottom:
         {
-            _titleLabel.frame = CGRectMake(kMCToastViewLeftSpace, kMCToastViewTopSpace, size.width, size.height);
-            self.bgView.frame = CGRectMake((SCREENW - _titleLabel.width - kMCToastViewLeftSpace*2)/2, (SCREENH - KMCToastViewBottomSpace - _titleLabel.height - kMCToastViewTopSpace*2), _titleLabel.width + kMCToastViewLeftSpace*2, _titleLabel.height + kMCToastViewTopSpace*2);
+            _titleLabel.frame = CGRectMake(kMCToastViewLeftSpace, kMCToastViewTopSpace, _titleLabel.width, _titleLabel.height);
+            self.frame = CGRectMake((SCREENW - _titleLabel.width - kMCToastViewLeftSpace*2)/2, (SCREENH - KMCToastViewBottomSpace - _titleLabel.height - kMCToastViewTopSpace*2), _titleLabel.width + kMCToastViewLeftSpace*2, _titleLabel.height + kMCToastViewTopSpace*2);
             break;
         }
         case HHZToastViewShowTypeCenter:
         {
-            _titleLabel.frame = CGRectMake(kMCToastViewLeftSpace, kMCToastViewTopSpace, size.width, size.height);
-            self.bgView.frame = CGRectMake((SCREENW - _titleLabel.width - kMCToastViewLeftSpace*2)/2, (SCREENH - _titleLabel.height - kMCToastViewTopSpace*2)/2, _titleLabel.width + kMCToastViewLeftSpace*2, _titleLabel.height + kMCToastViewTopSpace*2);
+            _titleLabel.frame = CGRectMake(kMCToastViewLeftSpace, kMCToastViewTopSpace, _titleLabel.width, _titleLabel.height);
+            self.frame = CGRectMake((SCREENW - _titleLabel.width - kMCToastViewLeftSpace*2)/2, (SCREENH - _titleLabel.height - kMCToastViewTopSpace*2)/2, _titleLabel.width + kMCToastViewLeftSpace*2, _titleLabel.height + kMCToastViewTopSpace*2);
             break;
         }
         case HHZToastViewShowTypeImageCenter:
@@ -204,21 +202,21 @@ static BOOL isHavaBlock;
             {
                 _titleLabel.hidden = YES;
                 _titleImage.frame = CGRectMake(kMCToastViewLeftSpace, kMCToastViewTopSpace, _titleImage.image.size.width, _titleImage.image.size.height);
-                self.bgView.frame = CGRectMake((SCREENW - _titleImage.width - kMCToastViewLeftSpace*2)/2, (SCREENH - _titleImage.height - kMCToastViewTopSpace*2)/2, _titleImage.width + kMCToastViewLeftSpace*2, _titleImage.height + kMCToastViewTopSpace*2);
+                self.frame = CGRectMake((SCREENW - _titleImage.width - kMCToastViewLeftSpace*2)/2, (SCREENH - _titleImage.height - kMCToastViewTopSpace*2)/2, _titleImage.width + kMCToastViewLeftSpace*2, _titleImage.height + kMCToastViewTopSpace*2);
             }
             else
             {
-                if (size.width >= _titleImage.image.size.width)
+                if (_titleLabel.width >= _titleImage.image.size.width)
                 {
-                    _titleImage.frame = CGRectMake((size.width + kMCToastViewLeftSpace*2 - _titleImage.image.size.width)/2, kMCToastViewTopSpace, _titleImage.image.size.width, _titleImage.image.size.height);
-                    _titleLabel.frame = CGRectMake(kMCToastViewLeftSpace, _titleImage.y + _titleImage.height + kMCToastViewTopSpace, size.width, size.height);
-                    self.bgView.frame = CGRectMake((SCREENW - _titleLabel.width - kMCToastViewLeftSpace*2)/2, (SCREENH - _titleLabel.y - _titleLabel.height - kMCToastViewTopSpace)/2, _titleLabel.width + kMCToastViewLeftSpace*2,_titleLabel.y + _titleLabel.height + kMCToastViewTopSpace);
+                    _titleImage.frame = CGRectMake((_titleLabel.width + kMCToastViewLeftSpace*2 - _titleImage.image.size.width)/2, kMCToastViewTopSpace, _titleImage.image.size.width, _titleImage.image.size.height);
+                    _titleLabel.frame = CGRectMake(kMCToastViewLeftSpace, _titleImage.y + _titleImage.height + kMCToastViewTopSpace, _titleLabel.width, _titleLabel.height);
+                    self.frame = CGRectMake((SCREENW - _titleLabel.width - kMCToastViewLeftSpace*2)/2, (SCREENH - _titleLabel.y - _titleLabel.height - kMCToastViewTopSpace)/2, _titleLabel.width + kMCToastViewLeftSpace*2,_titleLabel.y + _titleLabel.height + kMCToastViewTopSpace);
                 }
                 else
                 {
                     _titleImage.frame = CGRectMake(kMCToastViewLeftSpace, kMCToastViewTopSpace, _titleImage.image.size.width, _titleImage.image.size.height);
-                    _titleLabel.frame = CGRectMake((_titleImage.width + kMCToastViewLeftSpace*2 - size.width)/2, _titleImage.y + _titleImage.height + kMCToastViewTopSpace, size.width, size.height);
-                    self.bgView.frame = CGRectMake((SCREENW - _titleImage.width - kMCToastViewLeftSpace*2)/2, (SCREENH - _titleLabel.y - _titleLabel.height - kMCToastViewTopSpace)/2, _titleImage.width + kMCToastViewLeftSpace*2, _titleLabel.y + _titleLabel.height + kMCToastViewTopSpace);
+                    _titleLabel.frame = CGRectMake((_titleImage.width + kMCToastViewLeftSpace*2 - _titleLabel.width)/2, _titleImage.y + _titleImage.height + kMCToastViewTopSpace, _titleLabel.width, _titleLabel.height);
+                    self.frame = CGRectMake((SCREENW - _titleImage.width - kMCToastViewLeftSpace*2)/2, (SCREENH - _titleLabel.y - _titleLabel.height - kMCToastViewTopSpace)/2, _titleImage.width + kMCToastViewLeftSpace*2, _titleLabel.y + _titleLabel.height + kMCToastViewTopSpace);
                     
                 }
             }
@@ -228,18 +226,19 @@ static BOOL isHavaBlock;
             break;
         }
     }
+    self.bgView.frame = self.bounds;
     
-    //    dispatch_time_t toastDelay = dispatch_time(DISPATCH_TIME_NOW, kMCToastViewDuring * NSEC_PER_SEC);
-    //    dispatch_queue_t currentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    //    dispatch_after(toastDelay, currentQueue, ^{
-    //        dispatch_async(dispatch_get_main_queue(), ^{
-    //            [self stopToastView];
-    //        });
-    //    });
+    dispatch_time_t toastDelay = dispatch_time(DISPATCH_TIME_NOW, kMCToastViewDuring * NSEC_PER_SEC);
+    dispatch_queue_t currentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_after(toastDelay, currentQueue, ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self stopToastView];
+        });
+    });
+    
     self.showTimer = [NSTimer scheduledTimerWithTimeInterval:kMCToastViewDuring target:self selector:@selector(stopToastView) userInfo:nil repeats:NO];
     
 }
-
 
 -(void)stopToastView
 {

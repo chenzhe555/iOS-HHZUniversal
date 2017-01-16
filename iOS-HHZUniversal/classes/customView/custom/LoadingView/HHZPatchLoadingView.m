@@ -62,6 +62,7 @@ static CGFloat kMCActivityViewLeftSpace;
     return self;
 }
 
+
 -(void)initFrameParameters
 {
     kMCActivityViewBGWidth = 120.0f;

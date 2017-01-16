@@ -8,23 +8,22 @@
 
 #import "BaseLoadingView.h"
 #import "HHZKitTool.h"
+#import "HHZMethodException.h"
 
 @implementation BaseLoadingView
 
 +(instancetype)shareLoadingView
 {
-    return nil;
+    @throw [HHZMethodException exceptionWithClass:@"BaseLoadingView" Method:@"shareLoadingView"];
 }
 
-- (instancetype)init
+-(instancetype)init
 {
-    self = [super init];
-    if (self) {
+    if (self = [super init]) {
         self.bgView = [[UIView alloc] init];
         self.bgView.backgroundColor = [UIColor lightGrayColor];
         self.bgView.layer.cornerRadius = 5.0f;
         self.bgView.layer.masksToBounds = YES;
-        
         [self addSubview:self.bgView];
     }
     return self;

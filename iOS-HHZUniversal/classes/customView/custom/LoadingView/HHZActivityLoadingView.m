@@ -43,18 +43,10 @@ static CGFloat kMCActivityViewLeftSpace;
 
 - (instancetype)init
 {
-    self = [super init];
-    if (self) {
+    if (self = [super init]) {
         [self initFrameParameters];
         
         [[HHZKitTool getMainWindow] insertSubview:self atIndex:(INT32_MAX - 1)];
-        
-        self.bgView = [[UIView alloc] init];
-        self.bgView.backgroundColor = [UIColor lightGrayColor];
-        self.bgView.layer.cornerRadius = 5.0f;
-        self.bgView.layer.masksToBounds = YES;
-        
-        [self addSubview:self.bgView];
         
         _activity = [[UIActivityIndicatorView alloc] init];
         _activity.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
@@ -72,6 +64,11 @@ static CGFloat kMCActivityViewLeftSpace;
         
     }
     return self;
+}
+
+-(void)initTheme
+{
+    [super initTheme];
 }
 
 +(instancetype)shareLoadingView
@@ -100,7 +97,7 @@ static CGFloat kMCActivityViewLeftSpace;
 
 -(void)showMCActivityViewTopSpace:(CGFloat)topSpace andBottomSpace:(CGFloat)bottomSpace andText:(NSString *)labelText
 {
-    [super initTheme];
+    [self initTheme];
     
     self.frame = CGRectMake(self.x, topSpace, self.width, SCREENH - topSpace - bottomSpace);
     
@@ -120,7 +117,7 @@ static CGFloat kMCActivityViewLeftSpace;
 
 -(void)showMCActivityViewTopSpace:(CGFloat)topSpace andBottomSpace:(CGFloat)bottomSpace andText:(NSString *)labelText andKey:(NSString *)key
 {
-    [super initTheme];
+    [self initTheme];
     
     self.frame = CGRectMake(self.x, topSpace, self.width, SCREENH - topSpace - bottomSpace);
     

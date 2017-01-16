@@ -6,7 +6,7 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 
-#import "BaseLoadingView.h"
+#import "BaseAlertView.h"
 
 typedef void(^toastFinishedBlock) ();
 
@@ -16,7 +16,7 @@ typedef NS_ENUM(NSUInteger, HHZToastViewShowType) {
     HHZToastViewShowTypeImageCenter,
 };
 
-@interface HHZToastView : BaseLoadingView
+@interface HHZToastView : BaseAlertView
 /**
  *  展示Toast,传入字符串,不带回调
  *
