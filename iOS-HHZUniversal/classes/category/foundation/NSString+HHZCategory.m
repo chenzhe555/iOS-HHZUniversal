@@ -91,3 +91,98 @@
 }
 
 @end
+
+@implementation NSString (HHZUtils_Emoji)
+
+-(BOOL)isIncludeEmoji:(EmojiType)type
+{
+    switch (type) {
+        case EmojiTypeNormal:
+        {
+            return [self isIncludeNormalEmoji];
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
+
+-(BOOL)isIncludeNormalEmoji
+{
+    BOOL __block result = NO;
+    [self enumerateSubstringsInRange:NSMakeRange(0, [self length]) options:NSStringEnumerationByComposedCharacterSequences usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
+        if ([substring isNormalEmoji]) {
+            *stop = YES;
+            result = YES;
+        }
+    }];
+    return result;
+}
+
+-(BOOL)isNormalEmoji
+{
+    const unichar hs = [self characterAtIndex:0];
+    // surrogate pair
+    if (0xd800 <= hs && hs <= 0xdbff) {
+        if (self.length > 1) {
+            const unichar ls = [self characterAtIndex:1];
+            const int uc = ((hs - 0xd800) * 0x400) + (ls - 0xdc00) + 0x10000;
+            if (0x1d000 <= uc && uc <= 0x1f77f) {
+                return YES;
+            }
+            if (hs == 0xd83e) {
+                return YES;
+            }
+        }
+    } else if (self.length > 1) {
+        const unichar ls = [self characterAtIndex:1];
+        if (ls == 0x20e3 || ls == 0xfe0f) {
+            return YES;
+        }
+        
+    } else {
+        // non surrogate
+        if (0x2100 <= hs && hs <= 0x27ff) {
+            return YES;
+        } else if (0x2B05 <= hs && hs <= 0x2b07) {
+            return YES;
+        } else if (0x2934 <= hs && hs <= 0x2935) {
+            return YES;
+        } else if (0x3297 <= hs && hs <= 0x3299) {
+            return YES;
+        } else if (hs == 0xa9 || hs == 0xae || hs == 0x303d || hs == 0x3030 || hs == 0x2b55 || hs == 0x2b1c || hs == 0x2b1b || hs == 0x2b50) {
+            return YES;
+        } else {
+            return NO;
+        }
+    }
+    
+    return NO;
+}
+
+-(instancetype)removedEmojiString:(EmojiType)type
+{
+    switch (type) {
+        case EmojiTypeNormal:
+        {
+            return [self removedNormalEmojiString];
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
+
+-(instancetype)removedNormalEmojiString
+{
+    NSMutableString * __block buffer = [NSMutableString stringWithCapacity:[self length]];
+    
+    [self enumerateSubstringsInRange:NSMakeRange(0, [self length]) options:NSStringEnumerationByComposedCharacterSequences usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
+        [buffer appendString:([substring isNormalEmoji])? @"": substring];
+    }];
+    return buffer;
+}
+
+@end

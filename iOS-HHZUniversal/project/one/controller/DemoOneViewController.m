@@ -135,7 +135,6 @@
 -(void)requestSuccess:(HHZHttpResponse *)response
 {
     if (response.tag == _testResult.tag) {
-        LoggerApp(4,@"%@",response.object[@"data"][@"aaa"]);
         [[HHZToastView shareManager] showToastInCenter:[NSString stringWithFormat:@"返回的数据:%@",response.object[@"data"][@"aaa"]]];
     }
 }

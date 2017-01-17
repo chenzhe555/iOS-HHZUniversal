@@ -63,5 +63,46 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
+#pragma mark Emoji标签
+
+typedef NS_ENUM(NSInteger,EmojiType) {
+    EmojiTypeNormal = 1 << 0
+};
+
+@interface NSString (HHZUtils_Emoji)
+/**
+ *  是否包含Emoji表情(默认Emoji类型)
+ *
+ *  @return
+ */
+-(BOOL)isIncludeNormalEmoji;
+
+/**
+ *  移除默认Emoji表情类型
+ *
+ *  @return
+ */
+-(instancetype)removedNormalEmojiString;
+
+/**
+ *  是否包含Emoji表情
+ *
+ *  @param type Emoji的类型
+ *
+ *  @return 
+ */
+-(BOOL)isIncludeEmoji:(EmojiType)type;
+
+/**
+ *  移除Emoji标签
+ *
+ *  @param type Emoji类型
+ *
+ *  @return 
+ */
+-(instancetype)removedEmojiString:(EmojiType)type;
+@end
+
+
 NS_ASSUME_NONNULL_END
 

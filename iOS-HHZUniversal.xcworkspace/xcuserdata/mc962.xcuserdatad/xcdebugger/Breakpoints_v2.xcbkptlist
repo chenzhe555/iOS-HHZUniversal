@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOS-HHZUniversal/project/one/controller/DemoOneViewController.m"
-            timestampString = "506226837.015464"
+            filePath = "iOS-HHZUniversal/classes/subclass/HHZWebViewController.m"
+            timestampString = "506238799.000657"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
-            landmarkName = "-requestSuccess:"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "-webView:shouldStartLoadWithRequest:navigationType:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOS-HHZUniversal/project/one/controller/DemoOneViewController.m"
-            timestampString = "506226837.015464"
+            filePath = "iOS-HHZUniversal/classes/subclass/HHZWebViewController.m"
+            timestampString = "506238818.587879"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
-            landmarkName = "-requestFail:"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "-webViewDidFinishLoad:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -23,16 +23,28 @@
 #define SCREENW [UIScreen mainScreen].bounds.size.width
 #define SCREENH [UIScreen mainScreen].bounds.size.height
 #define kIS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+//iPhone4
 #define kIS_iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+//iPhone5 5S 5C SE
 #define kIS_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+//iPhone6 6S 7
 #define kIS_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size)) : NO)
+//iPhone6Plus 6SPlus 7Plus
 #define kIS_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) : NO)
 
-#define kIOS10_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"10.0"] != NSOrderedAscending )
-#define kIOS9_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"9.0"] != NSOrderedAscending )
-#define kIOS8_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"8.0"] != NSOrderedAscending )
-#define kIOS7_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
-#define kIOS6_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"6.0"] != NSOrderedAscending )
+//以下版本比较都属于闭区间
+#define kiOS10_or_Later     [[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0f
+#define kiOS9_or_Later      [[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0f
+#define kiOS8_or_Later      [[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0f
+#define kiOS7_or_Later      [[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0f
+#define kiOS6_or_Later      [[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0f
+#define kiOS10_or_Before	[[[UIDevice currentDevice] systemVersion] floatValue] <= 10.0f
+#define kiOS9_or_Before     [[[UIDevice currentDevice] systemVersion] floatValue] <= 9.0f
+#define kiOS8_or_Before     [[[UIDevice currentDevice] systemVersion] floatValue] <= 8.0f
+#define kiOS7_or_Before     [[[UIDevice currentDevice] systemVersion] floatValue] <= 7.0f
+#define kiOS6_or_Before     [[[UIDevice currentDevice] systemVersion] floatValue] <= 6.0f
+#define kiOSBetween(arg1,arg2) [[[UIDevice currentDevice] systemVersion] floatValue] >= (float)arg1 && [[[UIDevice currentDevice] systemVersion] floatValue] <= (float)arg2
+
 
 
 
@@ -76,3 +88,6 @@
 #endif
 #endif
 #endif
+
+
+#define Block_Excute(block,...) if(block) {block(__VA_ARGS__);};

@@ -61,7 +61,6 @@ static NSInteger aaaa = 1;
 {
     aaaa++;
     if (aaaa <= 6) {
-        LoggerApp(0,@"%ld",(long)aaaa);
         [[HHZTopShowAlertView shareManager] showAlertViewWithTitle:@"测试" Content:[NSString stringWithFormat:@"陈哲是个好孩子陈哲是个好孩子陈哲是个好孩子陈哲是个好孩子%ld",(long)aaaa] Type:HHZTopShowAlertViewTypeInfo];
     }
     
