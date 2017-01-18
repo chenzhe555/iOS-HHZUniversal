@@ -49,7 +49,6 @@
 		7892DD0A1E2C667000C30DAF /* MCNoneDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7892DBED1E2C667000C30DAF /* MCNoneDataView.m */; };
 		7892DD0B1E2C667000C30DAF /* BaseQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7892DBF01E2C667000C30DAF /* BaseQRCodeVC.m */; };
 		7892DD0C1E2C667000C30DAF /* MCQRCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7892DBF21E2C667000C30DAF /* MCQRCenterView.m */; };
-		7892DD0D1E2C667000C30DAF /* HHZRedPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7892DBF51E2C667000C30DAF /* HHZRedPointView.m */; };
 		7892DD0E1E2C667000C30DAF /* MCSlipMainScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7892DBF81E2C667000C30DAF /* MCSlipMainScrollView.m */; };
 		7892DD0F1E2C667000C30DAF /* MCSlipScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7892DBFA1E2C667000C30DAF /* MCSlipScrollView.m */; };
 		7892DD101E2C667000C30DAF /* MCSlipTopItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7892DBFD1E2C667000C30DAF /* MCSlipTopItemCell.m */; };
@@ -136,6 +135,7 @@
 		7892DD611E2C667100C30DAF /* DemoTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7892DCDF1E2C667000C30DAF /* DemoTwoViewController.m */; };
 		7892DD621E2C667100C30DAF /* DemoTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7892DCE01E2C667000C30DAF /* DemoTwoViewController.xib */; };
 		789ADC731E13C7820021537E /* basicInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 789ADC721E13C7820021537E /* basicInfo.plist */; };
+		78C2F3AB1E2F7A3D005C0053 /* HHZRedPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C2F3AA1E2F7A3D005C0053 /* HHZRedPointView.m */; };
 		78D9E9C71DE3E41C009D5E55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9C61DE3E41C009D5E55 /* main.m */; };
 		78D9E9CA1DE3E41C009D5E55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9C91DE3E41C009D5E55 /* AppDelegate.m */; };
 		78D9E9CD1DE3E41C009D5E55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9CC1DE3E41C009D5E55 /* ViewController.m */; };
@@ -271,8 +271,6 @@
 		7892DBF01E2C667000C30DAF /* BaseQRCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseQRCodeVC.m; sourceTree = "<group>"; };
 		7892DBF11E2C667000C30DAF /* MCQRCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCQRCenterView.h; sourceTree = "<group>"; };
 		7892DBF21E2C667000C30DAF /* MCQRCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCQRCenterView.m; sourceTree = "<group>"; };
-		7892DBF41E2C667000C30DAF /* HHZRedPointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZRedPointView.h; sourceTree = "<group>"; };
-		7892DBF51E2C667000C30DAF /* HHZRedPointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZRedPointView.m; sourceTree = "<group>"; };
 		7892DBF71E2C667000C30DAF /* MCSlipMainScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSlipMainScrollView.h; sourceTree = "<group>"; };
 		7892DBF81E2C667000C30DAF /* MCSlipMainScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSlipMainScrollView.m; sourceTree = "<group>"; };
 		7892DBF91E2C667000C30DAF /* MCSlipScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSlipScrollView.h; sourceTree = "<group>"; };
@@ -442,6 +440,8 @@
 		7892DCDF1E2C667000C30DAF /* DemoTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTwoViewController.m; sourceTree = "<group>"; };
 		7892DCE01E2C667000C30DAF /* DemoTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoTwoViewController.xib; sourceTree = "<group>"; };
 		789ADC721E13C7820021537E /* basicInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = basicInfo.plist; sourceTree = "<group>"; };
+		78C2F3A91E2F7A3D005C0053 /* HHZRedPointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZRedPointView.h; sourceTree = "<group>"; };
+		78C2F3AA1E2F7A3D005C0053 /* HHZRedPointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZRedPointView.m; sourceTree = "<group>"; };
 		78D9E9C21DE3E41C009D5E55 /* iOS-HHZUniversal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-HHZUniversal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D9E9C61DE3E41C009D5E55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78D9E9C81DE3E41C009D5E55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -613,6 +613,7 @@
 		7892DBC11E2C667000C30DAF /* custom */ = {
 			isa = PBXGroup;
 			children = (
+				78C2F3A81E2F7A3D005C0053 /* RedPointView */,
 				7892DBC21E2C667000C30DAF /* Albums */,
 				7892DBC51E2C667000C30DAF /* alert */,
 				7892DBCC1E2C667000C30DAF /* BlurMenu */,
@@ -622,7 +623,6 @@
 				7892DBE01E2C667000C30DAF /* NavigationView */,
 				7892DBE91E2C667000C30DAF /* NoneDataView */,
 				7892DBEE1E2C667000C30DAF /* QRCode */,
-				7892DBF31E2C667000C30DAF /* redPoint */,
 				7892DBF61E2C667000C30DAF /* SlipScrollView */,
 				7892DC001E2C667000C30DAF /* UpdateAlertView */,
 			);
@@ -730,15 +730,6 @@
 				7892DBF21E2C667000C30DAF /* MCQRCenterView.m */,
 			);
 			path = QRCode;
-			sourceTree = "<group>";
-		};
-		7892DBF31E2C667000C30DAF /* redPoint */ = {
-			isa = PBXGroup;
-			children = (
-				7892DBF41E2C667000C30DAF /* HHZRedPointView.h */,
-				7892DBF51E2C667000C30DAF /* HHZRedPointView.m */,
-			);
-			path = redPoint;
 			sourceTree = "<group>";
 		};
 		7892DBF61E2C667000C30DAF /* SlipScrollView */ = {
@@ -1427,6 +1418,15 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		78C2F3A81E2F7A3D005C0053 /* RedPointView */ = {
+			isa = PBXGroup;
+			children = (
+				78C2F3A91E2F7A3D005C0053 /* HHZRedPointView.h */,
+				78C2F3AA1E2F7A3D005C0053 /* HHZRedPointView.m */,
+			);
+			path = RedPointView;
+			sourceTree = "<group>";
+		};
 		78D9E9B91DE3E41B009D5E55 = {
 			isa = PBXGroup;
 			children = (
@@ -1780,6 +1780,7 @@
 				7892DCE91E2C667000C30DAF /* NSException+HHZCategory.m in Sources */,
 				7892DCF71E2C667000C30DAF /* UITableView+HHZCategory.m in Sources */,
 				7892DD0F1E2C667000C30DAF /* MCSlipScrollView.m in Sources */,
+				78C2F3AB1E2F7A3D005C0053 /* HHZRedPointView.m in Sources */,
 				7892DD3B1E2C667000C30DAF /* HHZIQKeyboardManagerTool.m in Sources */,
 				7892DD051E2C667000C30DAF /* BaseNavigationView.m in Sources */,
 				7892DD221E2C667000C30DAF /* HHZHttpStruct.m in Sources */,
@@ -1885,7 +1886,6 @@
 				7892DCEE1E2C667000C30DAF /* NSString+HHZCategory.m in Sources */,
 				7892DCE81E2C667000C30DAF /* NSDictionary+HHZCategory.m in Sources */,
 				7892DD071E2C667000C30DAF /* MCLeftNavigationView.m in Sources */,
-				7892DD0D1E2C667000C30DAF /* HHZRedPointView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

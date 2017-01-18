@@ -8,6 +8,7 @@
 
 #import "BottomPopViewController.h"
 #import "HHZBottomPopView.h"
+#import "HHZTabbarTool.h"
 
 @interface BottomPopViewController ()<PopViewDelegate>
 

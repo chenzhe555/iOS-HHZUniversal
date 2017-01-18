@@ -173,6 +173,22 @@ Pod::Spec.new do |s|
         three.source_files = 'iOS-HHZUniversal/classes/utils/application/*.{h,m}'
       end
 
+      two.subspec 'cookie' do |three|
+        three.source_files = 'iOS-HHZUniversal/classes/utils/cookie/*.{h,m}'
+      end
+
+      two.subspec 'logger' do |three|
+        three.source_files = 'iOS-HHZUniversal/classes/utils/logger/*.{h,m}'
+      end
+
+      two.subspec 'numerical' do |three|
+        three.source_files = 'iOS-HHZUniversal/classes/utils/numerical/*.{h,m}'
+      end
+
+      two.subspec 'system' do |three|
+        three.source_files = 'iOS-HHZUniversal/classes/utils/system/*.{h,m}'
+      end
+
     end
 
     one.subspec 'subclass' do |two|
@@ -196,6 +212,18 @@ Pod::Spec.new do |s|
 
       two.subspec 'system' do |three|
         three.source_files = 'iOS-HHZUniversal/classes/customView/system/*.{h,m}'
+
+        three.subspec 'Tabbar' do |four|
+          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/Tabbar/*.{h,m}'
+        end
+
+        three.subspec 'alert' do |four|
+          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/alert/*.{h,m}'
+        end
+
+        three.subspec 'notification' do |four|
+          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/notification/*.{h,m}'
+        end
       end
 
       two.subspec 'custom' do |three|
@@ -236,12 +264,16 @@ Pod::Spec.new do |s|
           four.source_files = 'iOS-HHZUniversal/classes/customView/custom/SlipScrollView/*.{h,m}'
         end
 
-        three.subspec 'Tabbar' do |four|
-          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/Tabbar/*.{h,m}'
-        end
-
         three.subspec 'UpdateAlertView' do |four|
           four.source_files = 'iOS-HHZUniversal/classes/customView/custom/UpdateAlertView/*.{h,m}'
+        end
+
+        three.subspec 'Albums' do |four|
+          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/Albums/*.{h,m}'
+        end
+
+        three.subspec 'alert' do |four|
+          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/alert/*.{h,m}'
         end
       end
     end

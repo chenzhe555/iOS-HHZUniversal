@@ -13,6 +13,7 @@
 #import "BottomPopViewController.h"
 #import "WatermarkViewController.h"
 #import "ShowAlertViewController.h"
+#import "HHZTabbarTool.h"
 
 @interface DemoOneViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
