@@ -1982,7 +1982,7 @@
 			baseConfigurationReference = 2B76864861DA6A6265E3BAA3 /* Pods-iOS-HHZUniversal.companydebug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2061,7 +2061,7 @@
 			baseConfigurationReference = CA5D235BA42D5BCA2D1D1D5C /* Pods-iOS-HHZUniversal.enterprisedebug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2144,7 +2144,7 @@
 			baseConfigurationReference = B98E6BBC653E4542BD15F7DA /* Pods-iOS-HHZUniversal.companyrelease.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2217,7 +2217,7 @@
 			baseConfigurationReference = 1BB4642AF5F9A96BAF3172BA /* Pods-iOS-HHZUniversal.enterpriserelease.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2350,7 +2350,7 @@
 			baseConfigurationReference = DEF0F1841E80C7F5DB9209FD /* Pods-iOS-HHZUniversal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2376,7 +2376,7 @@
 			baseConfigurationReference = 9644A4E204CBBC88EF4E1046 /* Pods-iOS-HHZUniversal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

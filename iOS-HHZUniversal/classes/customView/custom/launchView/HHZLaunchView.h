@@ -22,7 +22,7 @@
 
 @end
 
-@interface HHZLaunchView : UIView
+@interface HHZLaunchView : UIView<CAAnimationDelegate>
 
 /**
  *  网页跳转情况:跳转的Html地址

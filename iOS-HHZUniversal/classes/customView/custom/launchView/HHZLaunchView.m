@@ -11,6 +11,7 @@
 #import "HHZKitTool.h"
 #import "UIView+HHZCategory.h"
 #import <SDWebImage/SDWebImageManager.h>
+#import "HHZWeakProxy.h"
 
 //图片存储位置
 #define kHHZLaunchViewImgURL @"kHHZLaunchViewImgURL"
@@ -18,7 +19,7 @@
 #define kHHZLaunchViewImgNSStringURL @"kHHZLaunchViewImgNSStringURL"
 
 
-@interface HHZLaunchView ()<CAAnimationDelegate>
+@interface HHZLaunchView ()
 @property (nonatomic, assign) id<HHZLaunchViewDelegate> delegate;
 /**
  *  显示网络图片
@@ -179,7 +180,7 @@
     
     CAAnimationGroup * group = [CAAnimationGroup animation];
     group.animations = @[animation1,animation2];
-    group.delegate = self;
+    group.delegate = (id)[HHZWeakProxy proxyWithTarget_hhz:self];
     group.duration = 0.5f;
     
     group.removedOnCompletion = NO;
