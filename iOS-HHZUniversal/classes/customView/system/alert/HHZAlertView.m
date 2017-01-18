@@ -12,10 +12,9 @@
 
 @implementation HHZAlertView
 
-//TODO: 这里应该内部自己判断系统版本!!!要改
-+(void)showAlertViewTitle:(NSString *)title message:(NSString *)message delegate:(id)delegate ButtonTitles:(NSArray *)otherButtonTitles Tag:(NSInteger)tag
++(UIAlertView *)showAlertViewTitle:(NSString *)title message:(NSString *)message delegate:(id)delegate ButtonTitles:(NSArray *)otherButtonTitles Tag:(NSInteger)tag
 {
-    [self showAlertTitle:title message:message delegate:delegate ButtonTitles:otherButtonTitles Tag:tag];
+    return [self showAlertTitle:title message:message delegate:delegate ButtonTitles:otherButtonTitles Tag:tag];
 }
 
 //iOS8以前用的弹框(无返回值)

@@ -26,7 +26,7 @@
  *  @param otherButtonTitles
  *  @param tag
  */
-+(void)showAlertViewTitle:(NSString *)title message:(NSString *)message delegate:(id)delegate ButtonTitles:(NSArray *)otherButtonTitles Tag:(NSInteger)tag;
++(UIAlertView *)showAlertViewTitle:(NSString *)title message:(NSString *)message delegate:(id)delegate ButtonTitles:(NSArray *)otherButtonTitles Tag:(NSInteger)tag;
 
 /**
  *  iOS8以前用的弹框(无返回值)

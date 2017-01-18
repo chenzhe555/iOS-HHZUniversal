@@ -208,19 +208,20 @@ Pod::Spec.new do |s|
       two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/subclass'
       two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/category'
       two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/utils'
-      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/config'      
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/config'  
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/base'    
 
       two.subspec 'system' do |three|
         three.subspec 'Tabbar' do |four|
-          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/Tabbar/*.{h,m}'
+          four.source_files = 'iOS-HHZUniversal/classes/customView/system/Tabbar/*.{h,m}'
         end
 
         three.subspec 'alert' do |four|
-          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/alert/*.{h,m}'
+          four.source_files = 'iOS-HHZUniversal/classes/customView/system/alert/*.{h,m}'
         end
 
         three.subspec 'notification' do |four|
-          four.source_files = 'iOS-HHZUniversal/classes/customView/custom/notification/*.{h,m}'
+          four.source_files = 'iOS-HHZUniversal/classes/customView/system/notification/*.{h,m}'
         end
       end
 
