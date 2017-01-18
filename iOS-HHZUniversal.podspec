@@ -269,6 +269,8 @@ Pod::Spec.new do |s|
         end
 
         three.subspec 'Albums' do |four|
+          four.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/customView/custom/BottomPopView' 
+
           four.source_files = 'iOS-HHZUniversal/classes/customView/custom/Albums/*.{h,m}'
         end
 
