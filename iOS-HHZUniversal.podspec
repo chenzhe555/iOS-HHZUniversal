@@ -209,7 +209,8 @@ Pod::Spec.new do |s|
       two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/category'
       two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/utils'
       two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/config'  
-      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/base'    
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/base'
+      two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/exception'    
 
       two.subspec 'system' do |three|
         three.subspec 'Tabbar' do |four|
