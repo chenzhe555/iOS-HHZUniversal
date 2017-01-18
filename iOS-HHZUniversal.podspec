@@ -211,8 +211,6 @@ Pod::Spec.new do |s|
       two.dependency 'iOS-HHZUniversal/iOS-HHZUniversal/config'      
 
       two.subspec 'system' do |three|
-        three.source_files = 'iOS-HHZUniversal/classes/customView/system/*.{h,m}'
-
         three.subspec 'Tabbar' do |four|
           four.source_files = 'iOS-HHZUniversal/classes/customView/custom/Tabbar/*.{h,m}'
         end
@@ -343,8 +341,10 @@ Pod::Spec.new do |s|
   s.dependency "AFNetworking", "~> 3.1.0"
   s.dependency "PINCache", "3.0.1-beta"
   #s.dependency "IQKeyboardManager", "~> 4.0.6"
-  #s.dependency "CocoaLumberjack", "~> 3.0.0"
+  s.dependency "CocoaLumberjack", "~> 3.0.0"
   #s.dependency "SimpleKeychain", "~> 0.7.0"
-  #s.dependency "ZYQAssetPickerController", "~> 1.0.0"
+  s.dependency "ZYQAssetPickerController", "~> 1.0.0"
   s.dependency "SDWebImage", "~> 4.0.0-beta2"
+  s.dependency "pop", "~> 1.0.9"
+  s.dependency "NSLogger", "~> 1.7.0"
 end
