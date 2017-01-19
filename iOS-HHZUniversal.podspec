@@ -351,4 +351,6 @@ Pod::Spec.new do |s|
   s.dependency "SDWebImage", "~> 4.0.0-beta2"
   s.dependency "pop", "~> 1.0.9"
   s.dependency "NSLogger", "~> 1.7.0"
+  s.dependency "MJExtension", "~> 3.0.13"
+  s.dependency "MJRefresh", "~> 3.1.12"
 end

@@ -10,7 +10,7 @@
 
 
 @implementation HHZHttpClient
-+(HHZHttpResult *)sendRequest:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail
++(HHZHttpResult *)sendRequest:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail beforeSend:( HHZBeforeSendRequest)beforeSend
 {
     //生成Tag唯一标识
     NSUInteger httpTag = [[HHZHttpTagBuilder shareManager] getSoleHttpTag];
@@ -32,6 +32,9 @@
     //处理Condition情况
     [self handleHttpCondition:condition];
     
+    //发送网络请求前的回调
+    if (beforeSend) beforeSend(request,condition);
+    
     NSURLSessionDataTask * getTask = nil;
     if ([request.requestMethod isEqualToString:@"POST"]) {
         getTask = [[HHZHttpManager shareManager] POST:request.url parameters:request.paramaters progress:^(NSProgress * _Nonnull uploadProgress) {
@@ -43,10 +46,7 @@
             reponse.requestUrl = request.url;
             reponse.alertType = condition.alertType;
             
-            if (success)
-            {
-                success(reponse);
-            }
+            if (success) success(reponse);
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             HHZHttpResponse * reponse = [[HHZHttpResponse alloc] init];
             reponse.errorInfo = error;
@@ -54,10 +54,7 @@
             reponse.requestUrl = request.url;
             reponse.alertType = condition.alertType;
             
-            if (fail)
-            {
-                fail(reponse);
-            }
+            if (fail) fail(reponse);
         }];
     }
     return [HHZHttpResult generateDefaultResult:httpTag RequestURL:request.url Task:getTask];

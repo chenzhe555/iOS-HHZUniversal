@@ -18,9 +18,6 @@ case "${TARGETED_DEVICE_FAMILY}" in
   2)
     TARGET_DEVICE_ARGS="--target-device ipad"
     ;;
-  3)
-    TARGET_DEVICE_ARGS="--target-device tv"
-    ;;
   *)
     TARGET_DEVICE_ARGS="--target-device mac"
     ;;
@@ -77,21 +74,27 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
 fi
 if [[ "$CONFIGURATION" == "enterpriseDebug" ]]; then
+  install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
 fi
 if [[ "$CONFIGURATION" == "companyDebug" ]]; then
+  install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
 fi
 if [[ "$CONFIGURATION" == "enterpriseRelease" ]]; then
+  install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
 fi
 if [[ "$CONFIGURATION" == "companyRelease" ]]; then
+  install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
 fi
 

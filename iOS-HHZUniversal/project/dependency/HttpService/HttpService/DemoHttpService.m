@@ -99,6 +99,13 @@
     }
 }
 
+-(void)manageBeforeSendRequest:(HHZHttpRequest *)request condition:(HHZHttpRequestCondition *) condition
+{
+    if (_delegate && [_delegate respondsToSelector:@selector(beforeSendRequest:appendCondition:)])
+    {
+        [_delegate beforeSendRequest:request appendCondition:condition];
+    }
+}
 
 
 
@@ -125,6 +132,8 @@
         [weakSelf manageServiceSuccess:responseObject];
     } fail:^(HHZHttpResponse * _Nonnull responseObject) {
         [weakSelf manageServiceFail:responseObject];
+    } beforeSend:^(HHZHttpRequest * _Nonnull request, HHZHttpRequestCondition * _Nonnull condition) {
+        [weakSelf manageBeforeSendRequest:request condition:condition];
     }];
 }
 

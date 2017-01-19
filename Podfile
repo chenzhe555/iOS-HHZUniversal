@@ -15,6 +15,8 @@ target 'iOS-HHZUniversal' do
   pod 'SDWebImage', '~> 4.0.0-beta2'
   pod 'pop', '~> 1.0.9'
   pod 'NSLogger', '~> 1.7.0'
+  pod 'MJExtension', '~> 3.0.13'
+  pod 'MJRefresh', '~> 3.1.12'
   target 'iOS-HHZUniversalTests' do
     inherit! :search_paths
     # Pods for testing

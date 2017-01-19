@@ -15,6 +15,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+//网络请求发送之前的回调
+typedef void (^HHZBeforeSendRequest)(HHZHttpRequest * request,HHZHttpRequestCondition * condition);
 //网络请求成功和失败的回调
 typedef void (^HHZSuccessBlock)(HHZHttpResponse * responseObject);
 typedef void (^HHZFailureBlock)(HHZHttpResponse * responseObject);
@@ -30,7 +32,7 @@ typedef void (^HHZFailureBlock)(HHZHttpResponse * responseObject);
  *
  *  @return 当前请求唯一的tag标识
  */
-+(HHZHttpResult *)sendRequest:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail;
++(HHZHttpResult *)sendRequest:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail beforeSend:(HHZBeforeSendRequest)beforeSend;
 
 
 /**

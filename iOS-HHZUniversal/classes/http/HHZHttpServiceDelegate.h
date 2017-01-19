@@ -12,9 +12,18 @@
  */
 #import <Foundation/Foundation.h>
 @class HHZHttpResponse;
+@class HHZHttpRequest;
+@class HHZHttpRequestCondition;
 
 @protocol HHZHttpServiceDelegate <NSObject>
 @optional
+/**
+ *  处理完请求逻辑之后的回调
+ *
+ *  @param request   装载完毕的请求参数
+ *  @param condition 传入的Condition条件
+ */
+-(void)beforeSendRequest:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition;
 /**
  *  请求成功
  *

@@ -22,6 +22,8 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (3.0.0):
     - CocoaLumberjack/Default
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
   - NSLogger (1.7.0):
     - NSLogger/Standard (= 1.7.0)
   - NSLogger/Standard (1.7.0)
@@ -40,6 +42,8 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - CocoaLumberjack (~> 3.0.0)
+  - MJExtension (~> 3.0.13)
+  - MJRefresh (~> 3.1.12)
   - NSLogger (~> 1.7.0)
   - PINCache (~> 3.0.1-beta)
   - pop (~> 1.0.9)
@@ -49,12 +53,14 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CocoaLumberjack: c823149bccc5519a9447aeb433be7b1212a7d6a5
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   NSLogger: daa17368272ddf10a0850c218fe49de23b50f2eb
   PINCache: 6d273a6e0754bd26e3f12a38a90dde73cc6a42b2
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SDWebImage: e379f33106cf8d6766f970c0ef1c3fb609c94d78
   ZYQAssetPickerController: e5cf51ee6c05fa06746830026c247cb9f6699e84
 
-PODFILE CHECKSUM: b7724d3471d04ae947033910213ca465cd6fd73b
+PODFILE CHECKSUM: 079cdf8086661ad9aa5e6a2ba4a4cf7c67f27cdb
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.1.1
