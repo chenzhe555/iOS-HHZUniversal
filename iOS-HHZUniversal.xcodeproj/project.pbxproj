@@ -143,6 +143,9 @@
 		78D9E9D21DE3E41C009D5E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D9E9D11DE3E41C009D5E55 /* Assets.xcassets */; };
 		78D9E9D51DE3E41C009D5E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D9E9D31DE3E41C009D5E55 /* LaunchScreen.storyboard */; };
 		78D9E9E01DE3E41C009D5E55 /* iOS_HHZUniversalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9DF1DE3E41C009D5E55 /* iOS_HHZUniversalTests.m */; };
+		78F1605B1E30A2720011B2C9 /* WebViewJSBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F160591E30A2720011B2C9 /* WebViewJSBridgeViewController.m */; };
+		78F1605C1E30A2720011B2C9 /* WebViewJSBridgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78F1605A1E30A2720011B2C9 /* WebViewJSBridgeViewController.xib */; };
+		78F160611E30A3000011B2C9 /* webviewBridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 78F160601E30A3000011B2C9 /* webviewBridge.html */; };
 		D91A2AC77285ED1564546243 /* libPods-iOS-HHZUniversal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A02CFD3A02A60E15887B80 /* libPods-iOS-HHZUniversal.a */; };
 		E2317C593A94D06F85AE145C /* libPods-iOS-HHZUniversalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D732F2D9CF5B727F4AB86546 /* libPods-iOS-HHZUniversalTests.a */; };
 /* End PBXBuildFile section */
@@ -456,6 +459,10 @@
 		78D9E9DF1DE3E41C009D5E55 /* iOS_HHZUniversalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_HHZUniversalTests.m; sourceTree = "<group>"; };
 		78D9E9E11DE3E41C009D5E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78D9EAA91DE3E4E0009D5E55 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		78F160581E30A2720011B2C9 /* WebViewJSBridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJSBridgeViewController.h; sourceTree = "<group>"; };
+		78F160591E30A2720011B2C9 /* WebViewJSBridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJSBridgeViewController.m; sourceTree = "<group>"; };
+		78F1605A1E30A2720011B2C9 /* WebViewJSBridgeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewJSBridgeViewController.xib; sourceTree = "<group>"; };
+		78F160601E30A3000011B2C9 /* webviewBridge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = webviewBridge.html; sourceTree = "<group>"; };
 		95A02CFD3A02A60E15887B80 /* libPods-iOS-HHZUniversal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-HHZUniversal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9644A4E204CBBC88EF4E1046 /* Pods-iOS-HHZUniversal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversal.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal.release.xcconfig"; sourceTree = "<group>"; };
 		B98E6BBC653E4542BD15F7DA /* Pods-iOS-HHZUniversal.companyrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-HHZUniversal.companyrelease.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-HHZUniversal/Pods-iOS-HHZUniversal.companyrelease.xcconfig"; sourceTree = "<group>"; };
@@ -1317,6 +1324,10 @@
 				7892DCC71E2C667000C30DAF /* WatermarkViewController.h */,
 				7892DCC81E2C667000C30DAF /* WatermarkViewController.m */,
 				7892DCC91E2C667000C30DAF /* WatermarkViewController.xib */,
+				78F160581E30A2720011B2C9 /* WebViewJSBridgeViewController.h */,
+				78F160591E30A2720011B2C9 /* WebViewJSBridgeViewController.m */,
+				78F1605A1E30A2720011B2C9 /* WebViewJSBridgeViewController.xib */,
+				78F160601E30A3000011B2C9 /* webviewBridge.html */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1633,11 +1644,13 @@
 				7892DD4D1E2C667100C30DAF /* DemoFiveViewController.xib in Resources */,
 				7892DCE41E2C667000C30DAF /* HHZNavigationController.plist in Resources */,
 				7892DD5B1E2C667100C30DAF /* companyDebug.xcconfig in Resources */,
+				78F160611E30A3000011B2C9 /* webviewBridge.html in Resources */,
 				7892DD5E1E2C667100C30DAF /* enterpriseRelease.xcconfig in Resources */,
 				7892DD601E2C667100C30DAF /* DemoThreeViewController.xib in Resources */,
 				78D9E9D51DE3E41C009D5E55 /* LaunchScreen.storyboard in Resources */,
 				7892DD511E2C667100C30DAF /* BottomPopViewController.xib in Resources */,
 				7892DD5D1E2C667100C30DAF /* enterpriseDebug.xcconfig in Resources */,
+				78F1605C1E30A2720011B2C9 /* WebViewJSBridgeViewController.xib in Resources */,
 				7892DD591E2C667100C30DAF /* DemoOneCell.xib in Resources */,
 				7892DD4F1E2C667100C30DAF /* DemoFourViewController.xib in Resources */,
 				7892DD5A1E2C667100C30DAF /* AllowDomainsUrl.plist in Resources */,
@@ -1819,6 +1832,7 @@
 				7892DCF51E2C667000C30DAF /* UILabel+HHZCategory.m in Sources */,
 				7892DD541E2C667100C30DAF /* ShowAlertViewController.m in Sources */,
 				7892DD0A1E2C667000C30DAF /* MCNoneDataView.m in Sources */,
+				78F1605B1E30A2720011B2C9 /* WebViewJSBridgeViewController.m in Sources */,
 				7892DD3A1E2C667000C30DAF /* HHZReachabilityTool.m in Sources */,
 				7892DD011E2C667000C30DAF /* HHZLaunchView.m in Sources */,
 				7892DD2E1E2C667000C30DAF /* HHZCookieGenerateUtil.m in Sources */,

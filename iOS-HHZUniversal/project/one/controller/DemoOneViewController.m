@@ -14,6 +14,7 @@
 #import "WatermarkViewController.h"
 #import "ShowAlertViewController.h"
 #import "HHZTabbarTool.h"
+#import "WebViewJSBridgeViewController.h"
 
 @interface DemoOneViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -51,7 +52,7 @@
 {
     [super initializeData];
     self.title = @"第一个";
-    self.dataArray = @[@"跳转到WebView!",@"底部弹出视图",@"添加水印",@"弹出框"];
+    self.dataArray = @[@"跳转到WebView!",@"底部弹出视图",@"添加水印",@"弹出框",@"JS交互"];
 }
 
 #pragma mark 视图创建
@@ -101,38 +102,50 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    UIViewController * vc = nil;
     switch (indexPath.row) {
         case 0:
         {
-            HHZWebViewController * vc = [HHZWebViewController new];
-            vc.urlString = @"http://www.baidu.com";
-            [self.navigationController pushViewController:vc animated:YES];
+            vc = [HHZWebViewController new];
+            ((HHZWebViewController *)vc).urlString = @"http://www.baidu.com";
         }
             break;
         case 1:
         {
-            BottomPopViewController * vc = [BottomPopViewController new];
-            [self.navigationController pushViewController:vc animated:YES];
+            vc = [BottomPopViewController new];
         }
             break;
         case 2:
         {
-            WatermarkViewController * vc = [WatermarkViewController new];
-            [self.navigationController pushViewController:vc animated:YES];
+            vc = [WatermarkViewController new];
         }
             break;
         case 3:
         {
-            ShowAlertViewController * vc = [ShowAlertViewController new];
-            [self.navigationController pushViewController:vc animated:YES];
+            vc = [ShowAlertViewController new];
+        }
+            break;
+        case 4:
+        {
+            vc = [WebViewJSBridgeViewController new];
         }
             break;
         default:
+        {
+            vc = [HHZWebViewController new];
+            ((HHZWebViewController *)vc).urlString = @"http://www.baidu.com";
+        }
             break;
     }
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark 回调事件 --> HttpService代理方法
+-(void)beforeSendRequest:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition
+{
+    
+}
+
 -(void)requestSuccess:(HHZHttpResponse *)response
 {
     if (response.tag == _testResult.tag) {

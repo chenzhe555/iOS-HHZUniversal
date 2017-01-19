@@ -8,7 +8,7 @@
 
 #import "WatermarkViewController.h"
 #import "UIImage+HHZCategory.h"
-
+#import "HHZTabbarTool.h"
 
 @interface WatermarkViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *testImage;
@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [[HHZTabbarTool shareManager].tabbar hideTabbarView:YES];
 }
 
 - (void)didReceiveMemoryWarning {

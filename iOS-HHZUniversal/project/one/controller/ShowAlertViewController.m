@@ -10,6 +10,7 @@
 #import "HHZTopShowAlertView.h"
 #import "HHZMACROConfig.h"
 #import "HHZToastView.h"
+#import "HHZTabbarTool.h"
 
 @interface ShowAlertViewController ()
 - (IBAction)showTopAlert:(id)sender;
@@ -21,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [[HHZTabbarTool shareManager].tabbar hideTabbarView:YES];
 }
 
 - (void)didReceiveMemoryWarning {

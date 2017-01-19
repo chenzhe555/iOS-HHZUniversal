@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WebViewJavascriptBridge</title>
+	<script type="text/javascript">
+        function setupWebViewJavascriptBridge(callback) {
+            if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+            if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+            window.WVJBCallbacks = [callback];
+            var WVJBIframe = document.createElement('iframe');
+            WVJBIframe.style.display = 'none';
+            WVJBIframe.src = 'https://__bridge_loaded__';
+            document.documentElement.appendChild(WVJBIframe);
+            setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+        }
+    
+        setupWebViewJavascriptBridge(function(bridge) {
+            /* Initialize your app here */
+                                 
+            bridge.registerHandler('appCallWeb', function(data, responseCallback) {
+                alert(data["callWeb"]);
+                data = {"callApp":"App主动调用Web方法--->Web回调App"};
+                responseCallback(data)
+            })
+                                     
+            var callbackButton = document.getElementById('callAppMethod');
+            callbackButton.onclick = function(e) {
+                bridge.callHandler('WebCallApp', {'callApp': 'Web主动调用App方法'}, function(response) {
+                    //为了更能看出执行顺序,做了个循环,App也做了打印
+                    var i = 0;
+                    while(i < 1000000000) {
+                        i++;
+                    }
+                    alert(response['callWeb']);
+                })
+            }
+            
+        })
+    
+	</script>
+</head>
+<body>
+<button id='callAppMethod'>调用App方法</button>
+</body>
+</html>
