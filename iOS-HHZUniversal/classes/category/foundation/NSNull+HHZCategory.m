@@ -17,7 +17,7 @@ NSUInteger getDefaultLength(id self,SEL _cmd)
 
 @implementation NSNull (HHZUtils_Forward)
 /**
- *  如果调用length和count， 默认返回0
+ *  如果调用length和count， 默认返回0(这个只是为了测试消息转发，实际项目没必要做这么麻烦,参照NSNumber即可)
  *
  *  @param sel 方法
  *

@@ -135,6 +135,8 @@
 		7892DD611E2C667100C30DAF /* DemoTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7892DCDF1E2C667000C30DAF /* DemoTwoViewController.m */; };
 		7892DD621E2C667100C30DAF /* DemoTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7892DCE01E2C667000C30DAF /* DemoTwoViewController.xib */; };
 		789ADC731E13C7820021537E /* basicInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 789ADC721E13C7820021537E /* basicInfo.plist */; };
+		78A90A561E31B18700C74543 /* HHZTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A90A551E31B18700C74543 /* HHZTableView.m */; };
+		78A90A6A1E31DFE500C74543 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 78A90A691E31DFE500C74543 /* main.js */; };
 		78C2F3AB1E2F7A3D005C0053 /* HHZRedPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C2F3AA1E2F7A3D005C0053 /* HHZRedPointView.m */; };
 		78D9E9C71DE3E41C009D5E55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9C61DE3E41C009D5E55 /* main.m */; };
 		78D9E9CA1DE3E41C009D5E55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9E9C91DE3E41C009D5E55 /* AppDelegate.m */; };
@@ -443,6 +445,10 @@
 		7892DCDF1E2C667000C30DAF /* DemoTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTwoViewController.m; sourceTree = "<group>"; };
 		7892DCE01E2C667000C30DAF /* DemoTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoTwoViewController.xib; sourceTree = "<group>"; };
 		789ADC721E13C7820021537E /* basicInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = basicInfo.plist; sourceTree = "<group>"; };
+		78A90A541E31B18700C74543 /* HHZTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZTableView.h; sourceTree = "<group>"; };
+		78A90A551E31B18700C74543 /* HHZTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZTableView.m; sourceTree = "<group>"; };
+		78A90A601E31DE6400C74543 /* iOS-HHZUniversal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-HHZUniversal.entitlements"; sourceTree = "<group>"; };
+		78A90A691E31DFE500C74543 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		78C2F3A91E2F7A3D005C0053 /* HHZRedPointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZRedPointView.h; sourceTree = "<group>"; };
 		78C2F3AA1E2F7A3D005C0053 /* HHZRedPointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZRedPointView.m; sourceTree = "<group>"; };
 		78D9E9C21DE3E41C009D5E55 /* iOS-HHZUniversal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-HHZUniversal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -528,6 +534,8 @@
 				7892DB921E2C667000C30DAF /* HHZViewController.m */,
 				7892DB931E2C667000C30DAF /* HHZWeakProxy.h */,
 				7892DB941E2C667000C30DAF /* HHZWeakProxy.m */,
+				78A90A541E31B18700C74543 /* HHZTableView.h */,
+				78A90A551E31B18700C74543 /* HHZTableView.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -1116,6 +1124,7 @@
 		7892DC8E1E2C667000C30DAF /* project */ = {
 			isa = PBXGroup;
 			children = (
+				78A90A681E31DFE500C74543 /* jspatch */,
 				7892DC8F1E2C667000C30DAF /* dependency */,
 				7892DCAE1E2C667000C30DAF /* five */,
 				7892DCB51E2C667000C30DAF /* four */,
@@ -1429,6 +1438,14 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		78A90A681E31DFE500C74543 /* jspatch */ = {
+			isa = PBXGroup;
+			children = (
+				78A90A691E31DFE500C74543 /* main.js */,
+			);
+			path = jspatch;
+			sourceTree = "<group>";
+		};
 		78C2F3A81E2F7A3D005C0053 /* RedPointView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1461,6 +1478,7 @@
 		78D9E9C41DE3E41C009D5E55 /* iOS-HHZUniversal */ = {
 			isa = PBXGroup;
 			children = (
+				78A90A601E31DE6400C74543 /* iOS-HHZUniversal.entitlements */,
 				7892DB8C1E2C667000C30DAF /* classes */,
 				7892DC8E1E2C667000C30DAF /* project */,
 				78D9E9C81DE3E41C009D5E55 /* AppDelegate.h */,
@@ -1570,6 +1588,12 @@
 				TargetAttributes = {
 					78D9E9C11DE3E41C009D5E55 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9D5BK8R2U4;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					78D9E9DA1DE3E41C009D5E55 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1639,6 +1663,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78A90A6A1E31DFE500C74543 /* main.js in Resources */,
 				7892DD531E2C667100C30DAF /* DemoOneViewController.xib in Resources */,
 				7892DD571E2C667100C30DAF /* WatermarkViewController.xib in Resources */,
 				7892DD4D1E2C667100C30DAF /* DemoFiveViewController.xib in Resources */,
@@ -1869,6 +1894,7 @@
 				7892DD5F1E2C667100C30DAF /* DemoThreeViewController.m in Sources */,
 				7892DD491E2C667100C30DAF /* DemoTabbar.m in Sources */,
 				7892DD271E2C667000C30DAF /* HHZLabel.m in Sources */,
+				78A90A561E31B18700C74543 /* HHZTableView.m in Sources */,
 				7892DD561E2C667100C30DAF /* WatermarkViewController.m in Sources */,
 				7892DCF81E2C667000C30DAF /* UIView+HHZCategory.m in Sources */,
 				7892DD611E2C667100C30DAF /* DemoTwoViewController.m in Sources */,
@@ -1996,7 +2022,9 @@
 			baseConfigurationReference = 2B76864861DA6A6265E3BAA3 /* Pods-iOS-HHZUniversal.companydebug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOS-HHZUniversal/iOS-HHZUniversal.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9D5BK8R2U4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2075,7 +2103,9 @@
 			baseConfigurationReference = CA5D235BA42D5BCA2D1D1D5C /* Pods-iOS-HHZUniversal.enterprisedebug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOS-HHZUniversal/iOS-HHZUniversal.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9D5BK8R2U4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2158,7 +2188,9 @@
 			baseConfigurationReference = B98E6BBC653E4542BD15F7DA /* Pods-iOS-HHZUniversal.companyrelease.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOS-HHZUniversal/iOS-HHZUniversal.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9D5BK8R2U4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-HHZUniversal/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2231,7 +2263,9 @@
 			baseConfigurationReference = 1BB4642AF5F9A96BAF3172BA /* Pods-iOS-HHZUniversal.enterpriserelease.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOS-HHZUniversal/iOS-HHZUniversal.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9D5BK8R2U4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2364,7 +2398,9 @@
 			baseConfigurationReference = DEF0F1841E80C7F5DB9209FD /* Pods-iOS-HHZUniversal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOS-HHZUniversal/iOS-HHZUniversal.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9D5BK8R2U4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2390,7 +2426,9 @@
 			baseConfigurationReference = 9644A4E204CBBC88EF4E1046 /* Pods-iOS-HHZUniversal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOS-HHZUniversal/iOS-HHZUniversal.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9D5BK8R2U4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-HHZUniversal/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

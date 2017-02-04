@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 对象/nil
  */
--(nullable id)objectMaybeNilAtIndex_hhz:(NSUInteger)index;
+-(nullable id)objectMaybeNilAtIndex_hhz:(NSInteger)index;
 @end
 
 

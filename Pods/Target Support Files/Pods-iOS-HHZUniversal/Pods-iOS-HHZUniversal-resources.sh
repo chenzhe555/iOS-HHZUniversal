@@ -74,26 +74,32 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "JSPatch/JSPatch/JSPatch.js"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
 fi
 if [[ "$CONFIGURATION" == "enterpriseDebug" ]]; then
+  install_resource "JSPatch/JSPatch/JSPatch.js"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
 fi
 if [[ "$CONFIGURATION" == "companyDebug" ]]; then
+  install_resource "JSPatch/JSPatch/JSPatch.js"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "JSPatch/JSPatch/JSPatch.js"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
 fi
 if [[ "$CONFIGURATION" == "enterpriseRelease" ]]; then
+  install_resource "JSPatch/JSPatch/JSPatch.js"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
 fi
 if [[ "$CONFIGURATION" == "companyRelease" ]]; then
+  install_resource "JSPatch/JSPatch/JSPatch.js"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "ZYQAssetPickerController/ZYQAssetPickerController/ZYQAssetPicker.Bundle"
 fi

@@ -18,6 +18,7 @@ target 'iOS-HHZUniversal' do
   pod 'MJExtension', '~> 3.0.13'
   pod 'MJRefresh', '~> 3.1.12'
   pod 'WebViewJavascriptBridge', '~> 6.0.2'
+  pod 'JSPatchPlatform', '~> 1.6.6'
   target 'iOS-HHZUniversalTests' do
     inherit! :search_paths
     # Pods for testing

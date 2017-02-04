@@ -155,6 +155,7 @@
 
 -(void)requestFail:(HHZHttpResponse *)response
 {
+    NSLog(@"陈哲来了aaaaa");
     if (response.tag == _testResult.tag) {
         [self.currentService handleFailInfo:response];
     }

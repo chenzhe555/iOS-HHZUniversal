@@ -16,6 +16,10 @@
 #import "HHZDeviceTool.h"
 #import "HHZPlistTool.h"
 #import "HHZNumericalTool.h"
+#import <objc/runtime.h>
+#import "NSArray+HHZCategory.h"
+#import "HHZThreadSafeArray.h"
+#import <JSPatchPlatform/JSPatch.h>
 
 @interface AppDelegate ()
 
@@ -27,8 +31,11 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     
+    [self configSomeThing];
+    
     self.window.rootViewController = [self createTab];
     [self.window makeKeyAndVisible];
+
     
     
     return YES;
@@ -58,7 +65,7 @@
 
 -(void)configSomeThing
 {
-    
+    [self startJSEngine];
 }
 
 #pragma mark 创建Tabbar
@@ -101,4 +108,11 @@
     return [DemoTabbar createTabbarWithTabArray:tabbarArray];
 }
 
+#pragma mark JSPatch 
+-(void)startJSEngine
+{
+    [JSPatch testScriptInBundle];
+//    [JSPatch startWithAppKey:@"f772ec98ddf52c81"];
+//    [JSPatch sync];
+}
 @end

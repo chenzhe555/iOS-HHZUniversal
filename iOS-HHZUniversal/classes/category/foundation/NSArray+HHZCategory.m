@@ -7,6 +7,7 @@
 //
 
 #import "NSArray+HHZCategory.h"
+#import <objc/runtime.h>
 
 #pragma mark NSArray
 
@@ -26,9 +27,9 @@
     return mutaStr;
 }
 
--(id)objectMaybeNilAtIndex_hhz:(NSUInteger)index
+-(id)objectMaybeNilAtIndex_hhz:(NSInteger)index
 {
-    return index < self.count ? self[index] : nil;
+    return (index >= 0 && index < self.count) ? self[index] : nil;
 }
 
 @end

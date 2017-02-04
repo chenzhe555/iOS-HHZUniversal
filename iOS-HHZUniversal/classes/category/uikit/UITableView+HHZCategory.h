@@ -27,6 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)updateComponentBlock_hhz:(void (^)(UITableView * tableView))block;
 
 
+
+
 /*************************************   以下为便利方法   *************************************/
 -(void)scrollToRow_hhz:(NSUInteger)row inSection:(NSUInteger)section atScrollPosition:(UITableViewScrollPosition)scrollPosition animated:(BOOL)animated;
 -(void)insertRow_hhz:(NSUInteger)row inSection:(NSUInteger)section withRowAnimation:(UITableViewRowAnimation)animation;
