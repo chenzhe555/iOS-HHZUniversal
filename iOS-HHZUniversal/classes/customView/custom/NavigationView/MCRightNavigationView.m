@@ -10,8 +10,6 @@
 
 @implementation MCRightNavigationView
 
-
-
 +(void)createWithLeftTitle:(NSString *)title nolmalImage:(UIImage *)image selectedImage:(UIImage *)selectedImage andNavi:(UIViewController *)vc andSEL:(SEL)clickAction
 {
     UIBarButtonItem * negativeSeperator = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
